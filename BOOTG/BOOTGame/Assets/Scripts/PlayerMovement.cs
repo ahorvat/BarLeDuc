@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
-
+        // movement
         float moveHorizontal = Input.GetAxis("Horizontal");
         //float moveVertical = Input.GetAxis("Vertical");
 
@@ -34,5 +35,17 @@ public class PlayerMovement : MonoBehaviour
         }
 
         rb.AddForce(movement);
+
+        //collision
+        
+        
     }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.name == "Door")
+        {
+            SceneManager.LoadScene("scene2");
+        }
+    }
+
 }
