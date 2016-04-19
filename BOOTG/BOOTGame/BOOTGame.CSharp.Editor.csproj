@@ -5,16 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5B980A28-139A-F618-86EE-29D74B5C948E}</ProjectGuid>
+    <ProjectGuid>{6A0AD855-9B48-FD97-DA72-4DD7D584261E}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.3.4f1</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -52,14 +52,47 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.EditorTestsRunner">
+      <HintPath>Library\UnityAssemblies\UnityEditor.EditorTestsRunner.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -73,10 +106,13 @@
       <Project>{D325818F-3D8C-694F-C5C1-8392C03F2CB7}</Project>
       <Name>BOOTGame.CSharp.Plugins</Name>
     </ProjectReference>
+    <ProjectReference Include="BOOTGame.CSharp.csproj">
+      <Project>{5B980A28-139A-F618-86EE-29D74B5C948E}</Project>
+      <Name>BOOTGame.CSharp</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\TextMove.cs" />
+    <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
