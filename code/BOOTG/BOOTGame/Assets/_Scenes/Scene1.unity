@@ -677,7 +677,7 @@ MonoBehaviour:
   textFile: {fileID: 4900000, guid: 2cb8eff90562a0a44af91c6310876e8a, type: 3}
   textLines: []
   currentLine: 0
-  endAtLine: 5
+  endAtLine: 7
 --- !u!4 &1417274350
 Transform:
   m_ObjectHideFlags: 0
@@ -816,8 +816,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1938497440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.04, y: 0, z: 0}
-  m_LocalScale: {x: 2.2, y: 1.4350001, z: 1}
+  m_LocalPosition: {x: 1.8, y: 0, z: 0}
+  m_LocalScale: {x: 3.0250008, y: 1.4350001, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
