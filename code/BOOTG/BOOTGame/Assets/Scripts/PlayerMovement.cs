@@ -47,12 +47,16 @@ public class PlayerMovement : MonoBehaviour
     }
 
     //Collision
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerStay2D(Collider2D col)
     {
         //if this object collides with object Door, Scene2 will be loaded.
-        if(col.gameObject.name == "Door")
+        if(col.gameObject.tag == "Door")
         {
-            SceneManager.LoadScene("scene2");
+            if (Input.GetKey("up"))
+            {
+                SceneManager.LoadScene("Scene2");
+            }
+            
         }
 
         //if this object collides with object TestPerson, the method with the name "move" will be executed.
