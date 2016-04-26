@@ -134,7 +134,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.17, y: 6.24}
 --- !u!50 &155077553
 Rigidbody2D:
   serializedVersion: 2
@@ -143,7 +143,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 155077550}
   m_UseAutoMass: 1
-  m_Mass: 0.0256
+  m_Mass: 13.5408
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -556,7 +556,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 4, y: 6}
+  m_Size: {x: 6.5, y: 14.42}
 --- !u!212 &902855107
 SpriteRenderer:
   m_ObjectHideFlags: 0

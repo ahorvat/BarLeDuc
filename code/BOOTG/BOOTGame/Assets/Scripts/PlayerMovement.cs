@@ -58,9 +58,20 @@ public class PlayerMovement : MonoBehaviour
         //if this object collides with object Door, Scene2 will be loaded.
         if(col.gameObject.tag == "Door")
         {
+			if (Input.GetMouseButton (1)) {
+				SceneManager.LoadScene ("sc_brief_home");
+			}
+
+			if(Input.GetMouseButtonDown(0))
+			{
+				SceneManager.LoadScene ("sc_brief_home");
+			}
+
+
+
             if (Input.GetKey("up"))
             {
-                SceneManager.LoadScene("Scene2");
+                SceneManager.LoadScene("sc_brief_home");
             }
             
         }
