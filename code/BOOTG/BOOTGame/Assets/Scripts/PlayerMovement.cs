@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject TestText;
     public float speed = 1.5f;
     public float maxspeed = 4.0f;
+    private Vector2 targetPos;
+    private Vector2 trajectory;
 
     private Rigidbody2D rb;
 
@@ -22,11 +24,23 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
+            
             transform.position = transform.position - new Vector3(speed,0,0);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.position = transform.position + new Vector3(speed, 0, 0);
+        }
+
+        // op linker mouseclick
+        if (Input.GetMouseButton(0))
+        {
+
+            if (Input.mousePosition.x > transform.position.x + Screen.width/2)
+                transform.position = transform.position + new Vector3(speed, 0, 0);
+            if (Input.mousePosition.x < transform.position.x + Screen.width/2)
+                transform.position = transform.position - new Vector3(speed, 0, 0);
+
         }
        
     }
