@@ -6,53 +6,56 @@ public class PlayerMovement : MonoBehaviour
 {
 
     // Use this for initialization
-    private Rigidbody2D rb;
     public GameObject TestText;
     public float speed = 1.5f;
     public float maxspeed = 4.0f;
 
+    private Rigidbody2D rb;
 
     void Start()
-    {
+    {   
         rb = GetComponent<Rigidbody2D>();
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        // Movement
-
-        // We store the GetAxis Input which is premade by unity in MoveHorizontal and Vertical
-        // As we dont move vertical moveVertical becomes irrelevant
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        //float moveVertical = Input.GetAxis("Vertical");
-
-        //in movement we store a new vector made of moveHorizontal and for vertical 0.0f as we dont move vertical
-        Vector2 movement = new Vector2(moveHorizontal, 0.0f);
-
-        //movement gets multipited by speed. Because this happenes evry frame we scale te movement up.
-        movement = movement * speed;
-
-        //Movement Max
-        if (movement.x > maxspeed)
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
-            movement.x = maxspeed;
+            transform.position = transform.position - new Vector3(speed,0,0);
         }
-
-        //This is were we actually apply the movement onto the object.
-        rb.AddForce(movement);
-        
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.position = transform.position + new Vector3(speed, 0, 0);
+        }
+       
     }
 
     //Collision
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerStay2D(Collider2D col)
     {
         //if this object collides with object Door, Scene2 will be loaded.
-        if(col.gameObject.name == "Door")
+        if(col.gameObject.tag == "Door")
         {
-            SceneManager.LoadScene("scene2");
+            if (Input.GetKey("up"))
+            {
+                SceneManager.LoadScene("Scene2");
+            }
+            
+        }
+
+        if (col.gameObject.tag == "Letter")
+        {
+            if (Input.GetKey(KeyCode.Return))
+            {
+                GameObject.Destroy(gameObject);
+            }
+
+        }
+
+        if (col.gameObject)
+        {
+
         }
 
         //if this object collides with object TestPerson, the method with the name "move" will be executed.
