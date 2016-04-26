@@ -69,6 +69,7 @@ public class TextBoxManager : MonoBehaviour {
     public void EnableTekstBox()
     {
         textBox.SetActive(true);
+        isActive = true;
         if (stopPlayerMovement)
         {
             player.canMove = false;
@@ -79,6 +80,7 @@ public class TextBoxManager : MonoBehaviour {
     {
         textBox.SetActive(false);
         player.canMove = true;
+        isActive = false;
     }
 
     public void ReloadScript(TextAsset theText)
