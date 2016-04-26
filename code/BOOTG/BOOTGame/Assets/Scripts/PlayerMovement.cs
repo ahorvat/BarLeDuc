@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    public bool canMove;
+
     void Start()
     {   
         rb = GetComponent<Rigidbody2D>();
@@ -22,6 +24,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!canMove)
+        {
+            return;
+        }
+
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             

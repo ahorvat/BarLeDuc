@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class TextBoxManager : MonoBehaviour {
 
 
+    public PlayerMovement player;
     public GameObject textBox;
 
     public Text theText;
@@ -16,6 +17,10 @@ public class TextBoxManager : MonoBehaviour {
     public int endAtLine;
 
     public bool isActive;
+
+    public bool stopPlayerMovement;
+
+
 
 	// Use this for initialization
 	void Start ()
@@ -64,12 +69,26 @@ public class TextBoxManager : MonoBehaviour {
     public void EnableTekstBox()
     {
         textBox.SetActive(true);
+        if (stopPlayerMovement)
+        {
+            player.canMove = false;
+        }
     }
 
     public void DisableTekstBox()
     {
         textBox.SetActive(false);
+        player.canMove = true;
     }
 
+    public void ReloadScript(TextAsset theText)
+    {
+        if (theText != null)
+        {
+            textLines = new string[1];
+            textLines = (theText.text.Split('\n'));
+
+        }
+    }
     
 }
