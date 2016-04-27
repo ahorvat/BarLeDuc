@@ -9,9 +9,11 @@ public class PlayerMovement : MonoBehaviour
     public GameObject TestText;
     public float speed = 1.5f;
     public float maxspeed = 4.0f;
+    public GameObject player;
+
     private Vector2 targetPos;
     private Vector2 trajectory;
-
+    public  bool gotLetter;
     private Rigidbody2D rb;
 
     public bool canMove;
@@ -24,10 +26,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (!canMove)
         {
             return;
         }
+
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
@@ -49,46 +53,50 @@ public class PlayerMovement : MonoBehaviour
                 transform.position = transform.position - new Vector3(speed, 0, 0);
 
         }
-       
+
+
+        if (Application.loadedLevelName == "sc_brief_closeup")
+        {
+            gameObject.active = false;         
+            if (Input.GetMouseButtonDown(0))
+            {
+                SceneManager.LoadScene("sc_brief_home");
+                gameObject.active = true;
+            }
+        }
+
     }
 
     //Collision
     void OnTriggerStay2D(Collider2D col)
     {
         //if this object collides with object Door, Scene2 will be loaded.
-        if(col.gameObject.tag == "Door")
+        if (col.gameObject.tag == "Door")
         {
-			if (Input.GetMouseButton (1)) {
-				SceneManager.LoadScene ("sc_brief_home");
-			}
+            if (Input.GetMouseButton(1)) {
+                SceneManager.LoadScene("sc_brief_home");
+            }
 
-			if(Input.GetMouseButtonDown(0))
-			{
-				SceneManager.LoadScene ("sc_brief_home");
-			}
-
-
+        }
 
             if (Input.GetKey("up"))
             {
                 SceneManager.LoadScene("sc_brief_home");
+
             }
             
-        }
+        
 
         if (col.gameObject.tag == "Letter")
         {
-            if (Input.GetKey(KeyCode.Return))
+            if (Input.GetMouseButtonDown(0))
             {
-                GameObject.Destroy(gameObject);
+                SceneManager.LoadScene("sc_brief_closeup");
+                gotLetter = true;
             }
 
         }
 
-        if (col.gameObject)
-        {
-
-        }
 
         //if this object collides with object TestPerson, the method with the name "move" will be executed.
         if(col.gameObject.name == "TestPerson")
