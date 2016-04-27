@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Letter
-  - New Tag
+  - Background
+  - Door
   layers:
   - Default
   - TransparentFX
