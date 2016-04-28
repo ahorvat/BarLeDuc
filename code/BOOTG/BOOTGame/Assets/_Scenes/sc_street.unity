@@ -1333,7 +1333,7 @@ MonoBehaviour:
   theText: {fileID: 4900000, guid: 2cb8eff90562a0a44af91c6310876e8a, type: 3}
   textBox: {fileID: 0}
   startLine: 0
-  endLine: 4
+  endLine: 2
   optionLine: -1
   Button1: {fileID: 0}
   Button2: {fileID: 21300000, guid: de2ba3829137c0242a5e10ec7817a30f, type: 3}

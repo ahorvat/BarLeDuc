@@ -26,10 +26,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (Application.loadedLevel != 0) {
-			canMove = true;
-		} else {
-			canMove = false;
+		if (Application.loadedLevelName == "sc_menu") {
+            return;
+		} else
+        if (!canMove) { 
 			return;
 		}
   

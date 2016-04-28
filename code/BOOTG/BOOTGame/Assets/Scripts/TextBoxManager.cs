@@ -71,7 +71,7 @@ public class TextBoxManager : MonoBehaviour {
         //zodra er enter word gedrukt word de volgende line ingeladen
         if (textBox.activeInHierarchy)
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
             {
                 currentLine += 1;
             }

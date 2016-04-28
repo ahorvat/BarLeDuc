@@ -41,7 +41,7 @@ public class ActivateTekstAtLine : MonoBehaviour {
     {
         // hier word pas text doorgevoerd zodra er een key input is.
         // later moet er nog mouse input voor worden toegevoegd.
-        if(waitForPress && Input.GetKeyDown(KeyCode.J))
+        if(waitForPress && Input.GetKeyDown(KeyCode.J) || waitForPress && Input.GetMouseButtonDown(1))
         {
             // de text word ingeladen in de textbox manager
             // de startline en endline worden meegegeven om de tekst te handelen.
