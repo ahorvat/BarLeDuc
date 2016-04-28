@@ -11,17 +11,28 @@ public class ActivateTekstAtLine : MonoBehaviour {
     public int startLine;
     public int endLine;
 
+    public Sprite Button1;
+    public Sprite Button2;
+    public Sprite button3;
+
+    public int choise1;
+    public int choise2;
+    public int choise3;
+
+
     // booleans om de behaviour van dit script te handelen.
+    public bool hasChoise;
+
     public bool destroyWhenActivated; //destroy het object waar dit compenent in zit waarneer dit true is.
     public bool requireButtonPress; // of er een keypress nodig is om de text te laten verschijnen
     private bool waitForPress; // een bool om de keypress af te wachten
+    
 
 	// Use this for initialization
 	void Start ()
     {
         // de textbox word ingeladen d.m.v findobjectoftype zodat we geen textbox hoeven in te laden per NPC of trigger.
         textBox = FindObjectOfType<TextBoxManager>();
-        	
 	}
 	
 	// Update is called once per frame
@@ -33,11 +44,23 @@ public class ActivateTekstAtLine : MonoBehaviour {
         {
             // de text word ingeladen in de textbox manager
             // de startline en endline worden meegegeven om de tekst te handelen.
+
             textBox.ReloadScript(theText);
             textBox.currentLine = startLine;
             textBox.endAtLine = endLine;
-            textBox.EnableTekstBox();
 
+            if (hasChoise)
+            {
+                textBox.buttonSprite1 = Button1;
+                textBox.buttonSprite2 = Button2;
+                textBox.buttonSprite3 = button3;
+
+                textBox.buttonChoise1 = choise1;
+                textBox.buttonChoise2 = choise2;
+                textBox.buttonChoise3 = choise3;
+
+            }
+            textBox.EnableTekstBox();
             if (destroyWhenActivated)
             {
                 Destroy(gameObject);
@@ -56,10 +79,24 @@ public class ActivateTekstAtLine : MonoBehaviour {
                 return;
             }
             // anders word er op collision deze code uitgevoerd
+
             textBox.ReloadScript(theText);
             textBox.currentLine = startLine;
             textBox.endAtLine = endLine;
             textBox.EnableTekstBox();
+
+            if (hasChoise)
+            {
+
+                textBox.buttonSprite1 = Button1;
+                textBox.buttonSprite2 = Button2;
+                textBox.buttonSprite3 = button3;
+
+                textBox.buttonChoise1 = choise1;
+                textBox.buttonChoise2 = choise2;
+                textBox.buttonChoise3 = choise3;
+
+            }
 
             if (destroyWhenActivated)
             {
