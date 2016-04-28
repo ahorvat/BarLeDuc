@@ -26,11 +26,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (!canMove)
-        {
-            return;
-        }
+		if (Application.loadedLevel != 0) {
+			canMove = true;
+		} else {
+			canMove = false;
+			return;
+		}
+  
 
 
         if (Input.GetKey(KeyCode.LeftArrow))
