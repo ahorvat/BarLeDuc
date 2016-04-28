@@ -397,6 +397,7 @@ MonoBehaviour:
   textBox: {fileID: 0}
   startLine: 0
   endLine: 4
+  optionLine: 0
   Button1: {fileID: 0}
   Button2: {fileID: 0}
   button3: {fileID: 0}
@@ -1333,6 +1334,7 @@ MonoBehaviour:
   textBox: {fileID: 0}
   startLine: 0
   endLine: 4
+  optionLine: -1
   Button1: {fileID: 0}
   Button2: {fileID: 21300000, guid: de2ba3829137c0242a5e10ec7817a30f, type: 3}
   button3: {fileID: 21300000, guid: 7178fd46671d5564084625f665e87ca9, type: 3}

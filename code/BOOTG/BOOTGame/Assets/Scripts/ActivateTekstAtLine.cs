@@ -10,6 +10,7 @@ public class ActivateTekstAtLine : MonoBehaviour {
     // int voor startline en endline
     public int startLine;
     public int endLine;
+    public int optionLine;
 
     public Sprite Button1;
     public Sprite Button2;
@@ -48,9 +49,12 @@ public class ActivateTekstAtLine : MonoBehaviour {
             textBox.ReloadScript(theText);
             textBox.currentLine = startLine;
             textBox.endAtLine = endLine;
+            textBox.optionLine = optionLine;
 
             if (hasChoise)
             {
+
+
                 textBox.buttonSprite1 = Button1;
                 textBox.buttonSprite2 = Button2;
                 textBox.buttonSprite3 = button3;

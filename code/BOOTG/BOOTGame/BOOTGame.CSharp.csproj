@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\ActivateTekstAtLine.cs" />
     <Compile Include="Assets\Scripts\CameraBoundries.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\LoadOnClick.cs" />
     <Compile Include="Assets\Scripts\OutOfScreen.cs" />
     <Compile Include="Assets\Scripts\Persistence.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
