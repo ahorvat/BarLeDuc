@@ -5,34 +5,39 @@ public class Pause : MonoBehaviour
 {
 
     public GameObject PauseUI;
+    public GameObject ScenarioUI;
+    public PlayerMovement Player;
+    public bool paused = false;
 
-    private bool paused = false;
 
     void Start()
     {
-        
         PauseUI.SetActive(false);
+        ScenarioUI.SetActive(false);
+        Player = FindObjectOfType<PlayerMovement>();
     }
 
     void Update()
     {
-    }
-
-    public void PausedClicked() { 
-        //if (Input.GetButtonDown("Pause"))
-        //{
-        paused = true;
-        //}
         if (paused)
         {
             PauseUI.SetActive(true);
-            Time.timeScale = 0;
+            Player.canMove = false;
         }
         if (!paused)
         {
             PauseUI.SetActive(false);
-            Time.timeScale = 1;
+            Player.canMove = true;
         }
+        Debug.Log(paused);
+    }
+
+    public void PausedClicked() {
+        //if (Input.GetButtonDown("Pause"))
+        //{
+        paused = true;
+        //}
+
     }
     public void GaVerder()
     {
@@ -44,11 +49,36 @@ public class Pause : MonoBehaviour
 
     public void HoofdMenu()
     {
+        
+        Player.DestroyPlayer();
+       
         Application.LoadLevel(0);
+        paused = false;
+
     }
 
     public void VerlaatSpel()
     {
         Application.Quit();
+    }
+
+    public void KiesScenario()
+    {
+        if (paused)
+        {
+            PauseUI.SetActive(false);
+        }
+        ScenarioUI.SetActive(true);
+    }
+
+    public void ScenarioOne()
+    {
+        Application.LoadLevel(1);
+        ScenarioUI.SetActive(false);
+    }
+    public void ScenarioTwo()
+    {
+        Application.LoadLevel(2);
+        ScenarioUI.SetActive(false);
     }
 }
