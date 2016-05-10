@@ -125,19 +125,19 @@ public class TextBoxManager : MonoBehaviour {
     }
     public void QuestChoise1()
     {
-        //questManager.ButtonChoises(buttonChoise1);
+        questManager.ButtonChoises(buttonChoise1);
         DisableTekstBox();
 
     }
     public void QuestChoise2()
     {
-        //questManager.ButtonChoises(buttonChoise2);
+        questManager.ButtonChoises(buttonChoise2);
         DisableTekstBox();
 
     }
     public void QuestChoise3()
     {
-        //questManager.ButtonChoises(buttonChoise3);
+        questManager.ButtonChoises(buttonChoise3);
         DisableTekstBox();
     }
     public void DebugTest()

@@ -1086,7 +1086,7 @@ MonoBehaviour:
   player: {fileID: 155077551}
   textBox: {fileID: 1289831613}
   optionBox: {fileID: 1445648293}
-  questManager: {fileID: 0}
+  questManager: {fileID: 1788353868}
   option1: {fileID: 1935039852}
   option2: {fileID: 1339815986}
   option3: {fileID: 317943277}
@@ -1334,8 +1334,8 @@ MonoBehaviour:
   textBox: {fileID: 0}
   startLine: 0
   endLine: 2
-  optionLine: -1
-  Button1: {fileID: 0}
+  optionLine: 2
+  Button1: {fileID: 21300000, guid: e8ba3c19f03a2ca4e9ad407c634dab17, type: 3}
   Button2: {fileID: 21300000, guid: de2ba3829137c0242a5e10ec7817a30f, type: 3}
   button3: {fileID: 21300000, guid: 7178fd46671d5564084625f665e87ca9, type: 3}
   choise1: 0
