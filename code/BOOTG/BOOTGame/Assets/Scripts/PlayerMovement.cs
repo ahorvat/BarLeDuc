@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public float maxspeed = 4.0f;
     public GameObject player;
     private Rigidbody2D rb;
+    private int inputBoxLeft = 400;
+    private int inputBoxRight = 700;
 
     public bool canMove;
 
@@ -40,20 +42,27 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = transform.position + new Vector3(speed, 0, 0);
         }
-
+     
         // op linker mouseclick
         if (Input.GetMouseButton(0))
         {
 
-            if (Input.mousePosition.x > transform.position.x + Screen.width/2)
+            if (Input.mousePosition.x > inputBoxRight)
+            {
                 transform.position = transform.position + new Vector3(speed, 0, 0);
-            if (Input.mousePosition.x < transform.position.x + Screen.width/2)
+            }
+                
+            if (Input.mousePosition.x < inputBoxLeft)
+            {
                 transform.position = transform.position - new Vector3(speed, 0, 0);
+            }
+
+      
 
         }
 
 
-        if (Application.loadedLevelName == "sc_brief_closeup")
+        if (Application.loadedLevelName == "sc_brieven_closeup")
         {
             Destroy(gameObject);
         }
@@ -63,6 +72,17 @@ public class PlayerMovement : MonoBehaviour
     //Collision
     void OnTriggerStay2D(Collider2D col)
     {
+        if (Input.GetMouseButtonDown(0)) {
+
+            if (Input.mousePosition.x >= inputBoxLeft && Input.mousePosition.x <= inputBoxRight)
+            {
+                if (col.gameObject.tag == "Letter")
+                {
+                    SceneManager.LoadScene("sc_brieven_closeup");
+
+                }
+            }
+        }
         //if this object collides with object Door, Scene2 will be loaded.
         if (col.gameObject.tag == "Door")
         {
@@ -78,17 +98,7 @@ public class PlayerMovement : MonoBehaviour
 
             }
 
-
-
-        if (col.gameObject.tag == "Letter")
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                SceneManager.LoadScene("sc_brief_closeup");
-             
-            }
-
-        }
+        
 
 
         //if this object collides with object TestPerson, the method with the name "move" will be executed.
