@@ -79,7 +79,6 @@ public class PlayerMovement : MonoBehaviour
                 if (col.gameObject.tag == "Letter")
                 {
                     SceneManager.LoadScene("sc_brieven_closeup");
-
                 }
             }
         }
