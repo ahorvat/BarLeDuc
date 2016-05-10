@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Background
   - Door
+  - Letter
+  - Pause
   layers:
   - Default
   - TransparentFX
