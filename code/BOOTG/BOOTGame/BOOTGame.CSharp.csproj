@@ -61,15 +61,10 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\PlayerHasLetter.cs" />
+    <Compile Include="Assets\Rotation.cs" />
     <Compile Include="Assets\Scripts\ActivateTekstAtLine.cs" />
     <Compile Include="Assets\Scripts\CameraBoundries.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
@@ -80,6 +75,7 @@
     <Compile Include="Assets\Scripts\QuestManager.cs" />
     <Compile Include="Assets\Scripts\SwitchingScenes.cs" />
     <Compile Include="Assets\Scripts\TextBoxManager.cs" />
+    <Compile Include="Assets\mouseClick.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Texts\Dialoguetest.txt" />

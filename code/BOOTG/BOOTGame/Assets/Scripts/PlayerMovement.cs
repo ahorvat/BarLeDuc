@@ -10,10 +10,6 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 1.5f;
     public float maxspeed = 4.0f;
     public GameObject player;
-
-    private Vector2 targetPos;
-    private Vector2 trajectory;
-    public  bool gotLetter;
     private Rigidbody2D rb;
 
     public bool canMove;
@@ -59,12 +55,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Application.loadedLevelName == "sc_brief_closeup")
         {
-            gameObject.active = false;         
-            if (Input.GetMouseButtonDown(0))
-            {
-                SceneManager.LoadScene("sc_brief_home");
-                gameObject.active = true;
-            }
+            Destroy(gameObject);
         }
 
     }
@@ -86,22 +77,22 @@ public class PlayerMovement : MonoBehaviour
                 SceneManager.LoadScene("sc_brief_home");
 
             }
-            
-        
+
+
 
         if (col.gameObject.tag == "Letter")
         {
             if (Input.GetMouseButtonDown(0))
             {
                 SceneManager.LoadScene("sc_brief_closeup");
-                gotLetter = true;
+             
             }
 
         }
 
 
         //if this object collides with object TestPerson, the method with the name "move" will be executed.
-        if(col.gameObject.name == "TestPerson")
+        if (col.gameObject.name == "TestPerson")
         {
             TestText.SendMessage("Move");
         }
