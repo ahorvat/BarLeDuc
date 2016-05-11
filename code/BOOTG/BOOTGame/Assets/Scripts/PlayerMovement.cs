@@ -63,6 +63,20 @@ public class PlayerMovement : MonoBehaviour
     //Collision
     void OnTriggerStay2D(Collider2D col)
     {
+<<<<<<< HEAD
+=======
+        if (Input.GetMouseButtonDown(0)) {
+
+            if (Input.mousePosition.x >= inputBoxLeft && Input.mousePosition.x <= inputBoxRight)
+            {
+                if (col.gameObject.tag == "Letter")
+                {
+                    SceneManager.LoadScene("sc_brieven_closeup");
+
+                }
+            }
+        }
+>>>>>>> parent of 76ac66a... added letter closeups,
         //if this object collides with object Door, Scene2 will be loaded.
         if (col.gameObject.tag == "Door")
         {
