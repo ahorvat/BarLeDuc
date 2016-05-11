@@ -7,9 +7,7 @@ TagManager:
   - Background
   - Door
   - Letter
-  - gemeenteLetter
-  - ABNLetter
-  - staatsloterijLetter
+  - correctLetter
   layers:
   - Default
   - TransparentFX

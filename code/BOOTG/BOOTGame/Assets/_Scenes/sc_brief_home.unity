@@ -154,7 +154,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 31769077}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.86, y: -2.7, z: 0}
+  m_LocalPosition: {x: 1.51, y: -2.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -179,6 +179,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1938497443}
   - 212: {fileID: 1938497442}
+  - 61: {fileID: 1938497441}
   m_Layer: 0
   m_Name: TestPlatform
   m_TagString: Untagged
@@ -186,6 +187,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &1938497441
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1938497440}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 3.31, y: 1.08}
+  serializedVersion: 2
+  m_Size: {x: 3.69, y: 6.33}
 --- !u!212 &1938497442
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -223,7 +238,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1938497440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.85, y: 0.102, z: 0}
+  m_LocalPosition: {x: -1.77, y: 0.102, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
