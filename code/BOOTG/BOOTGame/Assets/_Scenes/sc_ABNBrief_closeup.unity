@@ -181,7 +181,6 @@ GameObject:
   - 4: {fileID: 947359173}
   - 212: {fileID: 947359172}
   - 114: {fileID: 947359171}
-  - 114: {fileID: 947359174}
   m_Layer: 0
   m_Name: ABNLetter
   m_TagString: ABNLetter
@@ -242,17 +241,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!114 &947359174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 947359170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8393bf8eea0548c45b2801e35dddadae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1411718198
 GameObject:
   m_ObjectHideFlags: 0
