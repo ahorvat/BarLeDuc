@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEditor;
+//using UnityEditor;
 using System.Collections;
 
 public class isPressed : MonoBehaviour {
@@ -9,7 +9,7 @@ public class isPressed : MonoBehaviour {
     {
         if (gameObject.tag == "correctButton")
         {
-            if (EditorApplication.currentScene == "sc_ABNBrief")
+			if (SceneManager.GetActiveScene().name == "sc_ABNBrief")
             {
                 SceneManager.LoadScene("sc_street");
             }
@@ -20,3 +20,6 @@ public class isPressed : MonoBehaviour {
         } 
     }
 }
+//
+//Scene scene = SceneManager.GetActiveScene();
+//scene.name; // name of scene
