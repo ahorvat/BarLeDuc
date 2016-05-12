@@ -2,21 +2,47 @@
 using UnityEngine.SceneManagement;
 using UnityEditor;
 using System.Collections;
+using UnityEditor.SceneManagement;
 
-public class isPressed : MonoBehaviour {
+public class isPressed : MonoBehaviour
+{
+
+    // public QuestManager questManager;
 
     void OnMouseDown()
     {
-        if (gameObject.tag == "correctButton")
+        if (gameObject.name == "correctButton")
         {
-            if (EditorApplication.currentScene == "sc_ABNBrief")
-            {
-                SceneManager.LoadScene("sc_street");
-            }
-            else if (gameObject.tag == "incorrectButton")
+            Debug.Log("asdfasdf");
+            if (Application.loadedLevelName == "sc_staatsloterijBrief_closeup")
             {
                 SceneManager.LoadScene("sc_brief_closeup");
             }
-        } 
+            if (Application.loadedLevelName == "sc_gemeenteBrief_closeup")
+            {
+                SceneManager.LoadScene("sc_street");
+            }
+            if (Application.loadedLevelName == "sc_ABNBrief_closeup")
+            {
+                SceneManager.LoadScene("sc_brief_closeup");
+            }
+        }
+        else if (gameObject.name == "incorrectButton")
+        {
+            Debug.Log("qwerqwerqwer");
+            if (Application.loadedLevelName == "sc_staatsloterijBrief_closeup")
+            {
+                SceneManager.LoadScene("sc_brief_closeup");
+            }
+            if (Application.loadedLevelName == "sc_gemeenteBrief_closeup")
+            {
+                SceneManager.LoadScene("sc_brief_closeup");
+            }
+            if (Application.loadedLevelName == "sc_ABNBrief_closeup")
+            {
+                SceneManager.LoadScene("sc_brief_closeup");
+            }
+        }
     }
 }
+
