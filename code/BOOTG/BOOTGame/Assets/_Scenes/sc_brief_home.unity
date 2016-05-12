@@ -745,7 +745,7 @@ GameObject:
   - 114: {fileID: 883775284}
   - 114: {fileID: 883775288}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MenuCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -836,7 +836,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 883775283}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c8d8d9fb434344b8fc13a1f72ae773, type: 3}
+  m_Script: {fileID: 11500000, guid: f3d4bc3abf39e214385741f331d37313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &914545695
@@ -1645,6 +1645,8 @@ MonoBehaviour:
   PauseUI: {fileID: 942664746}
   ScenarioUI: {fileID: 1777122655}
   Player: {fileID: 0}
+  paused: 0
+  MenuCan: {fileID: 883775283}
 --- !u!4 &1866467835 stripped
 Transform:
   m_PrefabParentObject: {fileID: 465750, guid: 775595038e6d0384ea8f9cc50e35a252, type: 2}
