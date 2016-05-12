@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public float maxspeed = 4.0f;
     public GameObject player;
     private Rigidbody2D rb;
+    private int inputBoxLeft = 400;
+    private int inputBoxRight = 700; 
 
     public bool canMove;
 
@@ -45,9 +47,9 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
 
-            if (Input.mousePosition.x > transform.position.x + Screen.width/2)
+            if (Input.mousePosition.x > inputBoxRight)
                 transform.position = transform.position + new Vector3(speed, 0, 0);
-            if (Input.mousePosition.x < transform.position.x + Screen.width/2)
+            if (Input.mousePosition.x < inputBoxLeft    )
                 transform.position = transform.position - new Vector3(speed, 0, 0);
 
         }
@@ -63,8 +65,7 @@ public class PlayerMovement : MonoBehaviour
     //Collision
     void OnTriggerStay2D(Collider2D col)
     {
-<<<<<<< HEAD
-=======
+
         if (Input.GetMouseButtonDown(0)) {
 
             if (Input.mousePosition.x >= inputBoxLeft && Input.mousePosition.x <= inputBoxRight)
@@ -75,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
->>>>>>> parent of 76ac66a... added letter closeups,
+
         //if this object collides with object Door, Scene2 will be loaded.
         if (col.gameObject.tag == "Door")
         {

@@ -353,7 +353,6 @@ MonoBehaviour:
   speed: 0.5
   maxspeed: 0
   player: {fileID: 0}
-  gotLetter: 0
   canMove: 1
 --- !u!61 &1217660166
 BoxCollider2D:
@@ -423,7 +422,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1217660162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.26, y: -1.38, z: 0}
+  m_LocalPosition: {x: 1.88, y: -0.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 842971206}
@@ -579,7 +578,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.3400771, y: 0.1200043}
+  m_AnchoredPosition: {x: 2.74, y: 1.06}
   m_SizeDelta: {x: 799.99994, y: 446.8619}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1783107971
@@ -624,7 +623,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6b557d893ca74a94ea300e39ebfc827c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a62d1a7ad73026641bbb04ce6a3b1818, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -636,7 +635,7 @@ Transform:
   m_GameObject: {fileID: 1783107971}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.0250008, y: 1.4350001, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1

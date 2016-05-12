@@ -4,14 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Background
-  - Door
+  - gemeenteLetter
+  - staatsloterijLetter
+  - ABNLetter
   - Letter
-<<<<<<< HEAD
-  - correctLetter
-=======
-  - Pause
->>>>>>> refs/remotes/origin/master
+  - correctButton
+  - incorrectButton
   layers:
   - Default
   - TransparentFX

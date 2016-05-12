@@ -13,3 +13,9 @@ EditorBuildSettings:
     path: Assets/_Scenes/sc_street.unity
   - enabled: 1
     path: Assets/_Scenes/sc_brief_closeup.unity
+  - enabled: 1
+    path: Assets/_Scenes/sc_ABNBrief_closeup.unity
+  - enabled: 1
+    path: Assets/_Scenes/sc_gemeenteBrief_closeup.unity
+  - enabled: 1
+    path: Assets/_Scenes/sc_staatsloterijBrief_closeup.unity
