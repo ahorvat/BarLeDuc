@@ -6,14 +6,10 @@ public class PlayerMovement : MonoBehaviour
 {
 
     // Use this for initialization
-    public GameObject TestText;
-    public float speed = 1.5f;
-    public float maxspeed = 4.0f;
-    public GameObject player;
+    public float speed;
     private Rigidbody2D rb;
     public float inputBoxLeft;
     public float inputBoxRight;
-
     private Camera camera;
     public bool canMove;
 
@@ -28,106 +24,43 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(camera.pixelWidth);
-        if (Application.loadedLevelName == "sc_menu") {
+        if (SceneManager.GetActiveScene().name == "sc_menu")
+        {
             return;
-		} else
-        if (!canMove) { 
+		}
+        else if (!canMove)
+        { 
 			return;
 		}
-  
-
-
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            
-            transform.position = transform.position - new Vector3(speed,0,0);
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.position = transform.position + new Vector3(speed, 0, 0);
-        }
 
         // op linker mouseclick
         if (Input.GetMouseButton(0))
         {
-
             if (Input.mousePosition.x > inputBoxRight)
-                transform.position = transform.position + new Vector3(speed, 0, 0);
+            {
+                transform.position += new Vector3(speed, 0, 0);
+            }
             if (Input.mousePosition.x < inputBoxLeft)
-                transform.position = transform.position - new Vector3(speed, 0, 0);
-
-        }
-
-
-        if (SceneManager.GetActiveScene().name == "sc_brief_closeup")
-        {
-            gameObject.transform.position = new Vector3(1000, 1000, 0);
-        }      
-
+            {
+                transform.position -= new Vector3(speed, 0, 0);
+            }
+        }     
     }
 
     //Collision
     void OnTriggerStay2D(Collider2D col)
     {
-
-        if (Input.GetMouseButtonDown(0)) {
-
-            if (Input.mousePosition.x >= inputBoxLeft && Input.mousePosition.x <= inputBoxRight)
-            {
-                if (col.gameObject.tag == "Letter")
+        if (Input.GetMouseButtonDown(0) && Input.mousePosition.x >= inputBoxLeft && Input.mousePosition.x <= inputBoxRight)
+        {
+            if (col.gameObject.tag == "Letter")
                 {
                     SceneManager.LoadScene("sc_brief_closeup");
                 }
-            }
-        }
-
-        //if this object collides with object Door, Scene2 will be loaded.
-        if (col.gameObject.tag == "Door")
-        {
-            if (Input.GetMouseButton(1)) {
-                SceneManager.LoadScene("sc_brief_home");
-            }
-
-        }
-
-            if (Input.GetKey("up"))
-            {
-                SceneManager.LoadScene("sc_brief_home");
-
-            }
-
-
-
-        if (col.gameObject.tag == "Letter")
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                SceneManager.LoadScene("sc_brief_closeup");
-             
-            }
-
-        }
-
-
-        //if this object collides with object TestPerson, the method with the name "move" will be executed.
-        if (col.gameObject.name == "TestPerson")
-        {
-            TestText.SendMessage("Move");
         }
     }
 
-    void OnCollisionExit2D(Collision2D col)
-    {
-        //if the object stops colliding with objec called TestPerson, the method with the name "remove" will be executed.
-        if (col.gameObject.name == "TestPerson")
-        {
-            TestText.SendMessage("ReMove");
-        }
-    }
     public void DestroyPlayer()
     {
         Destroy(gameObject);
-
     }
 }

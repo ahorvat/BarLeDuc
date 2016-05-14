@@ -16,9 +16,6 @@ public class TextBoxManager : MonoBehaviour {
     public Sprite buttonSprite1;
     public Sprite buttonSprite2;
     public Sprite buttonSprite3;
-    public int buttonChoise1;
-    public int buttonChoise2;
-    public int buttonChoise3;
     //text
     public Text theText;
     public TextAsset textFile;
@@ -123,9 +120,4 @@ public class TextBoxManager : MonoBehaviour {
 
         }
     }
-    public void DebugTest()
-    {
-        Debug.Log("test");
-    }
-    
 }

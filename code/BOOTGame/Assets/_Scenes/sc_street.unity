@@ -267,9 +267,6 @@ MonoBehaviour:
   Button1: {fileID: 0}
   Button2: {fileID: 0}
   button3: {fileID: 0}
-  choise1: 0
-  choise2: 0
-  choise3: 0
   hasChoise: 0
   destroyWhenActivated: 1
   requireButtonPress: 0
@@ -1049,6 +1046,21 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de6eb2a3db9835d49a9d93ab76fb7b37, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1621298626 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 128784, guid: de6eb2a3db9835d49a9d93ab76fb7b37, type: 2}
+  m_PrefabInternal: {fileID: 1472696630}
+--- !u!114 &1621298631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1621298626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb249eab5df13a448a83734eb54c4bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1682176448
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,9 +1155,6 @@ MonoBehaviour:
   Button1: {fileID: 21300000, guid: e8ba3c19f03a2ca4e9ad407c634dab17, type: 3}
   Button2: {fileID: 21300000, guid: de2ba3829137c0242a5e10ec7817a30f, type: 3}
   button3: {fileID: 21300000, guid: 7178fd46671d5564084625f665e87ca9, type: 3}
-  choise1: 0
-  choise2: 0
-  choise3: 0
   hasChoise: 1
   destroyWhenActivated: 0
   requireButtonPress: 1

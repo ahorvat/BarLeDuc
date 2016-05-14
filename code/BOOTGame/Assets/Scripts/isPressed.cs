@@ -6,15 +6,15 @@ using UnityEditor.SceneManagement;
 
 public class isPressed : MonoBehaviour
 {
-
+    //TODO QUESTMANAGER
     // public QuestManager questManager;
 
     void OnMouseDown()
     {
+        // voor de correct button
         if (gameObject.name == "correctButton")
         {
-
-            Debug.Log("asdfasdf");
+            //als de scnene x gelijk is aan de juise scene, ga naar de volgende scene. anders ga terug naar vorige scene.
             if (SceneManager.GetActiveScene().name == "sc_staatsloterijBrief_closeup")
             {
                 SceneManager.LoadScene("sc_brief_closeup");
@@ -30,9 +30,10 @@ public class isPressed : MonoBehaviour
             }
 
         }
+        //script voor incorrect button
         else if (gameObject.name == "incorrectButton")
         {
-            Debug.Log("qwerqwerqwer");
+            //ga terug naar de vorige scnene als je op kruihjse drukt
             if (SceneManager.GetActiveScene().name == "sc_staatsloterijBrief_closeup")
             {
                 SceneManager.LoadScene("sc_brief_closeup");

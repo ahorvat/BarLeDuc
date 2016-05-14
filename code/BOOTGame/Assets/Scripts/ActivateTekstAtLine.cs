@@ -16,10 +16,6 @@ public class ActivateTekstAtLine : MonoBehaviour {
     public Sprite Button2;
     public Sprite button3;
 
-    public int choise1;
-    public int choise2;
-    public int choise3;
-
 
     // booleans om de behaviour van dit script te handelen.
     public bool hasChoise;
@@ -41,7 +37,7 @@ public class ActivateTekstAtLine : MonoBehaviour {
     {
         // hier word pas text doorgevoerd zodra er een key input is.
         // later moet er nog mouse input voor worden toegevoegd.
-        if(waitForPress && Input.GetKeyDown(KeyCode.J) || waitForPress && Input.GetMouseButtonDown(1))
+        if(waitForPress && Input.GetMouseButtonDown(0))
         {
             // de text word ingeladen in de textbox manager
             // de startline en endline worden meegegeven om de tekst te handelen.
@@ -59,9 +55,6 @@ public class ActivateTekstAtLine : MonoBehaviour {
                 textBox.buttonSprite2 = Button2;
                 textBox.buttonSprite3 = button3;
 
-                textBox.buttonChoise1 = choise1;
-                textBox.buttonChoise2 = choise2;
-                textBox.buttonChoise3 = choise3;
 
             }
             textBox.EnableTekstBox();
@@ -95,10 +88,6 @@ public class ActivateTekstAtLine : MonoBehaviour {
                 textBox.buttonSprite1 = Button1;
                 textBox.buttonSprite2 = Button2;
                 textBox.buttonSprite3 = button3;
-
-                textBox.buttonChoise1 = choise1;
-                textBox.buttonChoise2 = choise2;
-                textBox.buttonChoise3 = choise3;
 
             }
 
