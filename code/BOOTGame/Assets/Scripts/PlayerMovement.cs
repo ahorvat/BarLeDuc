@@ -11,20 +11,24 @@ public class PlayerMovement : MonoBehaviour
     public float maxspeed = 4.0f;
     public GameObject player;
     private Rigidbody2D rb;
-    public float inputBoxLeft = 400;
-    public float inputBoxRight = 1136; 
+    public float inputBoxLeft;
+    public float inputBoxRight;
 
+    private Camera camera;
     public bool canMove;
 
     void Start()
     {
-       
+        camera = FindObjectOfType<Camera>();
+        inputBoxRight = camera.pixelWidth - 300;
+        inputBoxLeft = 300;
         rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
-    { 
+    {
+        Debug.Log(camera.pixelWidth);
         if (Application.loadedLevelName == "sc_menu") {
             return;
 		} else
