@@ -11,20 +11,22 @@ public class PlayerMovement : MonoBehaviour
     public float maxspeed = 4.0f;
     public GameObject player;
     private Rigidbody2D rb;
-    private int inputBoxLeft = 400;
-    private int inputBoxRight = 700; 
+    public float inputBoxLeft = 400;
+    public float inputBoxRight = 1136; 
 
     public bool canMove;
 
     void Start()
-    {   
+    {
+       
         rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-		if (Application.loadedLevelName == "sc_menu") {
+        Debug.Log(Screen.width);
+        if (Application.loadedLevelName == "sc_menu") {
             return;
 		} else
         if (!canMove) { 
@@ -49,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (Input.mousePosition.x > inputBoxRight)
                 transform.position = transform.position + new Vector3(speed, 0, 0);
-            if (Input.mousePosition.x < inputBoxLeft    )
+            if (Input.mousePosition.x < inputBoxLeft)
                 transform.position = transform.position - new Vector3(speed, 0, 0);
 
         }
@@ -57,7 +59,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (Application.loadedLevelName == "sc_brief_closeup")
         {
-            Destroy(gameObject);
+            gameObject.transform.position = new Vector3(1000,1000,0);         
+            if (Input.GetMouseButtonDown(0))
+            {
+                SceneManager.LoadScene("sc_brief_home");
+                gameObject.transform.position = new Vector3(-0.26f, -1.38f, 0);
+
+            }
         }
 
     }
@@ -119,5 +127,10 @@ public class PlayerMovement : MonoBehaviour
         {
             TestText.SendMessage("ReMove");
         }
+    }
+    public void DestroyPlayer()
+    {
+        Destroy(gameObject);
+
     }
 }
