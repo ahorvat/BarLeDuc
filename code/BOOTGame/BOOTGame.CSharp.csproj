@@ -63,13 +63,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BackToBrievencloseupScene.cs" />
-    <Compile Include="Assets\GetPause.cs" />
-    <Compile Include="Assets\MenuChooseScenario.cs" />
     <Compile Include="Assets\Scripts\ActivateTekstAtLine.cs" />
+    <Compile Include="Assets\Scripts\BackToBrievencloseupScene.cs" />
     <Compile Include="Assets\Scripts\CameraBoundries.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\GetPause.cs" />
     <Compile Include="Assets\Scripts\LoadOnClick.cs" />
+    <Compile Include="Assets\Scripts\MenuChooseScenario.cs" />
     <Compile Include="Assets\Scripts\OutOfScreen.cs" />
     <Compile Include="Assets\Scripts\Pause.cs" />
     <Compile Include="Assets\Scripts\Persistence.cs" />
@@ -79,11 +79,11 @@
     <Compile Include="Assets\Scripts\Rotation.cs" />
     <Compile Include="Assets\Scripts\SwitchingScenes.cs" />
     <Compile Include="Assets\Scripts\TextBoxManager.cs" />
+    <Compile Include="Assets\Scripts\canvasPersistence.cs" />
+    <Compile Include="Assets\Scripts\changingSpritesLeftArrow.cs" />
+    <Compile Include="Assets\Scripts\changingSpritesRightArrow.cs" />
+    <Compile Include="Assets\Scripts\isPressed.cs" />
     <Compile Include="Assets\Scripts\mouseClick.cs" />
-    <Compile Include="Assets\canvasPersistence.cs" />
-    <Compile Include="Assets\changingSpritesLeftArrow.cs" />
-    <Compile Include="Assets\changingSpritesRightArrow.cs" />
-    <Compile Include="Assets\isPressed.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Texts\Dialoguetest.txt" />
