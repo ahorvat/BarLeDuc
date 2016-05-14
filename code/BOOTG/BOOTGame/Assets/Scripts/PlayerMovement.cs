@@ -24,8 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        Debug.Log(Screen.width);
+    { 
         if (Application.loadedLevelName == "sc_menu") {
             return;
 		} else
@@ -57,16 +56,10 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        if (Application.loadedLevelName == "sc_brief_closeup")
+        if (SceneManager.GetActiveScene().name == "sc_brief_closeup")
         {
-            gameObject.transform.position = new Vector3(1000,1000,0);         
-            if (Input.GetMouseButtonDown(0))
-            {
-                SceneManager.LoadScene("sc_brief_home");
-                gameObject.transform.position = new Vector3(-0.26f, -1.38f, 0);
-
-            }
-        }
+            gameObject.transform.position = new Vector3(1000, 1000, 0);
+        }      
 
     }
 
@@ -80,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (col.gameObject.tag == "Letter")
                 {
-                    SceneManager.LoadScene("sc_brieven_closeup");
+                    SceneManager.LoadScene("sc_brief_closeup");
                 }
             }
         }

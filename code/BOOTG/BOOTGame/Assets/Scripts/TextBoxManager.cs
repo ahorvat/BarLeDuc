@@ -37,8 +37,9 @@ public class TextBoxManager : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
+        player = FindObjectOfType<PlayerMovement>();
         //als de tekst niet leeg is dan word de tekst opgesplits per enter
-	    if (textFile != null)
+        if (textFile != null)
         {
             textLines = (textFile.text.Split('\n'));
         }
@@ -56,6 +57,7 @@ public class TextBoxManager : MonoBehaviour {
         {
             DisableTekstBox();
         }
+
 	}
 	
 	// Update is called once per frame
@@ -87,9 +89,7 @@ public class TextBoxManager : MonoBehaviour {
             option1.image.sprite = buttonSprite1;
             option2.image.sprite = buttonSprite2;
             option3.image.sprite = buttonSprite3;
-            option1.onClick.AddListener(QuestChoise1);
-            option2.onClick.AddListener(QuestChoise2);
-            option3.onClick.AddListener(QuestChoise3);
+
             textBox.SetActive(false);
             optionBox.SetActive(true);
         }
@@ -122,23 +122,6 @@ public class TextBoxManager : MonoBehaviour {
             textLines = (theText.text.Split('\n'));
 
         }
-    }
-    public void QuestChoise1()
-    {
-        questManager.ButtonChoises(buttonChoise1);
-        DisableTekstBox();
-
-    }
-    public void QuestChoise2()
-    {
-        questManager.ButtonChoises(buttonChoise2);
-        DisableTekstBox();
-
-    }
-    public void QuestChoise3()
-    {
-        questManager.ButtonChoises(buttonChoise3);
-        DisableTekstBox();
     }
     public void DebugTest()
     {

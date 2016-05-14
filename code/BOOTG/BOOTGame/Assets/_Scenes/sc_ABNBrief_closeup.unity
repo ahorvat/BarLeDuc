@@ -180,8 +180,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 947359173}
   - 212: {fileID: 947359172}
-  - 114: {fileID: 947359171}
-  - 114: {fileID: 947359174}
   - 61: {fileID: 947359175}
   m_Layer: 0
   m_Name: ABNLetter
@@ -190,17 +188,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &947359171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 947359170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 784ed8305cda69b44a2a0a5fe3625bcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &947359172
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -243,17 +230,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!114 &947359174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 947359170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8393bf8eea0548c45b2801e35dddadae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &947359175
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -447,7 +423,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1411718200}
   - 212: {fileID: 1411718199}
-  - 114: {fileID: 1411718201}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -497,15 +472,3 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &1411718201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1411718198}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d15e76ed31ec7f4e98db582961e5243, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}

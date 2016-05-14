@@ -1,0 +1,4 @@
+Welkom in Scenario 1!
+U bevind zich in uw huis en uw heeft post gekregen.
+Om naar links of rechts te bewegen druk links of rechts van de player.
+Loop naar de post toe bij uw deur en klik erop om het op te pakken.
