@@ -771,9 +771,6 @@ MonoBehaviour:
   buttonSprite1: {fileID: 0}
   buttonSprite2: {fileID: 0}
   buttonSprite3: {fileID: 0}
-  buttonChoise1: 0
-  buttonChoise2: 0
-  buttonChoise3: 0
   theText: {fileID: 785653312}
   textFile: {fileID: 4900000, guid: 5d7606291dcf24742bff432ac70358b6, type: 3}
   textLines: []

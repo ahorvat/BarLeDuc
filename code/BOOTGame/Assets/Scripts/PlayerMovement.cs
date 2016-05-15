@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     // Use this for initialization
     public float speed;
     private Rigidbody2D rb;
+    private bool inputboxmiddle;
     public float inputBoxLeft;
     public float inputBoxRight;
     private Camera camera;
@@ -24,6 +25,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.mousePosition.x >= inputBoxLeft && Input.mousePosition.x <= inputBoxRight)
+        {
+            inputboxmiddle = true;
+        } else
+        {
+            inputboxmiddle = false;
+        }
         if (SceneManager.GetActiveScene().name == "sc_menu")
         {
             return;
