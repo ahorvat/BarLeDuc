@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     //rigidbody so we can get the component and change the position of the rigidbody(player).
     private Rigidbody2D rb;
 
-    private bool inputboxmiddle;
+    public bool inputboxmiddle;
 
     //inputboxes for detecting input at the right and left side of the screen.
 
@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
     void OnTriggerStay2D(Collider2D col)
     {
         //for interaction with object, we check if the player touches in the middle of the screen, or touches right of the left inputbox and left of the right inputbox.
-        if (Input.GetMouseButtonDown(0) && Input.mousePosition.x >= inputBoxLeft && Input.mousePosition.x <= inputBoxRight)
+        if (Input.GetMouseButtonDown(0) && inputboxmiddle)
         {
             //check which gameobject the player is colliding with at the moment he clicks in the middle of the screen.
             if (col.gameObject.tag == "Letter")

@@ -71,7 +71,7 @@ public class TextBoxManager : MonoBehaviour {
         if (textBox.activeInHierarchy)
         {
             if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
-            {
+            { 
                 currentLine += 1;
             }
         }
