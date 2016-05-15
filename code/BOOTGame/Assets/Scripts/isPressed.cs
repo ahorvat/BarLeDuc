@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-//using UnityEditor;
 using System.Collections;
 using UnityEditor.SceneManagement;
 
@@ -13,38 +12,38 @@ public class isPressed : MonoBehaviour
     void OnMouseDown()
     {
         // check if the gameobject that the mouse clicks on is the correctbutton.
-        if (gameObject.name == "correctButton")
+        if (gameObject.tag == "correctButton")
         {
             //switching scenes between different letters.
             if (SceneManager.GetActiveScene().name == "sc_staatsloterijBrief_closeup")
             {
-                SceneManager.LoadScene("sc_brief_closeup");
+                SceneManager.LoadScene("sc_incorrectletterchoice");
             }
             if (SceneManager.GetActiveScene().name == "sc_gemeenteBrief_closeup")
             {
-                SceneManager.LoadScene("sc_street");
+                SceneManager.LoadScene("sc_correctletterchoice");
             }
 			if (SceneManager.GetActiveScene().name == "sc_ABNBrief_closeup")
             {
-                SceneManager.LoadScene("sc_brief_closeup");
+                SceneManager.LoadScene("sc_correctletterchoice");
             }
 
         }
         //same goes for the incorrectbutton
-        else if (gameObject.name == "incorrectButton")
+        else if (gameObject.tag == "incorrectButton")
         {
             //back to the previous scene if the incorrectbutton is clicked.
             if (SceneManager.GetActiveScene().name == "sc_staatsloterijBrief_closeup")
             {
-                SceneManager.LoadScene("sc_brief_closeup");
+                SceneManager.LoadScene("sc_correctletterchoice");
             }
             if (SceneManager.GetActiveScene().name == "sc_gemeenteBrief_closeup")
             {
-                SceneManager.LoadScene("sc_brief_closeup");
+                SceneManager.LoadScene("sc_incorrectletterchoice");
             }
             if (SceneManager.GetActiveScene().name == "sc_ABNBrief_closeup")
             {
-                SceneManager.LoadScene("sc_brief_closeup");
+                SceneManager.LoadScene("sc_incorrectletterchoice");
             }
         }
     }
