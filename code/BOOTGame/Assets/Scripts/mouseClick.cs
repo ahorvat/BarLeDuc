@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class mouseClick : MonoBehaviour {
 
-    // Use this for initialization
+    //use the OnMouseDown method of Unity to check whether the mouseposition is on the object and the mouse is clicked while its on the object.
     void OnMouseDown() {
-
+        //check which letter is clicked and load scenes of the closeup of the clicked letter.
         if (gameObject.tag == "gemeenteLetter")
         {
             SceneManager.LoadScene("sc_gemeenteBrief_closeup");
