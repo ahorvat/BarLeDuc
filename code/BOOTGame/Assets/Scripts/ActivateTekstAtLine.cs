@@ -36,7 +36,6 @@ public class ActivateTekstAtLine : MonoBehaviour {
 	void Update ()
     {
         // hier word pas text doorgevoerd zodra er een key input is.
-        // later moet er nog mouse input voor worden toegevoegd.
         if(waitForPress && Input.GetMouseButtonDown(0))
         {
             // de text word ingeladen in de textbox manager
@@ -49,14 +48,11 @@ public class ActivateTekstAtLine : MonoBehaviour {
 
             if (hasChoise)
             {
-
-
                 textBox.buttonSprite1 = Button1;
                 textBox.buttonSprite2 = Button2;
                 textBox.buttonSprite3 = button3;
-
-
             }
+
             textBox.EnableTekstBox();
             if (destroyWhenActivated)
             {

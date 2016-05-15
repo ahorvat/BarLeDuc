@@ -9,12 +9,13 @@ public class isPressed : MonoBehaviour
     //TODO QUESTMANAGER
     // public QuestManager questManager;
 
+    //use the OnMouseDown method of Unity to check whether the mouseposition is on the object and the mouse is clicked while its on the object.
     void OnMouseDown()
     {
-        // voor de correct button
+        // check if the gameobject that the mouse clicks on is the correctbutton.
         if (gameObject.name == "correctButton")
         {
-            //als de scnene x gelijk is aan de juise scene, ga naar de volgende scene. anders ga terug naar vorige scene.
+            //switching scenes between different letters.
             if (SceneManager.GetActiveScene().name == "sc_staatsloterijBrief_closeup")
             {
                 SceneManager.LoadScene("sc_brief_closeup");
@@ -23,17 +24,16 @@ public class isPressed : MonoBehaviour
             {
                 SceneManager.LoadScene("sc_street");
             }
-
 			if (SceneManager.GetActiveScene().name == "sc_ABNBrief_closeup")
             {
                 SceneManager.LoadScene("sc_brief_closeup");
             }
 
         }
-        //script voor incorrect button
+        //same goes for the incorrectbutton
         else if (gameObject.name == "incorrectButton")
         {
-            //ga terug naar de vorige scnene als je op kruihjse drukt
+            //back to the previous scene if the incorrectbutton is clicked.
             if (SceneManager.GetActiveScene().name == "sc_staatsloterijBrief_closeup")
             {
                 SceneManager.LoadScene("sc_brief_closeup");
