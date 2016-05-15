@@ -54,7 +54,7 @@ public class Pause : MonoBehaviour
     public void HoofdMenu()
     {
         MenuCan.gameObject.SetActive(false);
-        Player.DestroyPlayer();
+        //Player.DestroyPlayer();
         Application.LoadLevel(0);
         paused = false;
 
