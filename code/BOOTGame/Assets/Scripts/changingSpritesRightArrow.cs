@@ -3,37 +3,49 @@ using System.Collections;
 
 public class changingSpritesRightArrow : MonoBehaviour {
 
-    public Sprite sprite1; // Drag your first sprite here
-    public Sprite sprite2; // Drag your second sprite here
+    //Make a public sprite so we can add sprite 1 and 2 in the editor itself.
+    public Sprite sprite1; 
+    public Sprite sprite2;
+    //declare a playermovement object so we can adjust the player variables.
     private PlayerMovement player;
-
+    //declare a playermovement object so we can change the rendered sprite later.
     private SpriteRenderer spriteRenderer;
 
     void Start()
     {
+        //set the player to the playermovement script.
         player = FindObjectOfType<PlayerMovement>();
-
-        spriteRenderer = GetComponent<SpriteRenderer>(); // we are accessing the SpriteRenderer that is attached to the Gameobject
-        if (spriteRenderer.sprite == null) // if the sprite on spriteRenderer is null then
-            spriteRenderer.sprite = sprite1; // set the sprite to sprite1
+        //set the spriterenderer to the spriterenderer component of this gameobject.
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        //set the sprite to the first sprite even if there is no sprite selected.
+        if (spriteRenderer.sprite == null)
+        {
+            spriteRenderer.sprite = sprite1;
+        }  
     }
 
     void Update()
     {
-    
-           ChangeTheDamnSprite(); // call method to change sprite
+        //call the changing sprites method each frame.
+        ChangeSprite(); 
     }
 
-    void ChangeTheDamnSprite()
+    //method to change the sprite.
+    void ChangeSprite()
     {
+        //check if the input is in the right inputbox.
         if (Input.GetMouseButton(0) && Input.mousePosition.x > player.inputBoxRight)
         {
+            //so we can change the sprite to sprite2(button pressed sprite).
             spriteRenderer.sprite = sprite2;
         }
-        else if(Input.GetMouseButton(0) && Input.mousePosition.x < player.inputBoxRight && Input.mousePosition.x > player.inputBoxLeft)
+        //check if the mouseclick is in the middle of the screen
+        else if (Input.GetMouseButton(0) && Input.mousePosition.x < player.inputBoxRight && Input.mousePosition.x > player.inputBoxLeft)
         {
+            //set the sprite to the not-pressed sprite.
             spriteRenderer.sprite = sprite1;
         }
+        //set the sprite to non-pressed sprite when the left mousebutton/touch is not pressed.
         else
         {
             spriteRenderer.sprite = sprite1;
