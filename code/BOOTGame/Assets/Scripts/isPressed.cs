@@ -46,6 +46,15 @@ public class isPressed : MonoBehaviour
                 SceneManager.LoadScene("sc_incorrectletterchoice");
             }
         }
+
+        if (gameObject.tag == "yesButton")
+        {
+            SceneManager.LoadScene("sc_brief_closeup");
+        }
+        else if (gameObject.tag == "noButton")
+        {
+            SceneManager.LoadScene("sc_brief_closeup");
+        }
     }
 }
 
