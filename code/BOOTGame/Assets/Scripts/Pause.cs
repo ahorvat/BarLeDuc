@@ -27,21 +27,28 @@ public class Pause : MonoBehaviour
         if (paused)
         {
             PauseUI.SetActive(true);
-            Player.canMove = false;
+            if (Player != null)
+            {
+                Player.canMove = false;
+            }
+
         }
+
         //Als de niet game gepauzeerd is staat het paue menu uit, player kan bewegen.
         if (!paused)
         {
             PauseUI.SetActive(false);
-            Player.canMove = true;
+            if (Player != null)
+            {
+                Player.canMove = true;
+            }
         }
     }
 
     //Als de homebutton wordt gedrukt is de game paused.
-    public void PausedClicked() {
-     
-        paused = true;
-        
+    public void PausedClicked()
+    {
+        paused = true;    
     }
 
     //Als de ga verder button wordt gedrukt is de game niet paused.
@@ -54,25 +61,25 @@ public class Pause : MonoBehaviour
     public void HoofdMenu()
     {
         MenuCan.gameObject.SetActive(false);
-        //Player.DestroyPlayer();
         Application.LoadLevel(0);
         paused = false;
-
-
     }
 
+    //
     public void KiesScenario()
     {
-       
         paused = false;
         ScenarioUI.SetActive(true);
     }
 
+    //
     public void ScenarioOne()
     {
         Application.LoadLevel(1);
         ScenarioUI.SetActive(false);
     }
+
+    //
     public void ScenarioTwo()
     {
         Application.LoadLevel(2);
