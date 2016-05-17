@@ -35,16 +35,21 @@ public class isPressed : MonoBehaviour
             //back to the previous scene if the incorrectbutton is clicked.
             if (SceneManager.GetActiveScene().name == "sc_staatsloterijBrief_closeup")
             {
-                SceneManager.LoadScene("sc_correctletterchoice");
+                SceneManager.LoadScene("sc_correctletterchoice1");
             }
             if (SceneManager.GetActiveScene().name == "sc_gemeenteBrief_closeup")
             {
-                SceneManager.LoadScene("sc_incorrectletterchoice");
+                SceneManager.LoadScene("sc_incorrectletterchoice1");
             }
             if (SceneManager.GetActiveScene().name == "sc_ABNBrief_closeup")
             {
-                SceneManager.LoadScene("sc_incorrectletterchoice");
+                SceneManager.LoadScene("sc_incorrectletterchoice1");
             }
+        }
+
+        if (gameObject.tag == "yesButton")
+        {
+            SceneManager.LoadScene("sc_brief_closeup");
         }
     }
 }
