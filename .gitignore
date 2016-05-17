@@ -32,3 +32,12 @@ sysinfo.txt
 Icon?
 ehthumbs.db
 [Tt]humbs.db
+
+# ============ #
+# VSCode       #
+# ============ #
+code/BOOTGame/.vscode/launch.json
+code/BOOTGame/Assets/Plugins.meta
+code/BOOTGame/Assets/Plugins/Editor.meta
+code/BOOTGame/Assets/Plugins/Editor/VSCode.cs
+code/BOOTGame/Assets/Plugins/Editor/VSCode.cs.meta
