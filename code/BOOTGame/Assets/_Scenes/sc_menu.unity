@@ -205,7 +205,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 526295176}
---- !u!1001 &833587947
+--- !u!1001 &703170588
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -242,6 +242,30 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 460932, guid: de6eb2a3db9835d49a9d93ab76fb7b37, type: 2}
       propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163902, guid: de6eb2a3db9835d49a9d93ab76fb7b37, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419690, guid: de6eb2a3db9835d49a9d93ab76fb7b37, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216162, guid: de6eb2a3db9835d49a9d93ab76fb7b37, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401270, guid: de6eb2a3db9835d49a9d93ab76fb7b37, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21202530, guid: de6eb2a3db9835d49a9d93ab76fb7b37, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21213276, guid: de6eb2a3db9835d49a9d93ab76fb7b37, type: 2}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -285,7 +309,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1 &1557244248
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,7 +370,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &1764596805
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,7 +457,7 @@ RectTransform:
   m_Children:
   - {fileID: 526295177}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 2.74, y: 1.06}
@@ -496,4 +520,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
