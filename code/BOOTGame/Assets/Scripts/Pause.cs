@@ -48,7 +48,16 @@ public class Pause : MonoBehaviour
     //Als de homebutton wordt gedrukt is de game paused.
     public void PausedClicked()
     {
-        paused = true;    
+		if (paused) { 
+			
+			paused = false;	
+		}
+		else if (!paused) {
+			
+			paused = true;
+		}
+
+
     }
 
     //Als de ga verder button wordt gedrukt is de game niet paused.
@@ -85,4 +94,12 @@ public class Pause : MonoBehaviour
         Application.LoadLevel(2);
         ScenarioUI.SetActive(false);
     }
+
+	public void ScenarioTerug()
+	{
+		ScenarioUI.SetActive(false);
+		paused = true;
+	
+	}
+
 }
