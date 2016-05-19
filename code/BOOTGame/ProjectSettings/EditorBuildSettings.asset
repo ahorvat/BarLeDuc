@@ -6,6 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Scenes/sc_initalize_persistence.unity
+  - enabled: 1
     path: Assets/_Scenes/sc_menu.unity
   - enabled: 1
     path: Assets/_Scenes/sc_brief_home.unity

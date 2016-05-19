@@ -540,7 +540,7 @@ GameObject:
   - 4: {fileID: 947359173}
   - 212: {fileID: 947359172}
   m_Layer: 0
-  m_Name: staatsloterijLetter
+  m_Name: staatsloterijLetter_Closeup
   m_TagString: staatsloterijLetter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
