@@ -28,8 +28,8 @@ public class PlayerMovement : MonoBehaviour
         //set the rb(rigidbody) to the rigidbody component of this gameobject(player) so we can change its fields.
         rb = GetComponent<Rigidbody2D>();
         //calculate the inputboxes on the left and right side of the screen/camera.
-        inputBoxRight = camera.pixelWidth - 300;
-        inputBoxLeft = 300;
+        inputBoxRight = camera.pixelWidth - camera.pixelWidth / 4;
+        inputBoxLeft = camera.pixelWidth / 4;
     }
 
     // Update is called once per frame
@@ -59,17 +59,20 @@ public class PlayerMovement : MonoBehaviour
 
         /*Check for user input on the left mousebutton or if the player touches the screen. If he touches the screen on the right inputbox,
         increase the position with the speed variable that we set in the editor to the position if the player touches the inputbox on the right.
-        If the player touches or clicks the left inputbox, decrease the x position of the player with the speed variable.
+        If the player touches or clicks the left inputbox, decrease the x position of the player with the speed variable. 
+        Player sprite flips on when left or right inputbox is clicked.
         */
         if (Input.GetMouseButton(0))
         {
             if (Input.mousePosition.x > inputBoxRight)
             {
                 transform.position += new Vector3(speed, 0, 0);
+                GetComponent<SpriteRenderer>().flipX = false;
             }
             if (Input.mousePosition.x < inputBoxLeft)
             {
                 transform.position -= new Vector3(speed, 0, 0);
+                GetComponent<SpriteRenderer>().flipX = true;      
             }
         }     
     }

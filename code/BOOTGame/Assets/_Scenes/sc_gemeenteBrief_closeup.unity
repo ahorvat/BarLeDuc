@@ -412,7 +412,7 @@ GameObject:
   - 4: {fileID: 947359173}
   - 212: {fileID: 947359172}
   m_Layer: 0
-  m_Name: gemeenteLetter
+  m_Name: gemeenteLetter_CloseUp
   m_TagString: gemeenteLetter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
