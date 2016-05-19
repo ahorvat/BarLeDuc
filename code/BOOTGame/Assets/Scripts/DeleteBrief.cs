@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class DeleteBrief : MonoBehaviour {
 
@@ -12,7 +13,6 @@ public class DeleteBrief : MonoBehaviour {
     {
         if (gemeenteBrief)
         {
-            Debug.Log("adfasdf");
             Destroy(GameObject.Find("gemeenteLetter"));
         }
         if (abnBrief)
@@ -22,6 +22,12 @@ public class DeleteBrief : MonoBehaviour {
         if (staatsloterijLetter)
         {
             Destroy(GameObject.Find("staatsloterijLetter"));
+        }
+
+        if(gemeenteBrief && abnBrief && staatsloterijLetter)
+        {
+            SceneManager.LoadScene("sc_gemeenteBrief_choices");
+            Destroy(gameObject);
         }
     }
 }

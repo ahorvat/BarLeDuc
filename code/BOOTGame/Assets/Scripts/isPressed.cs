@@ -5,8 +5,14 @@ using UnityEditor.SceneManagement;
 
 public class isPressed : MonoBehaviour
 {
-    //TODO QUESTMANAGER
-    // public QuestManager questManager;
+
+    public DeleteBrief deleteBrief;
+
+    void Start()
+    {
+        deleteBrief = FindObjectOfType<DeleteBrief>();
+    }
+
 
     //use the OnMouseDown method of Unity to check whether the mouseposition is on the object and the mouse is clicked while its on the object.
     void OnMouseDown()
@@ -21,10 +27,12 @@ public class isPressed : MonoBehaviour
             }
             if (SceneManager.GetActiveScene().name == "sc_gemeenteBrief_closeup")
             {
+                deleteBrief.gemeenteBrief = true;
                 SceneManager.LoadScene("sc_correctletterchoice");
             }
 			if (SceneManager.GetActiveScene().name == "sc_ABNBrief_closeup")
             {
+                deleteBrief.abnBrief = true;
                 SceneManager.LoadScene("sc_correctletterchoice");
             }
 
@@ -35,6 +43,7 @@ public class isPressed : MonoBehaviour
             //back to the previous scene if the incorrectbutton is clicked.
             if (SceneManager.GetActiveScene().name == "sc_staatsloterijBrief_closeup")
             {
+                deleteBrief.staatsloterijLetter = true;
                 SceneManager.LoadScene("sc_correctletterchoice1");
             }
             if (SceneManager.GetActiveScene().name == "sc_gemeenteBrief_closeup")
