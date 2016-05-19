@@ -407,7 +407,7 @@ GameObject:
   - 212: {fileID: 947359172}
   - 61: {fileID: 947359175}
   m_Layer: 0
-  m_Name: ABNLetter
+  m_Name: ABNLetter_CloseUp
   m_TagString: ABNLetter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

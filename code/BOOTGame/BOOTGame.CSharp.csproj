@@ -61,11 +61,18 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SceneSwitch.cs" />
     <Compile Include="Assets\Scripts\ActivateTekstAtLine.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\DeleteBrief.cs" />
+    <Compile Include="Assets\Scripts\Goto_Start.cs" />
     <Compile Include="Assets\Scripts\LoadOnClick.cs" />
     <Compile Include="Assets\Scripts\OutOfScreen.cs" />
     <Compile Include="Assets\Scripts\Pause.cs" />
@@ -73,6 +80,7 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Rotation.cs" />
+    <Compile Include="Assets\Scripts\SceneSwitch.cs" />
     <Compile Include="Assets\Scripts\TextBoxManager.cs" />
     <Compile Include="Assets\Scripts\changingSpritesLeftArrow.cs" />
     <Compile Include="Assets\Scripts\changingSpritesRightArrow.cs" />

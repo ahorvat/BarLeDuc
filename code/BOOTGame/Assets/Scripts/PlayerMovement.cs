@@ -28,8 +28,8 @@ public class PlayerMovement : MonoBehaviour
         //set the rb(rigidbody) to the rigidbody component of this gameobject(player) so we can change its fields.
         rb = GetComponent<Rigidbody2D>();
         //calculate the inputboxes on the left and right side of the screen/camera.
-        inputBoxRight = camera.pixelWidth - 300;
-        inputBoxLeft = 300;
+        inputBoxRight = camera.pixelWidth - camera.pixelWidth / 4;
+        inputBoxLeft = camera.pixelWidth / 4;
     }
 
     // Update is called once per frame
