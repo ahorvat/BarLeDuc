@@ -33,12 +33,12 @@ public class Scaling : MonoBehaviour
         while (Time.time - startTime < duration)
         {
             float amount = (Time.time - startTime) / duration;
-            transform.localScale = Vector3.Lerp(Vector3.one, Vector3.one * 3.0f, amount);
+            transform.localScale = Vector3.Lerp(Vector3.one, Vector3.one * 2.0f, amount);
             yield return null;
         }
 
         // Snap the scale to 3.0f.
-        transform.localScale = Vector3.one * 3;
+        transform.localScale = Vector3.one * 2.0f;
         // Leave the scale at 3 for 2 seconds (this can be changed at any time).
         yield return new WaitForSeconds(0);
         
@@ -48,7 +48,7 @@ public class Scaling : MonoBehaviour
         while (Time.time - startTime < duration)
         {
             float amount = (Time.time - startTime) / duration;
-            transform.localScale = Vector3.Lerp(Vector3.one * 3, Vector3.one, amount);
+            transform.localScale = Vector3.Lerp(Vector3.one * 2.0f, Vector3.one, amount);
             yield return null;
         }
 
