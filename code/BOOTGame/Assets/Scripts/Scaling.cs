@@ -6,26 +6,39 @@ public class Scaling : MonoBehaviour
 
     // Time that it takes to scale.
     public float duration = 1.5f;
+    public float minXpos;
+    public float maxXpos;
+    public float scaleAmount;
 
     // Boolean to check if its scaling so the method doesnt overlap.
     private bool isScaling = false;
 
+    private GameObject player;
+
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     // Call the method for scaling each frame. StartCorountine is used to call the scaling method. We cant just call it like we usually do since it's a IEnumerator method.
     void Update()
     {
-    //StartCorountine is used to call the scaling method.We cant just call it like we usually do since it's a IEnumerator method.
-            StartCoroutine(DoScaleThing());
+        //StartCorountine is used to call the scaling method.We cant just call it like we usually do since it's a IEnumerator method.
+        StartCoroutine(DoScaleThing());
     }
     //Method for scaling.
     public IEnumerator DoScaleThing()
     {
-            
+
         // Check if scaling is true, if so, quit the method so it doesnt overlap.
         if (isScaling)
         {
             yield break;
         }
-        
+
+        if (player.transform.position.x < minXpos || player.transform.position.x > maxXpos)
+        {
+            yield break;
+        }
 
         //Set scaling on true so the scaling starts.
         isScaling = true;
@@ -39,7 +52,7 @@ public class Scaling : MonoBehaviour
             //set the amount to lerp the scale with the amount. 
             float amount = (Time.time - startTime) / duration;
             //lerp to calculate the interpollation of 2 vectors and amount to set the amount that it scales with each frame.
-            transform.localScale = Vector3.Lerp(Vector3.one, Vector3.one * 2.0f, amount);
+            transform.localScale = Vector3.Lerp(Vector3.one, Vector3.one * scaleAmount, amount);
             //yield to return on this frame and go on next frame with the loop with the same variables it had last frame.
             yield return null;
         }
@@ -50,7 +63,7 @@ public class Scaling : MonoBehaviour
         while (Time.time - startTime < duration)
         {
             float amount = (Time.time - startTime) / duration;
-            transform.localScale = Vector3.Lerp(Vector3.one * 2.0f, Vector3.one, amount);
+            transform.localScale = Vector3.Lerp(Vector3.one * scaleAmount, Vector3.one, amount);
             yield return null;
         }
 

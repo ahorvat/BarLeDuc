@@ -12,6 +12,8 @@ TagManager:
   - incorrectButton
   - yesButton
   - pcBackground
+  - Door
+  - Door2
   layers:
   - Default
   - TransparentFX
