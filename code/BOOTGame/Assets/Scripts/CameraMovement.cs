@@ -42,6 +42,7 @@ public class CameraMovement : MonoBehaviour {
 			ResizeCamToTargetSize();
 		}
 		
+		// Get the object to track.
 		followTarget = GameObject.FindGameObjectWithTag("Player");	
 		// Get background bounds
 		spriteBounds = GameObject.FindGameObjectWithTag("Background").GetComponentInChildren<SpriteRenderer>();
@@ -77,16 +78,21 @@ public class CameraMovement : MonoBehaviour {
 		if(_camera && followTarget){
 			Vector2 newPosition = new Vector2(followTarget.transform.position.x, followTarget.transform.position.y);
 
-			this.checkBounds(ref newPosition);
+			checkBounds(ref newPosition);
+			lockCamtoBackground(ref newPosition);
 
 			float nextX = Mathf.Round(_pixelLockedPPU * newPosition.x);
 			float nextY = Mathf.Round(_pixelLockedPPU * newPosition.y);
 
 
 			_camera.transform.position = new Vector3(nextX/_pixelLockedPPU, nextY/_pixelLockedPPU, _camera.transform.position.z);
+		} else {
+			Vector2 newPosition = new Vector2(camera.transform.position.x, camera.transform.position.x);
+			lockCamtoBackground(ref newPosition);
 		}
 	}
 
+	
 	public void checkBounds(ref Vector2 pos){
 
 		float viewportDiameter = targetViewportSizeInPixels.x / 2.0f / pixelsPerUnit;
@@ -94,6 +100,15 @@ public class CameraMovement : MonoBehaviour {
 		float leftBound = spriteBounds.bounds.min.x + viewportDiameter;
 		float rightBound = spriteBounds.bounds.max.x - viewportDiameter;
 
+		// Restrict horizontal movement within extents of the background sprite
 		pos.x = Mathf.Clamp (pos.x, leftBound, rightBound);
+		
+
+	}
+	
+	// Lock camera to background sprite's bottom edge
+	public void lockCamtoBackground(ref Vector2 pos) {
+		float viewportHeight = targetViewportSizeInPixels.y / 2.0f / pixelsPerUnit;
+		pos.y = spriteBounds.bounds.min.y + viewportHeight;
 	}
 }
