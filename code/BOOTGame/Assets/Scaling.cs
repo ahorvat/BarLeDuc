@@ -4,45 +4,47 @@ using System.Collections;
 public class Scaling : MonoBehaviour
 {
 
-    // This is the time it takes to scale up/down.
+    // Time that it takes to scale.
     public float duration = 1.5f;
 
-    // This remains true while it is in the prossess of scaling.
+    // Boolean to check if its scaling so the method doesnt overlap.
     private bool isScaling = false;
 
-
-    // This is called every frame.  I will use it to check if space is pressed down, then trigger the scale.
+    // Call the method for scaling each frame. StartCorountine is used to call the scaling method. We cant just call it like we usually do since it's a IEnumerator method.
     void Update()
     {
+    //StartCorountine is used to call the scaling method.We cant just call it like we usually do since it's a IEnumerator method.
             StartCoroutine(DoScaleThing());
     }
-
+    //Method for scaling.
     public IEnumerator DoScaleThing()
     {
-
-        // Check if we are scaling now, if so exit method to avoid overlap.
+            
+        // Check if scaling is true, if so, quit the method so it doesnt overlap.
         if (isScaling)
+        {
             yield break;
+        }
+        
 
-        // Declare that we are scaling now.
+        //Set scaling on true so the scaling starts.
         isScaling = true;
 
-        // Grab the current time and store it in a variable.
+        // Get the current time and store it in a float. We do this by getting the time in seconds from the start of this frame.
         float startTime = Time.time;
 
+        //loop as long as the time - startTime is less then the duration, so we can scale it as long as we set the duration.
         while (Time.time - startTime < duration)
         {
+            //set the amount to lerp the scale with the amount. 
             float amount = (Time.time - startTime) / duration;
+            //lerp to calculate the interpollation of 2 vectors and amount to set the amount that it scales with each frame.
             transform.localScale = Vector3.Lerp(Vector3.one, Vector3.one * 2.0f, amount);
+            //yield to return on this frame and go on next frame with the loop with the same variables it had last frame.
             yield return null;
         }
 
-        // Snap the scale to 3.0f.
-        transform.localScale = Vector3.one * 2.0f;
-        // Leave the scale at 3 for 2 seconds (this can be changed at any time).
-        yield return new WaitForSeconds(0);
-        
-        // Now for the scale down part.  Store the current time in the same variable.
+        // Scale down part, works the same as the scaling part.
         startTime = Time.time;
 
         while (Time.time - startTime < duration)
@@ -52,10 +54,10 @@ public class Scaling : MonoBehaviour
             yield return null;
         }
 
-        // Snap the scale to 1.0.
+        //Set the scale to one if it isnt scaling up/down
         transform.localScale = Vector3.one;
 
-        // Declare that we are no longer modifing the scale.
+        // Set scaling to false at the end of this method.
         isScaling = false;
     }
 }
