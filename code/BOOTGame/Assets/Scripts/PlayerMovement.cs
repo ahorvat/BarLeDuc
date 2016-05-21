@@ -88,6 +88,11 @@ public class PlayerMovement : MonoBehaviour
                 {
                     SceneManager.LoadScene("sc_brief_closeup");
                 }
+
+            if (col.gameObject.tag == "pcBackground")
+            {
+                SceneManager.LoadScene("sc_google_closeup");
+            }
         }
     }
 

@@ -17,7 +17,7 @@ public class SceneSwitch : MonoBehaviour {
     }
     public void sc_brief_home_buurvrouw()
     {
-        SceneManager.LoadScene("sc_brief_home");
+        SceneManager.LoadScene("sc_brief_home_buurvrouw");
         return;
     }
 }
