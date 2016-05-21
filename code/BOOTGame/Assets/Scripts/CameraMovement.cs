@@ -8,6 +8,7 @@ public class CameraMovement : MonoBehaviour {
 	 * The target size of the view port.
 	 */
 	public Vector2 targetViewportSizeInPixels = new Vector2(1024.0f, 768.0f);
+	public Vector2 targetViewportSizeInPixels = new Vector2(1777.0f, 1217.0f);
 	/**
 	 * Snap movement of the camera to pixels.
 	 */
