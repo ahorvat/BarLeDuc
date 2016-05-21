@@ -15,7 +15,7 @@ public class CameraMovement : MonoBehaviour {
 	/**
 	 * The number of target pixels in every Unity unit.
 	 */
-	public float pixelsPerUnit = 32.0f;
+	public float pixelsPerUnit = 100.0f;
 	/**
 	 * A game object that the camera will follow the x and y position of.
 	 */
@@ -25,7 +25,7 @@ public class CameraMovement : MonoBehaviour {
 	private int _currentScreenWidth = 0;
 	private int _currentScreenHeight = 0;
 
-	private float _pixelLockedPPU = 32.0f;
+	private float _pixelLockedPPU = 100.0f;
 	private Vector2 _winSize;
 
 	private SpriteRenderer spriteBounds;
@@ -41,7 +41,8 @@ public class CameraMovement : MonoBehaviour {
 			_camera.orthographic = true;
 			ResizeCamToTargetSize();
 		}
-			
+		
+		followTarget = GameObject.FindGameObjectWithTag("Player");	
 		// Get background bounds
 		spriteBounds = GameObject.FindGameObjectWithTag("Background").GetComponentInChildren<SpriteRenderer>();
 	}
@@ -88,13 +89,11 @@ public class CameraMovement : MonoBehaviour {
 
 	public void checkBounds(ref Vector2 pos){
 
-		float viewportDiameter = targetViewportSizeInPixels.x / 2.0f;
+		float viewportDiameter = targetViewportSizeInPixels.x / 2.0f / pixelsPerUnit;
 
 		float leftBound = spriteBounds.bounds.min.x + viewportDiameter;
 		float rightBound = spriteBounds.bounds.max.x - viewportDiameter;
 
-//		var pos = new Vector3(followTarget.transform.position.x, followTarget.transform.position.y, _camera.transform.position.z);
 		pos.x = Mathf.Clamp (pos.x, leftBound, rightBound);
-//		_camera.transform.position = pos;
 	}
 }
