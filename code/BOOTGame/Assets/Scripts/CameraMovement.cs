@@ -65,6 +65,7 @@ public class CameraMovement : MonoBehaviour {
 			}
 			// now we have our percentage let's make the viewport scale to that
 			float camSize = ((Screen.height/2)/floored)/pixelsPerUnit;
+			float camSize = ((Screen.height/2/percentageY)/floored)/pixelsPerUnit;
 			_camera.orthographicSize = camSize;
 			_pixelLockedPPU = floored * pixelsPerUnit;
 		}
