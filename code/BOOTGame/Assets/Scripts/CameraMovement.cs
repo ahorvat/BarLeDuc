@@ -7,7 +7,6 @@ public class CameraMovement : MonoBehaviour {
 	/**
 	 * The target size of the view port.
 	 */
-	public Vector2 targetViewportSizeInPixels = new Vector2(1024.0f, 768.0f);
 	public Vector2 targetViewportSizeInPixels = new Vector2(1777.0f, 1217.0f);
 	/**
 	 * Snap movement of the camera to pixels.
@@ -65,7 +64,6 @@ public class CameraMovement : MonoBehaviour {
 				floored = 1;
 			}
 			// now we have our percentage let's make the viewport scale to that
-			float camSize = ((Screen.height/2)/floored)/pixelsPerUnit;
 			float camSize = ((Screen.height/2/percentageY)/floored)/pixelsPerUnit;
 			_camera.orthographicSize = camSize;
 			_pixelLockedPPU = floored * pixelsPerUnit;
@@ -89,8 +87,9 @@ public class CameraMovement : MonoBehaviour {
 
 			_camera.transform.position = new Vector3(nextX/_pixelLockedPPU, nextY/_pixelLockedPPU, _camera.transform.position.z);
 		} else {
-			Vector2 newPosition = new Vector2(camera.transform.position.x, camera.transform.position.x);
+			Vector2 newPosition = new Vector2(GetComponent<Camera>().transform.position.x, GetComponent<Camera>().transform.position.x);
 			lockCamtoBackground(ref newPosition);
+			centerCamtoBackground(ref newPosition);
 		}
 	}
 
@@ -113,4 +112,11 @@ public class CameraMovement : MonoBehaviour {
 		float viewportHeight = targetViewportSizeInPixels.y / 2.0f / pixelsPerUnit;
 		pos.y = spriteBounds.bounds.min.y + viewportHeight;
 	}
+	
+	// Lock camera to background sprite's bottom edge
+	public void centerCamtoBackground(ref Vector2 pos) {
+		float viewportWidth = targetViewportSizeInPixels.x / 2.0f / pixelsPerUnit;
+		pos.x = spriteBounds.bounds.min.x + viewportWidth;
+	}
+	
 }
