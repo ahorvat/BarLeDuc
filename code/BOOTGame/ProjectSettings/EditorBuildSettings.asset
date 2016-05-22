@@ -20,6 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/sc_gemeenteBrief_closeup.unity
   - enabled: 1
+    path: Assets/_Scenes/sc_google_incorrect.unity
+  - enabled: 1
     path: Assets/_Scenes/sc_staatsloterijBrief_closeup.unity
   - enabled: 1
     path: Assets/_Scenes/sc_correctletterchoice.unity

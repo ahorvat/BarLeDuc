@@ -35,6 +35,10 @@ public class isPressed : MonoBehaviour
                 deleteBrief.abnBrief = true;
                 SceneManager.LoadScene("sc_correctletterchoice");
             }
+            if (SceneManager.GetActiveScene().name == "sc_google_closeup")
+            {
+                SceneManager.LoadScene("sc_google_incorrect");
+            }
 
         }
         //same goes for the incorrectbutton
@@ -60,10 +64,22 @@ public class isPressed : MonoBehaviour
             }
         }
 
-        if (gameObject.tag == "yesButton")
+        else if (gameObject.tag == "yesButton")
         {
-            SceneManager.LoadScene("sc_brief_closeup");
+            if (SceneManager.GetActiveScene().name == "sc_incorrectletterchoice" || SceneManager.GetActiveScene().name == "sc_incorrectletterchoice1"|| 
+                SceneManager.GetActiveScene().name == "sc_correctletterchoice" || SceneManager.GetActiveScene().name == "sc_correctletterchoice1")
+            {
+                SceneManager.LoadScene("sc_brief_closeup");
+            }
+
+            if (SceneManager.GetActiveScene().name == "sc_google_incorrect")
+            {
+                SceneManager.LoadScene("sc_gemeentebrief_choices");
+            }
+
         }
+
+
     }
 }
 
