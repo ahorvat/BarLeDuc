@@ -47,6 +47,13 @@ public class CameraMovement : MonoBehaviour {
 		// Get background bounds
 		spriteBounds = GameObject.FindGameObjectWithTag("Background").GetComponentInChildren<SpriteRenderer>();
 	}
+	
+	void OnLevelWasLoaded(int level) {
+		// Get the object to track.
+		followTarget = GameObject.FindGameObjectWithTag("Player");
+		// Get background bounds
+		spriteBounds = GameObject.FindGameObjectWithTag("Background").GetComponentInChildren<SpriteRenderer>();
+	}
 
 	public void ResizeCamToTargetSize(){
 		if(_currentScreenWidth != Screen.width || _currentScreenHeight != Screen.height){
