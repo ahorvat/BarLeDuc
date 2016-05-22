@@ -101,7 +101,12 @@ public class PlayerMovement : MonoBehaviour
 
             if (col.gameObject.tag == "Door2")
             {
-                SceneManager.LoadScene("sc_brief_buurvrouw");
+                SceneManager.LoadScene("sc_brief_home_buurvrouw");
+            }
+
+            if (col.gameObject.tag == "PC")
+            {
+                SceneManager.LoadScene("sc_google_closeup");
             }
         }
     }

@@ -54,6 +54,10 @@ public class isPressed : MonoBehaviour
             {
                 SceneManager.LoadScene("sc_incorrectletterchoice1");
             }
+            if (SceneManager.GetActiveScene().name == "sc_google_closeup")
+            {
+                SceneManager.LoadScene("sc_brief_home_google");
+            }
         }
 
         if (gameObject.tag == "yesButton")

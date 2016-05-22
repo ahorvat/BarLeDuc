@@ -14,6 +14,7 @@ TagManager:
   - pcBackground
   - Door
   - Door2
+  - PC
   layers:
   - Default
   - TransparentFX
