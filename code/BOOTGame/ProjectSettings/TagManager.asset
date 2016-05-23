@@ -15,6 +15,8 @@ TagManager:
   - PC
   - Door2
   - pcBackground
+  - PauseUI
+  - ScenarioUI
   layers:
   - Default
   - TransparentFX

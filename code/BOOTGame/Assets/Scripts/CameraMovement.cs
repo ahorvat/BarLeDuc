@@ -32,7 +32,6 @@ public class CameraMovement : MonoBehaviour {
 
 	protected void Start(){
 		// persist camera
-		DontDestroyOnLoad(gameObject);
 
 		_camera = this.GetComponent<Camera>();
 		if(!_camera){
@@ -94,9 +93,11 @@ public class CameraMovement : MonoBehaviour {
 
 			_camera.transform.position = new Vector3(nextX/_pixelLockedPPU, nextY/_pixelLockedPPU, _camera.transform.position.z);
 		} else {
-			Vector2 newPosition = new Vector2(GetComponent<Camera>().transform.position.x, GetComponent<Camera>().transform.position.x);
+			// In scenes without player
+			Vector2 newPosition = new Vector2(GetComponent<Camera>().transform.position.x, GetComponent<Camera>().transform.position.y);
 			lockCamtoBackground(ref newPosition);
 			centerCamtoBackground(ref newPosition);
+			_camera.transform.position = new Vector3(newPosition.x/_pixelLockedPPU, newPosition.y/_pixelLockedPPU, _camera.transform.position.z);
 		}
 	}
 

@@ -19,6 +19,8 @@ public class Pause : MonoBehaviour
         ScenarioUI.SetActive(false);
         Player = FindObjectOfType<PlayerMovement>();
         MenuCan = FindObjectOfType<Canvas>();
+        
+        PauseUI = GameObject.FindGameObjectWithTag("PauseUI");
     }
 
     void Update()
