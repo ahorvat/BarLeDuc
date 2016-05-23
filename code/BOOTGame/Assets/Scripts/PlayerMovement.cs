@@ -80,15 +80,16 @@ public class PlayerMovement : MonoBehaviour
     //OnTriggerStay checks if the gameobject(player) is standing on a trigger and isnt moving.
     void OnTriggerStay2D(Collider2D col)
     {
+        
+        // Debug.Log("Collide");
         //for interaction with object, we check if the player touches in the middle of the screen, or touches right of the left inputbox and left of the right inputbox.
         if (Input.GetMouseButtonDown(0) && inputboxmiddle)
         {
             //check which gameobject the player is colliding with at the moment he clicks in the middle of the screen.
             if (col.gameObject.tag == "Letter")
-                {
-                    SceneManager.LoadScene("sc_brief_closeup");
-                }
+            {
                 SceneManager.LoadScene("sc_brief_closeup");
+            }
 
             if (col.gameObject.tag == "pcBackground")
             {
