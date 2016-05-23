@@ -30,7 +30,6 @@ GameObject:
   - 92: {fileID: 9224692}
   - 81: {fileID: 8150266}
   - 114: {fileID: 11474710}
-  - 114: {fileID: 11463378}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -74,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 15.7, y: -1.12, z: -0.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 408818}
@@ -167,22 +166,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite1: {fileID: 21300000, guid: ea1717770c62e604193e172a53813738, type: 3}
   sprite2: {fileID: 21300000, guid: 4ec772938ea9a1a4cb015dd0296ea4a3, type: 3}
---- !u!114 &11463378
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 111988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85b68478e7f66ff44811ece5ba5095b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PauseUI: {fileID: 0}
-  ScenarioUI: {fileID: 0}
-  Player: {fileID: 0}
-  paused: 0
-  MenuCan: {fileID: 0}
 --- !u!114 &11474710
 MonoBehaviour:
   m_ObjectHideFlags: 1
