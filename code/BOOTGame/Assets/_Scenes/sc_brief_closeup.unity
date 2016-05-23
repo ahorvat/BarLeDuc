@@ -114,7 +114,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9822f0713009c9e44853eb17379b6f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deleteBrief: {fileID: 0}
 --- !u!212 &115243010
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -200,7 +199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9822f0713009c9e44853eb17379b6f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deleteBrief: {fileID: 0}
 --- !u!212 &242549639
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -446,7 +444,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9822f0713009c9e44853eb17379b6f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deleteBrief: {fileID: 0}
 --- !u!212 &828761879
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -721,7 +718,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: f1f5c1dabd8704428ae40db578839ad1, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0

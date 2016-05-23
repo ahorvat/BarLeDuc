@@ -11,10 +11,12 @@ TagManager:
   - correctButton
   - incorrectButton
   - yesButton
-  - pcBackground
-  - Door
-  - Door2
+  - Background
   - PC
+  - Door2
+  - pcBackground
+  - PauseUI
+  - ScenarioUI
   layers:
   - Default
   - TransparentFX

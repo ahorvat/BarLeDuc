@@ -7,7 +7,7 @@ public class CameraMovement : MonoBehaviour {
 	/**
 	 * The target size of the view port.
 	 */
-	public Vector2 targetViewportSizeInPixels = new Vector2(1024.0f, 768.0f);
+	public Vector2 targetViewportSizeInPixels = new Vector2(1777.0f, 1217.0f);
 	/**
 	 * Snap movement of the camera to pixels.
 	 */
@@ -15,7 +15,7 @@ public class CameraMovement : MonoBehaviour {
 	/**
 	 * The number of target pixels in every Unity unit.
 	 */
-	public float pixelsPerUnit = 32.0f;
+	public float pixelsPerUnit = 100.0f;
 	/**
 	 * A game object that the camera will follow the x and y position of.
 	 */
@@ -25,14 +25,13 @@ public class CameraMovement : MonoBehaviour {
 	private int _currentScreenWidth = 0;
 	private int _currentScreenHeight = 0;
 
-	private float _pixelLockedPPU = 32.0f;
+	private float _pixelLockedPPU = 100.0f;
 	private Vector2 _winSize;
 
 	private SpriteRenderer spriteBounds;
 
 	protected void Start(){
 		// persist camera
-		DontDestroyOnLoad(gameObject);
 
 		_camera = this.GetComponent<Camera>();
 		if(!_camera){
@@ -41,7 +40,16 @@ public class CameraMovement : MonoBehaviour {
 			_camera.orthographic = true;
 			ResizeCamToTargetSize();
 		}
-			
+		
+		// Get the object to track.
+		followTarget = GameObject.FindGameObjectWithTag("Player");	
+		// Get background bounds
+		spriteBounds = GameObject.FindGameObjectWithTag("Background").GetComponentInChildren<SpriteRenderer>();
+	}
+	
+	void OnLevelWasLoaded(int level) {
+		// Get the object to track.
+		followTarget = GameObject.FindGameObjectWithTag("Player");
 		// Get background bounds
 		spriteBounds = GameObject.FindGameObjectWithTag("Background").GetComponentInChildren<SpriteRenderer>();
 	}
@@ -62,7 +70,7 @@ public class CameraMovement : MonoBehaviour {
 				floored = 1;
 			}
 			// now we have our percentage let's make the viewport scale to that
-			float camSize = ((Screen.height/2)/floored)/pixelsPerUnit;
+			float camSize = ((Screen.height/2/percentageY)/floored)/pixelsPerUnit;
 			_camera.orthographicSize = camSize;
 			_pixelLockedPPU = floored * pixelsPerUnit;
 		}
@@ -76,25 +84,47 @@ public class CameraMovement : MonoBehaviour {
 		if(_camera && followTarget){
 			Vector2 newPosition = new Vector2(followTarget.transform.position.x, followTarget.transform.position.y);
 
-			this.checkBounds(ref newPosition);
+			checkBounds(ref newPosition);
+			lockCamtoBackground(ref newPosition);
 
 			float nextX = Mathf.Round(_pixelLockedPPU * newPosition.x);
 			float nextY = Mathf.Round(_pixelLockedPPU * newPosition.y);
 
 
 			_camera.transform.position = new Vector3(nextX/_pixelLockedPPU, nextY/_pixelLockedPPU, _camera.transform.position.z);
+		} else {
+			// In scenes without player
+			Vector2 newPosition = new Vector2(GetComponent<Camera>().transform.position.x, GetComponent<Camera>().transform.position.y);
+			lockCamtoBackground(ref newPosition);
+			centerCamtoBackground(ref newPosition);
+			_camera.transform.position = new Vector3(newPosition.x/_pixelLockedPPU, newPosition.y/_pixelLockedPPU, _camera.transform.position.z);
 		}
 	}
 
+	
 	public void checkBounds(ref Vector2 pos){
 
-		float viewportDiameter = targetViewportSizeInPixels.x / 2.0f;
+		float viewportDiameter = targetViewportSizeInPixels.x / 2.0f / pixelsPerUnit;
 
 		float leftBound = spriteBounds.bounds.min.x + viewportDiameter;
 		float rightBound = spriteBounds.bounds.max.x - viewportDiameter;
 
-//		var pos = new Vector3(followTarget.transform.position.x, followTarget.transform.position.y, _camera.transform.position.z);
+		// Restrict horizontal movement within extents of the background sprite
 		pos.x = Mathf.Clamp (pos.x, leftBound, rightBound);
-//		_camera.transform.position = pos;
+		
+
 	}
+	
+	// Lock camera to background sprite's bottom edge
+	public void lockCamtoBackground(ref Vector2 pos) {
+		float viewportHeight = targetViewportSizeInPixels.y / 2.0f / pixelsPerUnit;
+		pos.y = spriteBounds.bounds.min.y + viewportHeight;
+	}
+	
+	// Lock camera to background sprite's bottom edge
+	public void centerCamtoBackground(ref Vector2 pos) {
+		float viewportWidth = targetViewportSizeInPixels.x / 2.0f / pixelsPerUnit;
+		pos.x = spriteBounds.bounds.min.x + viewportWidth;
+	}
+	
 }
