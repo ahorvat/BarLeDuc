@@ -62,7 +62,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.76, y: -2.83, z: 0.52}
+  m_LocalPosition: {x: 6.3, y: -4.7, z: 0.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 454360}
@@ -74,7 +74,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.82, y: -1.07, z: -0.53}
+  m_LocalPosition: {x: 15.7, y: -1.12, z: -0.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 408818}
@@ -88,7 +88,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.54, y: -2.83, z: 0.52}
+  m_LocalPosition: {x: -6.3, y: -4.7, z: 0.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 454360}
@@ -113,7 +113,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.84
+  orthographic size: 6.085
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -189,12 +189,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111988}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 917e50b41177e5944868736ebdca9253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetViewportSizeInPixels: {x: 1024, y: 768}
+  targetViewportSizeInPixels: {x: 1777, y: 1217}
   lockToPixels: 1
   pixelsPerUnit: 100
   followTarget: {fileID: 193724, guid: e992fed9e9bf74d30a10adaaa88fe756, type: 2}
