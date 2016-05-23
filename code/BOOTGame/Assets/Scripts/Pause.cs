@@ -20,7 +20,7 @@ public class Pause : MonoBehaviour
         Player = FindObjectOfType<PlayerMovement>();
         MenuCan = FindObjectOfType<Canvas>();
         
-        PauseUI = GameObject.FindGameObjectWithTag("PauseUI");
+        // PauseUI = GameObject.FindGameObjectWithTag("PauseUI");
     }
 
     void Update()
