@@ -85,6 +85,10 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &159096252 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 111198, guid: 43e26d1359d32fe4baa48f13db81e720, type: 2}
+  m_PrefabInternal: {fileID: 1006680398}
 --- !u!1 &283603778
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,22 +503,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 493692, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -4.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 408818, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -4.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 408818, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 493692, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -6.3
-      objectReference: {fileID: 0}
+    - target: {fileID: 11463378, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: PauseUI
+      value: 
+      objectReference: {fileID: 159096252}
+    - target: {fileID: 11463378, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: ScenarioUI
+      value: 
+      objectReference: {fileID: 1362282029}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
   m_IsPrefabParent: 0
@@ -572,7 +568,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: f1f5c1dabd8704428ae40db578839ad1, type: 3}
     m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
@@ -736,7 +732,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 940203105}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.89, y: -2.92, z: 0}
+  m_LocalPosition: {x: 20.11, y: -3.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1090,7 +1086,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 419014, guid: e992fed9e9bf74d30a10adaaa88fe756, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 13.69
+      value: 15.51
       objectReference: {fileID: 0}
     - target: {fileID: 419014, guid: e992fed9e9bf74d30a10adaaa88fe756, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1123,6 +1119,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e992fed9e9bf74d30a10adaaa88fe756, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1362282029 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 144524, guid: 43e26d1359d32fe4baa48f13db81e720, type: 2}
+  m_PrefabInternal: {fileID: 1006680398}
 --- !u!1 &1380151592
 GameObject:
   m_ObjectHideFlags: 0
