@@ -88,6 +88,26 @@ public class PlayerMovement : MonoBehaviour
                 {
                     SceneManager.LoadScene("sc_brief_closeup");
                 }
+
+            if (col.gameObject.tag == "pcBackground")
+            {
+                SceneManager.LoadScene("sc_google_closeup");
+            }
+
+            if (col.gameObject.tag == "Door")
+            {
+                SceneManager.LoadScene("sc_street");
+            }
+
+            if (col.gameObject.tag == "Door2")
+            {
+                SceneManager.LoadScene("sc_brief_home_buurvrouw");
+            }
+
+            if (col.gameObject.tag == "PC")
+            {
+                SceneManager.LoadScene("sc_google_closeup");
+            }
         }
     }
 
