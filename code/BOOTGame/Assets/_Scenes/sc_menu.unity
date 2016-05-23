@@ -94,7 +94,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 419014, guid: e992fed9e9bf74d30a10adaaa88fe756, type: 2}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: -3.25
+=======
+      value: -3.53
+>>>>>>> EdgeCollision
       objectReference: {fileID: 0}
     - target: {fileID: 419014, guid: e992fed9e9bf74d30a10adaaa88fe756, type: 2}
       propertyPath: m_LocalPosition.y
@@ -126,6 +130,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 419014, guid: e992fed9e9bf74d30a10adaaa88fe756, type: 2}
       propertyPath: m_LocalScale.x
+<<<<<<< HEAD
       value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 419014, guid: e992fed9e9bf74d30a10adaaa88fe756, type: 2}
@@ -135,6 +140,17 @@ Prefab:
     - target: {fileID: 419014, guid: e992fed9e9bf74d30a10adaaa88fe756, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.4
+=======
+      value: 0.3257584
+      objectReference: {fileID: 0}
+    - target: {fileID: 419014, guid: e992fed9e9bf74d30a10adaaa88fe756, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.3257584
+      objectReference: {fileID: 0}
+    - target: {fileID: 419014, guid: e992fed9e9bf74d30a10adaaa88fe756, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.3257584
+>>>>>>> EdgeCollision
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e992fed9e9bf74d30a10adaaa88fe756, type: 2}
@@ -171,7 +187,11 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: -187, y: -492}
+=======
+  m_AnchoredPosition: {x: -107.5, y: -174.1}
+>>>>>>> EdgeCollision
   m_SizeDelta: {x: 11.7, y: 11.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526295178
@@ -486,7 +506,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 454360, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD
       value: -0.6
+=======
+      value: -2.79
+>>>>>>> EdgeCollision
       objectReference: {fileID: 0}
     - target: {fileID: 454360, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -519,6 +543,22 @@ Prefab:
     - target: {fileID: 2026698, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
       propertyPath: orthographic size
       value: 6.083
+      objectReference: {fileID: 0}
+    - target: {fileID: 11463378, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11474710, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 134892, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 106398, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11463378, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
       propertyPath: m_Enabled
@@ -629,7 +669,11 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 4.0200005, y: 13.540001}
+=======
+  m_AnchoredPosition: {x: 0.7, y: 1.13}
+>>>>>>> EdgeCollision
   m_SizeDelta: {x: 799.99994, y: 446.8619}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1783107971
@@ -686,7 +730,11 @@ Transform:
   m_GameObject: {fileID: 1783107971}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.12, y: -1.84, z: 0}
+<<<<<<< HEAD
   m_LocalScale: {x: 1, y: 1, z: 1}
+=======
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8217156}
+>>>>>>> EdgeCollision
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
