@@ -29,10 +29,6 @@ public class Pause : MonoBehaviour
         if (paused)
         {
             PauseUI.SetActive(true);
-            if (Player != null)
-            {
-                Player.canMove = false;
-            }
 
         }
 
@@ -40,24 +36,28 @@ public class Pause : MonoBehaviour
         if (!paused)
         {
             PauseUI.SetActive(false);
-            if (Player != null)
-            {
-                Player.canMove = true;
-            }
+
         }
     }
 
     //Als de homebutton wordt gedrukt is de game paused.
     public void PausedClicked()
     {
-		if (paused) { 
-			
-			paused = false;	
+		if (paused) {
+            if (Player != null)
+            {
+                Player.canMove = false;
+            }
+            paused = false;	
 		}
 		else if (!paused) {
 			
 			paused = true;
-		}
+            if (Player != null)
+            {
+                Player.canMove = true;
+            }
+        }
 
 
     }
