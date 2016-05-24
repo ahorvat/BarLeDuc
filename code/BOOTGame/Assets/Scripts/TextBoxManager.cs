@@ -8,7 +8,6 @@ public class TextBoxManager : MonoBehaviour {
     public PlayerMovement player;
     public GameObject textBox;
     public GameObject optionBox;
-    public QuestManager questManager;
     //buttons
     public Button option1;
     public Button option2;
