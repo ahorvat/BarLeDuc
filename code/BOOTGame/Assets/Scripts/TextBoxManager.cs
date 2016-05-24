@@ -7,6 +7,7 @@ public class TextBoxManager : MonoBehaviour {
     //player object, tekst objects en textfiles
     public PlayerMovement player;
     public GameObject textBox;
+    public GameObject Panel;
     public GameObject optionBox;
     //buttons
     public Button option1;
