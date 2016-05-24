@@ -14,6 +14,7 @@ public class changingSpritesRightArrow : MonoBehaviour {
     void Start()
     {
         //set the player to the playermovement script.
+
         player = FindObjectOfType<PlayerMovement>();
         //set the spriterenderer to the spriterenderer component of this gameobject.
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -27,20 +28,26 @@ public class changingSpritesRightArrow : MonoBehaviour {
     void Update()
     {
         //call the changing sprites method each frame.
+
         ChangeSprite(); 
     }
 
     //method to change the sprite.
     void ChangeSprite()
     {
-        //check if the input is in the right inputbox.
+        if (player == null)
+        {
+            return;
+        }
+
+        //check if the input is in the left inputbox.
         if (Input.GetMouseButton(0) && Input.mousePosition.x > player.inputBoxRight)
         {
             //so we can change the sprite to sprite2(button pressed sprite).
             spriteRenderer.sprite = sprite2;
         }
         //check if the mouseclick is in the middle of the screen
-        else if (Input.GetMouseButton(0) && Input.mousePosition.x < player.inputBoxRight && Input.mousePosition.x > player.inputBoxLeft)
+        else if (Input.GetMouseButton(0) && player.inputboxmiddle)
         {
             //set the sprite to the not-pressed sprite.
             spriteRenderer.sprite = sprite1;

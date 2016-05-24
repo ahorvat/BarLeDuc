@@ -59,6 +59,10 @@ public class TextBoxManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        if (player == null)
+        {
+            return;
+        }
         //als het object niet active is word de code niet gerunned
         if (!isActive)
         {

@@ -38,9 +38,20 @@ public class PlayerMovement : MonoBehaviour
         inputBoxRight = camera.pixelWidth - camera.pixelWidth / 4;
         inputBoxLeft = camera.pixelWidth / 4;
 
-        leftArrow.SetActive(true);
-        rightArrow.SetActive(true);
-        dialogueBox.SetActive(false);
+        if (leftArrow != null)
+        {
+            leftArrow.SetActive(true);
+        }
+        if (rightArrow != null)
+        {
+            rightArrow.SetActive(true);
+        }
+        
+        if (dialogueBox != null)
+        {
+            dialogueBox.SetActive(false);
+        }
+
     }
 
     // Update is called once per frame
