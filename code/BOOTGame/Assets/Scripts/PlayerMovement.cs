@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     //rigidbody so we can get the component and change the position of the rigidbody(player).
     private Rigidbody2D rb;
     private GameObject dialogueBox;
+    private GameObject leftArrow;
+    private GameObject rightArrow;
 
     public bool inputboxmiddle;
 
@@ -29,11 +31,15 @@ public class PlayerMovement : MonoBehaviour
         //set the rb(rigidbody) to the rigidbody component of this gameobject(player) so we can change its fields.
         rb = GetComponent<Rigidbody2D>();
 
+        leftArrow = GameObject.FindGameObjectWithTag("leftArrow");
+        rightArrow = GameObject.FindGameObjectWithTag("rightArrow");
         dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
         //calculate the inputboxes on the left and right side of the screen/camera.
         inputBoxRight = camera.pixelWidth - camera.pixelWidth / 4;
         inputBoxLeft = camera.pixelWidth / 4;
 
+        leftArrow.SetActive(true);
+        rightArrow.SetActive(true);
         dialogueBox.SetActive(false);
     }
 
@@ -87,6 +93,8 @@ public class PlayerMovement : MonoBehaviour
         if (col.gameObject.tag == "Woman")
         {
             dialogueBox.SetActive(true);
+            leftArrow.SetActive(false);
+            rightArrow.SetActive(false);
         }
     }
 
@@ -95,6 +103,8 @@ public class PlayerMovement : MonoBehaviour
         if (col.gameObject.tag == "Woman")
         {
             dialogueBox.SetActive(false);
+            leftArrow.SetActive(true);
+            rightArrow.SetActive(true);
         }
 
     }

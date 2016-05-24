@@ -17,6 +17,12 @@ TagManager:
   - pcBackground
   - PauseUI
   - ScenarioUI
+  - DialogueBox
+  - TextBoxManager
+  - Woman
+  - leftArrow
+  - rightArrow
+  - arrow
   layers:
   - Default
   - TransparentFX
