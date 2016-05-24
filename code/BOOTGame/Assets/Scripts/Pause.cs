@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class Pause : MonoBehaviour
@@ -72,7 +72,7 @@ public class Pause : MonoBehaviour
     public void HoofdMenu()
     {
         MenuCan.gameObject.SetActive(false);
-        Application.LoadLevel(0);
+        SceneManager.LoadScene(0);
         paused = false;
     }
 
@@ -86,14 +86,14 @@ public class Pause : MonoBehaviour
     //
     public void ScenarioOne()
     {
-        Application.LoadLevel(1);
+        SceneManager.LoadScene(1);
         ScenarioUI.SetActive(false);
     }
 
     //
     public void ScenarioTwo()
     {
-        Application.LoadLevel(2);
+        SceneManager.LoadScene(2);
         ScenarioUI.SetActive(false);
     }
 
