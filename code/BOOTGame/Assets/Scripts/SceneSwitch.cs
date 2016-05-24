@@ -20,4 +20,11 @@ public class SceneSwitch : MonoBehaviour {
         SceneManager.LoadScene("sc_brief_home_buurvrouw");
         return;
     }
+
+    public void sc_incorrectchoice_dialogue()
+    {
+        SceneManager.LoadScene("sc_incorrectchoice_dialogue");
+        return;
+    }
+
 }

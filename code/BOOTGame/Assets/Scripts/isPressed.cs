@@ -7,10 +7,14 @@ public class isPressed : MonoBehaviour
 {
 
     public DeleteBrief deleteBrief;
+    private TextBoxManager textBoxManager;
+    private GameObject dialogueBox;
 
     void Start()
     {
+        textBoxManager =  FindObjectOfType<TextBoxManager>();
         deleteBrief = FindObjectOfType<DeleteBrief>();
+        dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
     }
 
 
@@ -75,6 +79,16 @@ public class isPressed : MonoBehaviour
             if (SceneManager.GetActiveScene().name == "sc_google_incorrect")
             {
                 SceneManager.LoadScene("sc_gemeentebrief_choices");
+            }
+
+            if (SceneManager.GetActiveScene().name == "sc_street")
+            {
+                dialogueBox.SetActive(false);
+                textBoxManager.EnableTekstBox();
+            }
+            if (SceneManager.GetActiveScene().name == "sc_incorrectchoice_dialogue")
+            {
+                SceneManager.LoadScene("sc_street");
             }
 
         }

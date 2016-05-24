@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -9,8 +8,6 @@ public class TextBoxManager : MonoBehaviour {
     public PlayerMovement player;
     public GameObject textBox;
     public GameObject optionBox;
-	public GameObject test1;
-	public GameObject test2;
     public QuestManager questManager;
     //buttons
     public Button option1;
@@ -19,8 +16,6 @@ public class TextBoxManager : MonoBehaviour {
     public Sprite buttonSprite1;
     public Sprite buttonSprite2;
     public Sprite buttonSprite3;
-	//public Sprite dialogboxYoussef;
-	//public Sprite dialogboxHenk;
     //text
     public Text theText;
     public TextAsset textFile;
@@ -34,14 +29,11 @@ public class TextBoxManager : MonoBehaviour {
     public bool isActive;
     // een bool om de player te laten stoppen
     public bool stopPlayerMovement;
-	public Scene scene;
 
 
 	// Use this for initialization
 	void Start ()
     {
-		test2.SetActive (false);
-		scene = SceneManager.GetActiveScene ();
         player = FindObjectOfType<PlayerMovement>();
         //als de tekst niet leeg is dan word de tekst opgesplits per enter
         if (textFile != null)
@@ -98,25 +90,6 @@ public class TextBoxManager : MonoBehaviour {
             textBox.SetActive(false);
             optionBox.SetActive(true);
         }
-		if (scene.name == "sc_brief_home_phonecall" && currentLine == 3) {
-			test1.SetActive (false);
-			test2.SetActive (true);
-		}
-		if (scene.name == "sc_brief_home_phonecall" && currentLine == 4) {
-			test1.SetActive (true);
-			test2.SetActive (false);
-		}
-		if (scene.name == "sc_brief_home_phonecall" && currentLine == 5) {
-			test1.SetActive (false);
-			test2.SetActive (true);
-		}
-		if (scene.name == "sc_brief_home_phonecall" && currentLine == 6) {
-			test1.SetActive (true);
-			test2.SetActive (false);
-		}
-		if (scene.name == "sc_brief_home_phonecall" && currentLine == 7) {
-			SceneManager.LoadScene ("sc_incorrectPhonecall");
-		}
 	}
     //een functie om de textbox aan te zetten en de player movement still te zetten. de playermovement is toggle baar
     public void EnableTekstBox()
