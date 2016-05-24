@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\ActivateTekstAtLine.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\DeleteBrief.cs" />
+    <Compile Include="Assets\Scripts\DialogeManager.cs" />
     <Compile Include="Assets\Scripts\Goto_Start.cs" />
     <Compile Include="Assets\Scripts\LoadOnClick.cs" />
     <Compile Include="Assets\Scripts\OutOfScreen.cs" />
@@ -87,8 +88,8 @@
     <Compile Include="Assets\Scripts\changingSpritesRightArrow.cs" />
     <Compile Include="Assets\Scripts\isPressed.cs" />
     <Compile Include="Assets\Scripts\mouseClick.cs" />
-    <Compile Include="Assets\TBM_Extend.cs" />
-    <Compile Include="Assets\changingSprites.cs" />
+    <Compile Include="Assets\Sprites\TBM_Extend.cs" />
+    <Compile Include="Assets\Sprites\changingSprites.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Texts\Dialoguetest.txt" />

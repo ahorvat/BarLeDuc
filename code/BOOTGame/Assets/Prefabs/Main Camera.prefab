@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 493692}
   - 212: {fileID: 21214704}
   - 114: {fileID: 11461384}
+  - 114: {fileID: 11448132}
   m_Layer: 0
   m_Name: LeftArrow
   m_TagString: Untagged
@@ -73,7 +74,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.7, y: -1.12, z: -0.53}
+  m_LocalPosition: {x: 0, y: 0, z: -0.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 408818}
@@ -140,6 +141,21 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111988}
   m_Enabled: 1
+--- !u!114 &11448132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9137fdc89c0c74b98c671e7cc1e34c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.75
+  minXpos: 8
+  maxXpos: 224.43
+  scaleAmount: 1.5
 --- !u!114 &11460796
 MonoBehaviour:
   m_ObjectHideFlags: 1
