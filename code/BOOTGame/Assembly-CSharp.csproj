@@ -63,8 +63,8 @@
      <Compile Include="Assets\Scripts\changingSpritesRightArrow.cs" />
      <Compile Include="Assets\Scripts\isPressed.cs" />
      <Compile Include="Assets\Scripts\mouseClick.cs" />
-     <Compile Include="Assets\TBM_Extend.cs" />
-     <Compile Include="Assets\changingSprites.cs" />
+     <Compile Include="Assets\Sprites\TBM_Extend.cs" />
+     <Compile Include="Assets\Sprites\changingSprites.cs" />
      <None Include="Assets\Texts\StartScene1.txt" />
      <None Include="Assets\Texts\Dialoguetest.txt" />
      <None Include="Assets\Texts\Phonecall.txt" />
