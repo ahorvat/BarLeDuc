@@ -41,3 +41,5 @@ EditorBuildSettings:
     path: Assets/_Scenes/sc_brief_home_phonecall.unity
   - enabled: 1
     path: Assets/_Scenes/sc_brief_home_google.unity
+  - enabled: 1
+    path: Assets/_Scenes/sc_incorrectPhonecall.unity

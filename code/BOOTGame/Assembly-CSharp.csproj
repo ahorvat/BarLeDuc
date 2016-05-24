@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\mouseClick.cs" />
      <None Include="Assets\Texts\StartScene1.txt" />
      <None Include="Assets\Texts\Dialoguetest.txt" />
+     <None Include="Assets\Texts\Phonecall.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
