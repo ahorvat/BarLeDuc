@@ -877,6 +877,12 @@ RectTransform:
   m_AnchoredPosition: {x: 7.525918, y: -0.787609}
   m_SizeDelta: {x: 104.610016, y: -6.595291}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1456284936 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11436782, guid: e992fed9e9bf74d30a10adaaa88fe756,
+    type: 2}
+  m_PrefabInternal: {fileID: 1129515284}
+  m_Script: {fileID: 11500000, guid: d86c0c5d08b60f0429aca1185b7f69b8, type: 3}
 --- !u!1001 &1457692933
 Prefab:
   m_ObjectHideFlags: 0
@@ -972,7 +978,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1599314910}
-  - 114: {fileID: 1599314909}
+  - 114: {fileID: 1599314911}
   m_Layer: 0
   m_Name: Text Box Manager
   m_TagString: Untagged
@@ -980,7 +986,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1599314909
+--- !u!4 &1599314910
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1599314908}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.18, y: 5.48, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+--- !u!114 &1599314911
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -988,10 +1006,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1599314908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f672de29c6ed4d0428c9c61ae94f75da, type: 3}
+  m_Script: {fileID: 11500000, guid: bb8cccf1dce856f40ade9225d4bb00c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1456284936}
   textBox: {fileID: 1665442312}
   optionBox: {fileID: 1997499079}
   questManager: {fileID: 0}
@@ -1006,28 +1024,18 @@ MonoBehaviour:
   textLines:
   - Henk! Ik snap mijn brief niet.
   - Zou jij me willen helpen met vertalen.
-  - Ja tuurlijk, kan je de brief voorlezen.
+  - Ja tuurlijk, kan je de brief voorlezen?
   - Nee dat lukt niet.
   - Dan kan ik je helaas niet helpen.
   - Jammer, bedankt Henk!
-  - Jammer, bedankt Henk!
+  - 
   currentLine: 1
   endAtLine: 6
   optionLine: 1000
   isActive: 1
   stopPlayerMovement: 1
---- !u!4 &1599314910
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1599314908}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.18, y: 5.48, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  DialogYoussef: {fileID: 517948465}
+  DialogHenk: {fileID: 316832536}
 --- !u!1 &1628598984
 GameObject:
   m_ObjectHideFlags: 0
