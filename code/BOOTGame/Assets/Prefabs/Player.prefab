@@ -95,7 +95,7 @@ MonoBehaviour:
   inputboxmiddle: 0
   inputBoxLeft: 250
   inputBoxRight: 600
-  canMove: 0
+  canMove: 1
 --- !u!114 &11458956
 MonoBehaviour:
   m_ObjectHideFlags: 1

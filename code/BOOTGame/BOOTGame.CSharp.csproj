@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\changingSpritesRightArrow.cs" />
     <Compile Include="Assets\Scripts\isPressed.cs" />
     <Compile Include="Assets\Scripts\mouseClick.cs" />
+    <Compile Include="Assets\changingSprites.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Texts\Dialoguetest.txt" />

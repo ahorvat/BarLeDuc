@@ -33,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
         //calculate the inputboxes on the left and right side of the screen/camera.
         inputBoxRight = camera.pixelWidth - camera.pixelWidth / 4;
         inputBoxLeft = camera.pixelWidth / 4;
+
+        dialogueBox.SetActive(false);
     }
 
     // Update is called once per frame
@@ -80,22 +82,21 @@ public class PlayerMovement : MonoBehaviour
         }     
     }
 
-    void OnTriggerEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Woman")
         {
-            Debug.Log("asdfasdf");
             dialogueBox.SetActive(true);
         }
-        Debug.Log("asdfasdf");
     }
 
-    void OnTriggerExit2D(Collision2D col)
+    void OnTriggerExit2D(Collider2D col)
     {
         if (col.gameObject.tag == "Woman")
         {
             dialogueBox.SetActive(false);
         }
+
     }
 
     //OnTriggerStay checks if the gameobject(player) is standing on a trigger and isnt moving.
