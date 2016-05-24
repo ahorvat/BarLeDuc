@@ -785,7 +785,7 @@ Prefab:
     - target: {fileID: 11489402, guid: 748a7ec3e7d834d34b1c0a4fba02190f, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1637168022}
+      objectReference: {fileID: 0}
     - target: {fileID: 189108, guid: 748a7ec3e7d834d34b1c0a4fba02190f, type: 2}
       propertyPath: m_Name
       value: MenuCanvas
@@ -823,6 +823,8 @@ MonoBehaviour:
   player: {fileID: 0}
   textBox: {fileID: 1380151592}
   optionBox: {fileID: 1715094405}
+  test1: {fileID: 0}
+  test2: {fileID: 0}
   questManager: {fileID: 0}
   option1: {fileID: 0}
   option2: {fileID: 0}
@@ -832,7 +834,9 @@ MonoBehaviour:
   buttonSprite3: {fileID: 0}
   theText: {fileID: 785653312}
   textFile: {fileID: 4900000, guid: 5d7606291dcf24742bff432ac70358b6, type: 3}
-  textLines: []
+  textLines:
+  - Hey kijk, de post is er!
+  - Ik ga mijn post bekijken.
   currentLine: 0
   endAtLine: 1
   optionLine: 1000
@@ -1022,12 +1026,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
---- !u!114 &1637168022 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11463378, guid: 5933b1198f8594023bea11cd52231e1f,
-    type: 2}
-  m_PrefabInternal: {fileID: 775143443}
-  m_Script: {fileID: 11500000, guid: 85b68478e7f66ff44811ece5ba5095b4, type: 3}
 --- !u!1 &1715094405
 GameObject:
   m_ObjectHideFlags: 0
