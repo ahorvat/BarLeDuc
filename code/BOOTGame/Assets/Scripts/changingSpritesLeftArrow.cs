@@ -33,6 +33,11 @@ public class changingSpritesLeftArrow : MonoBehaviour {
     //method to change the sprite.
     void ChangeSprite()
     {
+        if (player == null)
+        {
+            return;
+        }
+
         //check if the input is in the left inputbox.
         if (Input.GetMouseButton(0) && Input.mousePosition.x < player.inputBoxLeft)
         {

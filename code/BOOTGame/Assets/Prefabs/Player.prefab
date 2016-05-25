@@ -13,6 +13,7 @@ GameObject:
   - 61: {fileID: 6164864}
   - 50: {fileID: 5082250}
   - 114: {fileID: 11458956}
+  - 114: {fileID: 11456918}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -78,6 +79,22 @@ MonoBehaviour:
   inputboxmiddle: 0
   inputBoxLeft: 0
   inputBoxRight: 0
+  canMove: 1
+--- !u!114 &11456918
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7994e13d8bd2f842b3124bd5c15b192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.2
+  inputboxmiddle: 0
+  inputBoxLeft: 250
+  inputBoxRight: 600
   canMove: 1
 --- !u!114 &11458956
 MonoBehaviour:

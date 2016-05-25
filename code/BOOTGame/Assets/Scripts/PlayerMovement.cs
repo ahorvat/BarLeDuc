@@ -9,6 +9,10 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     //rigidbody so we can get the component and change the position of the rigidbody(player).
     private Rigidbody2D rb;
+    private GameObject dialogueBox;
+    private GameObject leftArrow;
+    private GameObject rightArrow;
+    private GameObject textButtons;
 
     public bool inputboxmiddle;
 
@@ -27,9 +31,28 @@ public class PlayerMovement : MonoBehaviour
         camera = FindObjectOfType<Camera>();
         //set the rb(rigidbody) to the rigidbody component of this gameobject(player) so we can change its fields.
         rb = GetComponent<Rigidbody2D>();
+        textButtons = GameObject.FindGameObjectWithTag("textButtons");
+        leftArrow = GameObject.FindGameObjectWithTag("leftArrow");
+        rightArrow = GameObject.FindGameObjectWithTag("rightArrow");
+        dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
         //calculate the inputboxes on the left and right side of the screen/camera.
         inputBoxRight = camera.pixelWidth - camera.pixelWidth / 4;
         inputBoxLeft = camera.pixelWidth / 4;
+
+        if (leftArrow != null)
+        {
+            leftArrow.SetActive(true);
+        }
+        if (rightArrow != null)
+        {
+            rightArrow.SetActive(true);
+        }
+        
+        if (dialogueBox != null)
+        {
+            dialogueBox.SetActive(false);
+        }
+
     }
 
     // Update is called once per frame
@@ -75,6 +98,29 @@ public class PlayerMovement : MonoBehaviour
                 GetComponent<SpriteRenderer>().flipX = true;      
             }
         }     
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Woman")
+        {
+            dialogueBox.SetActive(true);
+            leftArrow.SetActive(false);
+            rightArrow.SetActive(false);
+            textButtons.SetActive(false);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Woman")
+        {
+            dialogueBox.SetActive(false);
+            leftArrow.SetActive(true);
+            rightArrow.SetActive(true);
+            textButtons.SetActive(true);
+        }
+
     }
 
     //OnTriggerStay checks if the gameobject(player) is standing on a trigger and isnt moving.

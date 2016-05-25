@@ -69,9 +69,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ActivateTekstAtLine.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\DeleteBrief.cs" />
+    <Compile Include="Assets\Scripts\DialogeManager.cs" />
     <Compile Include="Assets\Scripts\Goto_Start.cs" />
     <Compile Include="Assets\Scripts\LoadOnClick.cs" />
     <Compile Include="Assets\Scripts\OutOfScreen.cs" />
@@ -87,11 +87,23 @@
     <Compile Include="Assets\Scripts\changingSpritesRightArrow.cs" />
     <Compile Include="Assets\Scripts\isPressed.cs" />
     <Compile Include="Assets\Scripts\mouseClick.cs" />
+    <Compile Include="Assets\Scripts\zOD_ActivateTekstAtLine.cs" />
+    <Compile Include="Assets\Scripts\zOD_TextBoxManager.cs" />
+    <Compile Include="Assets\Sprites\TBM_Extend.cs" />
+    <Compile Include="Assets\Sprites\changingSprites.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Texts\BriefCloseup.txt" />
+    <None Include="Assets\Texts\BrievenCloseup.txt" />
+    <None Include="Assets\Texts\BuurvrouwDialogue.txt" />
+    <None Include="Assets\Texts\BuurvrouwText.txt" />
     <None Include="Assets\Texts\Dialoguetest.txt" />
+    <None Include="Assets\Texts\GemeentebriefChoices.txt" />
+    <None Include="Assets\Texts\GoogleGebruiken.txt" />
+    <None Include="Assets\Texts\GoogleText.txt" />
     <None Include="Assets\Texts\Phonecall.txt" />
     <None Include="Assets\Texts\StartScene1.txt" />
+    <None Include="Assets\Texts\Tutorial.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
