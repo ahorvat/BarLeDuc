@@ -41,7 +41,7 @@ public class isPressed : MonoBehaviour
             }
             if (SceneManager.GetActiveScene().name == "sc_google_closeup")
             {
-                SceneManager.LoadScene("sc_google_incorrect");
+                SceneManager.LoadScene("sc_incorrectletterchoice");
             }
 
         }
@@ -52,15 +52,15 @@ public class isPressed : MonoBehaviour
             if (SceneManager.GetActiveScene().name == "sc_staatsloterijBrief_closeup")
             {
                 deleteBrief.staatsloterijLetter = true;
-                SceneManager.LoadScene("sc_correctletterchoice1");
+                SceneManager.LoadScene("sc_correctletterchoice");
             }
             if (SceneManager.GetActiveScene().name == "sc_gemeenteBrief_closeup")
             {
-                SceneManager.LoadScene("sc_incorrectletterchoice1");
+                SceneManager.LoadScene("sc_incorrectletterchoice");
             }
             if (SceneManager.GetActiveScene().name == "sc_ABNBrief_closeup")
             {
-                SceneManager.LoadScene("sc_incorrectletterchoice1");
+                SceneManager.LoadScene("sc_incorrectletterchoice");
             }
             if (SceneManager.GetActiveScene().name == "sc_google_closeup")
             {
