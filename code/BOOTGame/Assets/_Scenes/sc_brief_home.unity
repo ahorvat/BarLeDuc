@@ -1196,11 +1196,11 @@ Prefab:
       objectReference: {fileID: 712976955}
     - target: {fileID: 22431868, guid: 748a7ec3e7d834d34b1c0a4fba02190f, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -306
+      value: -315.3
       objectReference: {fileID: 0}
     - target: {fileID: 22431868, guid: 748a7ec3e7d834d34b1c0a4fba02190f, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 197
+      value: 282.1
       objectReference: {fileID: 0}
     - target: {fileID: 22481032, guid: 748a7ec3e7d834d34b1c0a4fba02190f, type: 2}
       propertyPath: m_RootOrder
