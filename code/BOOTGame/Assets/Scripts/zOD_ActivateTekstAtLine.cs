@@ -5,7 +5,7 @@ public class ActivateTekstAtLine : MonoBehaviour {
 
     // textbestand en textbox object
     public TextAsset theText;
-    public TextBoxManager textBox;
+    public zOD_TextBoxManager textBox;
     public PlayerMovement player;
 
     // int voor startline en endline
@@ -30,7 +30,7 @@ public class ActivateTekstAtLine : MonoBehaviour {
 	void Start ()
     {
         // de textbox word ingeladen d.m.v findobjectoftype zodat we geen textbox hoeven in te laden per NPC of trigger.
-        textBox = FindObjectOfType<TextBoxManager>();
+        textBox = FindObjectOfType<zOD_TextBoxManager>();
         player = FindObjectOfType<PlayerMovement>();
 	}
 	

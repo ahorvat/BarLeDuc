@@ -2,7 +2,7 @@
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class TBM_Extend : TextBoxManager {
+public class TBM_Extend : zOD_TextBoxManager {
     public GameObject DialogYoussef;
     public GameObject DialogHenk;
     public Scene activeScene;
