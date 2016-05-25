@@ -92,9 +92,11 @@
     <Compile Include="Assets\Sprites\changingSprites.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Texts\BrievenCloseup.txt" />
     <None Include="Assets\Texts\Dialoguetest.txt" />
     <None Include="Assets\Texts\Phonecall.txt" />
     <None Include="Assets\Texts\StartScene1.txt" />
+    <None Include="Assets\Texts\Tutorial.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

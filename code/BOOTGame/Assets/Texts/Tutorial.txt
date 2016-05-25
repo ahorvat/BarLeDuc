@@ -1,0 +1,6 @@
+Welkom in de game!
+Dit ben jij.
+Je kunt bewegen door op de zijkanten van het scherm te drukken.
+Je kunt door in het midden van het scherm te drukken interacten.
+Probeer het uit!
+Loop naar de brief en klik erop.
