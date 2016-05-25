@@ -28,6 +28,7 @@ public class DialogeManager : MonoBehaviour
 
     // een bool om de canvas aan en uit te zetten
     public bool isActive;
+    public bool kutMathijs;
 
     // een bool om de player te laten stoppen
     public bool stopPlayerMovement;
@@ -62,10 +63,6 @@ public class DialogeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player == null)
-        {
-            return;
-        }
 
         if (!isActive)
         {
@@ -73,6 +70,10 @@ public class DialogeManager : MonoBehaviour
         }
         if (currentLine > endAtLine)
         {
+            if (kutMathijs)
+            {
+                return;
+            }
             DisableDM();
         }
         //zodra er enter word gedrukt word de volgende line ingeladen
@@ -80,6 +81,10 @@ public class DialogeManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
             {
+                if (kutMathijs && currentLine == endAtLine)
+                {
+                    return;
+                }
                 currentLine += 1;
             }
         }
@@ -118,13 +123,19 @@ public class DialogeManager : MonoBehaviour
     public void EnableDM()
     {
         textBox.SetActive(true);
-        player.canMove = false;
+        if (stopPlayerMovement)
+        {
+            player.canMove = false;
+        }
         isActive = true;
     }
     public void DisableDM()
     {
         textBox.SetActive(false);
-        player.canMove = true;
+        if (stopPlayerMovement)
+        {
+            player.canMove = true;
+        }
         isActive = false;
     }
 }
