@@ -127,6 +127,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &106512743
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 499994258}
+    m_Modifications:
+    - target: {fileID: 454360, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454360, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454360, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 454360, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454360, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454360, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454360, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 454360, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &215537665
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,6 +222,10 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!4 &499994258 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 454360, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+  m_PrefabInternal: {fileID: 38047864}
 --- !u!1 &583026890
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,8 +730,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.25000763, y: 1.4999361}
-  m_SizeDelta: {x: -0.5, y: 2.9996}
+  m_AnchoredPosition: {x: 0.25000763, y: 45}
+  m_SizeDelta: {x: -0.5, y: -150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1835226630
 CanvasRenderer:
