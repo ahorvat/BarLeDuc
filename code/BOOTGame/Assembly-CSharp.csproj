@@ -45,7 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\ActivateTekstAtLine.cs" />
+     <Compile Include="Assets\Scripts\Bouncing.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\DeleteBrief.cs" />
      <Compile Include="Assets\Scripts\DialogeManager.cs" />
@@ -60,10 +60,13 @@
      <Compile Include="Assets\Scripts\Scaling.cs" />
      <Compile Include="Assets\Scripts\SceneSwitch.cs" />
      <Compile Include="Assets\Scripts\TextBoxManager.cs" />
+     <Compile Include="Assets\Scripts\bouncingTest.cs" />
      <Compile Include="Assets\Scripts\changingSpritesLeftArrow.cs" />
      <Compile Include="Assets\Scripts\changingSpritesRightArrow.cs" />
      <Compile Include="Assets\Scripts\isPressed.cs" />
      <Compile Include="Assets\Scripts\mouseClick.cs" />
+     <Compile Include="Assets\Scripts\zOD_ActivateTekstAtLine.cs" />
+     <Compile Include="Assets\Scripts\zOD_TextBoxManager.cs" />
      <Compile Include="Assets\Sprites\TBM_Extend.cs" />
      <Compile Include="Assets\Sprites\changingSprites.cs" />
      <None Include="Assets\Texts\BuurvrouwText.txt" />
@@ -73,6 +76,9 @@
      <None Include="Assets\Texts\GoogleText.txt" />
      <None Include="Assets\Texts\Dialoguetest.txt" />
      <None Include="Assets\Texts\Phonecall.txt" />
+     <None Include="Assets\Texts\BriefCloseup.txt" />
+     <None Include="Assets\Texts\GoogleGebruiken.txt" />
+     <None Include="Assets\Texts\GemeentebriefChoices.txt" />
      <None Include="Assets\Texts\BrievenCloseup.txt" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
