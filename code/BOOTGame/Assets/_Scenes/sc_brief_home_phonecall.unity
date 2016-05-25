@@ -186,6 +186,10 @@ Prefab:
       propertyPath: buurvrouwText
       value: 
       objectReference: {fileID: 1011697612}
+    - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
+      propertyPath: stopPlayerMovement
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9e996928807af0458ad496f479c5594, type: 2}
   m_IsPrefabParent: 0
@@ -424,6 +428,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 21205806, guid: e992fed9e9bf74d30a10adaaa88fe756, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c0fab3509f52e84d962e3a9222caabb,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e992fed9e9bf74d30a10adaaa88fe756, type: 2}
   m_IsPrefabParent: 0
