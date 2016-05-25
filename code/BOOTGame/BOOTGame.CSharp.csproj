@@ -93,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Texts\BrievenCloseup.txt" />
+    <None Include="Assets\Texts\BuurvrouwDialogue.txt" />
     <None Include="Assets\Texts\BuurvrouwText.txt" />
     <None Include="Assets\Texts\Dialoguetest.txt" />
     <None Include="Assets\Texts\GoogleText.txt" />

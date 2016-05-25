@@ -35,6 +35,7 @@ public class DialogeManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
         player = FindObjectOfType<PlayerMovement>();
         //als de tekst niet leeg is dan word de tekst opgesplits per enter
         if (textFile != null)
@@ -61,6 +62,11 @@ public class DialogeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (player == null)
+        {
+            return;
+        }
+
         if (!isActive)
         {
             return;
