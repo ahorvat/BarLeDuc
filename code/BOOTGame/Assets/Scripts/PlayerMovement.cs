@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private GameObject dialogueBox;
     private GameObject leftArrow;
     private GameObject rightArrow;
+    private GameObject textButtons;
 
     public bool inputboxmiddle;
 
@@ -30,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
         camera = FindObjectOfType<Camera>();
         //set the rb(rigidbody) to the rigidbody component of this gameobject(player) so we can change its fields.
         rb = GetComponent<Rigidbody2D>();
-
+        textButtons = GameObject.FindGameObjectWithTag("textButtons");
         leftArrow = GameObject.FindGameObjectWithTag("leftArrow");
         rightArrow = GameObject.FindGameObjectWithTag("rightArrow");
         dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
@@ -106,6 +107,7 @@ public class PlayerMovement : MonoBehaviour
             dialogueBox.SetActive(true);
             leftArrow.SetActive(false);
             rightArrow.SetActive(false);
+            textButtons.SetActive(false);
         }
     }
 
@@ -116,6 +118,7 @@ public class PlayerMovement : MonoBehaviour
             dialogueBox.SetActive(false);
             leftArrow.SetActive(true);
             rightArrow.SetActive(true);
+            textButtons.SetActive(true);
         }
 
     }

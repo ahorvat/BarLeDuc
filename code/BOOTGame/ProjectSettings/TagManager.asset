@@ -23,6 +23,8 @@ TagManager:
   - leftArrow
   - rightArrow
   - arrow
+  - Door
+  - textButtons
   layers:
   - Default
   - TransparentFX
