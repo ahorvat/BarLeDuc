@@ -63,13 +63,14 @@ public class DialogeManager : MonoBehaviour
                 currentLine += 1;
             }
         }
-
+        //als de currentline in de boolean lijst true geeft display youseff background.
         if (yousef_lines[currentLine])
         {
             image.sprite = bg_yousef;
             buurvrouwText.text = "";
             yousefText.text = textLines[currentLine];
         }
+        //als de currentline niet in de boolean lijst true geeft display vrouw background.
         if (!yousef_lines[currentLine])
         {
             image.sprite = bg_buurvrouw;
@@ -79,9 +80,7 @@ public class DialogeManager : MonoBehaviour
 
         if (currentLine > endAtLine)
         {
-            textBox.SetActive(false);
-            player.canMove = true;
-            isActive = false;
+            DisableDM();
         }
 
 
@@ -100,5 +99,18 @@ public class DialogeManager : MonoBehaviour
         yousefText.text = "";
         buurvrouwText.text = textLines[currentLine];
 
+    }
+
+    public void EnableDM()
+    {
+        textBox.SetActive(true);
+        player.canMove = false;
+        isActive = true;
+    }
+    public void DisableDM()
+    {
+        textBox.SetActive(false);
+        player.canMove = true;
+        isActive = false;
     }
 }
