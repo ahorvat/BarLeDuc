@@ -858,6 +858,10 @@ Prefab:
       propertyPath: yousef_lines.Array.data[6]
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
+      propertyPath: stopPlayerMovement
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9e996928807af0458ad496f479c5594, type: 2}
   m_IsPrefabParent: 0
@@ -1242,7 +1246,7 @@ MonoBehaviour:
   inputboxmiddle: 0
   inputBoxLeft: 250
   inputBoxRight: 600
-  canMove: 0
+  canMove: 1
 --- !u!114 &1802310896
 MonoBehaviour:
   m_ObjectHideFlags: 0
