@@ -46,6 +46,16 @@ public class DialogeManager : MonoBehaviour
         {
             endAtLine = textLines.Length - 1;
         }
+
+        if (isActive)
+        {
+            EnableDM();
+        }
+
+        if (!isActive)
+        {
+            DisableDM();
+        }
     }
 
     // Update is called once per frame
@@ -54,6 +64,10 @@ public class DialogeManager : MonoBehaviour
         if (!isActive)
         {
             return;
+        }
+        if (currentLine > endAtLine)
+        {
+            DisableDM();
         }
         //zodra er enter word gedrukt word de volgende line ingeladen
         if (textBox.activeInHierarchy)
@@ -77,12 +91,6 @@ public class DialogeManager : MonoBehaviour
             yousefText.text = "";
             buurvrouwText.text = textLines[currentLine];
         }
-
-        if (currentLine > endAtLine)
-        {
-            DisableDM();
-        }
-
 
     }
     void Youssef()
