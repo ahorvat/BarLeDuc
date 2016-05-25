@@ -93,10 +93,13 @@
     <Compile Include="Assets\Sprites\changingSprites.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Texts\BriefCloseup.txt" />
     <None Include="Assets\Texts\BrievenCloseup.txt" />
     <None Include="Assets\Texts\BuurvrouwDialogue.txt" />
     <None Include="Assets\Texts\BuurvrouwText.txt" />
     <None Include="Assets\Texts\Dialoguetest.txt" />
+    <None Include="Assets\Texts\GemeentebriefChoices.txt" />
+    <None Include="Assets\Texts\GoogleGebruiken.txt" />
     <None Include="Assets\Texts\GoogleText.txt" />
     <None Include="Assets\Texts\Phonecall.txt" />
     <None Include="Assets\Texts\StartScene1.txt" />
