@@ -29,7 +29,7 @@ public class DialogeManager : MonoBehaviour
 
     // een bool om de canvas aan en uit te zetten
     public bool isActive;
-    public bool kutMathijs;
+    public bool aardigeMathijs;
 
     // een bool om de player te laten stoppen
     public bool stopPlayerMovement;
@@ -71,7 +71,7 @@ public class DialogeManager : MonoBehaviour
         }
         if (currentLine > endAtLine)
         {
-            if (kutMathijs)
+            if (aardigeMathijs)
             {
                 return;
             }
@@ -82,7 +82,7 @@ public class DialogeManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
             {
-                if (kutMathijs && currentLine == endAtLine)
+                if (aardigeMathijs && currentLine == endAtLine)
                 {
                     return;
                 }
