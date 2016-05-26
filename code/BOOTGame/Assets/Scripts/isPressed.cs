@@ -27,7 +27,7 @@ public class isPressed : MonoBehaviour
             //switching scenes between different letters.
             if (SceneManager.GetActiveScene().name == "sc_staatsloterijBrief_closeup")
             {
-                SceneManager.LoadScene("sc_incorrectletterchoice");
+                SceneManager.LoadScene("sc_incorrectletterchoice1");
             }
             if (SceneManager.GetActiveScene().name == "sc_gemeenteBrief_closeup")
             {
@@ -52,7 +52,7 @@ public class isPressed : MonoBehaviour
             if (SceneManager.GetActiveScene().name == "sc_staatsloterijBrief_closeup")
             {
                 deleteBrief.staatsloterijLetter = true;
-                SceneManager.LoadScene("sc_correctletterchoice");
+                SceneManager.LoadScene("sc_correctletterchoice1");
             }
             if (SceneManager.GetActiveScene().name == "sc_gemeenteBrief_closeup")
             {
