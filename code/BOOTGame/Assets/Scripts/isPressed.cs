@@ -90,6 +90,10 @@ public class isPressed : MonoBehaviour
             {
                 SceneManager.LoadScene("sc_street");
             }
+            if (SceneManager.GetActiveScene().name == "sc_phonecallFeedback")
+            {
+                SceneManager.LoadScene("sc_gemeentebrief_choices");
+            }
 
         }
 
