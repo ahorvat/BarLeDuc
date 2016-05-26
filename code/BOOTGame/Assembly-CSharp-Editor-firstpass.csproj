@@ -49,8 +49,17 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Plugins\Editor\VSCode.cs" />
+     <None Include="Assets\Texts\BuurvrouwText.txt" />
+     <None Include="Assets\Texts\Tutorial.txt" />
+     <None Include="Assets\Texts\BuurvrouwDialogue.txt" />
      <None Include="Assets\Texts\StartScene1.txt" />
+     <None Include="Assets\Texts\GoogleText.txt" />
      <None Include="Assets\Texts\Dialoguetest.txt" />
+     <None Include="Assets\Texts\Phonecall.txt" />
+     <None Include="Assets\Texts\BriefCloseup.txt" />
+     <None Include="Assets\Texts\GoogleGebruiken.txt" />
+     <None Include="Assets\Texts\GemeentebriefChoices.txt" />
+     <None Include="Assets\Texts\BrievenCloseup.txt" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
