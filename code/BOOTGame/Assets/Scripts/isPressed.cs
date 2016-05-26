@@ -41,7 +41,7 @@ public class isPressed : MonoBehaviour
             }
             if (SceneManager.GetActiveScene().name == "sc_google_closeup")
             {
-                SceneManager.LoadScene("sc_incorrectletterchoice");
+                SceneManager.LoadScene("sc_googleFeedback");
             }
 
         }
@@ -94,7 +94,10 @@ public class isPressed : MonoBehaviour
             {
                 SceneManager.LoadScene("sc_gemeentebrief_choices");
             }
-
+            if (SceneManager.GetActiveScene().name == "sc_googleFeedback")
+            {
+                SceneManager.LoadScene("sc_gemeentebrief_choices");
+            }
         }
 
 
