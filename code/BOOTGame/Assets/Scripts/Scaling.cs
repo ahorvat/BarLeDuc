@@ -35,9 +35,11 @@ public class Scaling : MonoBehaviour
             yield break;
         }
 
-        if (player.transform.position.x < minXpos || player.transform.position.x > maxXpos)
-        {
-            yield break;
+        if (player) {
+            if (player.transform.position.x < minXpos || player.transform.position.x > maxXpos)
+            {
+                yield break;
+            }   
         }
 
         //Set scaling on true so the scaling starts.
