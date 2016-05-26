@@ -353,7 +353,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Deze brief is wel belangrijk!
+  m_Text: 'Deze brief is niet belangrijk
+
+    het gaat om reclame!'
 --- !u!222 &431570135
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -498,7 +500,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -57, y: -181}
+  m_AnchoredPosition: {x: -52, y: -177}
   m_SizeDelta: {x: 160.01, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &741839549
