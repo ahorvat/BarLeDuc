@@ -190,6 +190,11 @@ Prefab:
       propertyPath: stopPlayerMovement
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
+      propertyPath: bg_buurvrouw
+      value: 
+      objectReference: {fileID: 21300000, guid: a107af5b18d845f458356e1a9fbacc0d,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9e996928807af0458ad496f479c5594, type: 2}
   m_IsPrefabParent: 0

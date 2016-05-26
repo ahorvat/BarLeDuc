@@ -83,16 +83,16 @@
     <Compile Include="Assets\Scripts\Rotation.cs" />
     <Compile Include="Assets\Scripts\Scaling.cs" />
     <Compile Include="Assets\Scripts\SceneSwitch.cs" />
+    <Compile Include="Assets\Scripts\TBM_Extend.cs" />
     <Compile Include="Assets\Scripts\TextBoxManager.cs" />
     <Compile Include="Assets\Scripts\bouncingTest.cs" />
+    <Compile Include="Assets\Scripts\changingSprites.cs" />
     <Compile Include="Assets\Scripts\changingSpritesLeftArrow.cs" />
     <Compile Include="Assets\Scripts\changingSpritesRightArrow.cs" />
     <Compile Include="Assets\Scripts\isPressed.cs" />
     <Compile Include="Assets\Scripts\mouseClick.cs" />
     <Compile Include="Assets\Scripts\zOD_ActivateTekstAtLine.cs" />
     <Compile Include="Assets\Scripts\zOD_TextBoxManager.cs" />
-    <Compile Include="Assets\Sprites\TBM_Extend.cs" />
-    <Compile Include="Assets\Sprites\changingSprites.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Texts\BriefCloseup.txt" />
