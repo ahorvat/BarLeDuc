@@ -14,7 +14,7 @@ public class incorrectPhonecall : MonoBehaviour {
 	void Update () {
         if (!dialogueManager.isActive)
         {
-            SceneManager.LoadScene("sc_buurvrouwFeedback");
+            SceneManager.LoadScene("sc_phonecallFeedback");
         }
 	}
 }

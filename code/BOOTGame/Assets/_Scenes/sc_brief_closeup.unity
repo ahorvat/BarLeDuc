@@ -517,7 +517,6 @@ GameObject:
   - 4: {fileID: 828761880}
   - 212: {fileID: 828761879}
   - 114: {fileID: 828761877}
-  - 114: {fileID: 828761878}
   - 61: {fileID: 828761881}
   - 114: {fileID: 828761882}
   m_Layer: 0
@@ -538,21 +537,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9822f0713009c9e44853eb17379b6f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &828761878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 828761876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e9137fdc89c0c74b98c671e7cc1e34c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 1.5
-  minXpos: 0
-  maxXpos: 0
-  scaleAmount: 0
 --- !u!212 &828761879
 SpriteRenderer:
   m_ObjectHideFlags: 0
