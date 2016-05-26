@@ -2,6 +2,6 @@ Klik op het scherm om te praten!
 Welkom in de game!
 Dit bent u.
 U kunt bewegen door op de zijkanten van het scherm te drukken.
-U kunt door in het midden van het scherm te drukken interacten.
+U kunt door in het midden van het scherm te drukken praten.
 Probeer het uit!
 Loop naar de brief en klik erop.
