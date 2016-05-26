@@ -32,9 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/sc_brief_home_buurvrouw.unity
   - enabled: 1
-    path: Assets/_Scenes/sc_incorrectletterchoice1.unity
+    path: Assets/_Scenes/Feedback Scenes/sc_incorrectletterchoice1.unity
   - enabled: 1
-    path: Assets/_Scenes/sc_correctletterchoice1.unity
+    path: Assets/_Scenes/Feedback Scenes/sc_correctletterchoice1.unity
   - enabled: 1
     path: Assets/_Scenes/sc_google_closeup.unity
   - enabled: 1
@@ -43,5 +43,3 @@ EditorBuildSettings:
     path: Assets/_Scenes/sc_brief_home_phonecall.unity
   - enabled: 1
     path: Assets/_Scenes/sc_brief_home_google.unity
-  - enabled: 1
-    path: Assets/_Scenes/Feedback Scenes/sc_incorrectPhonecall.unity
