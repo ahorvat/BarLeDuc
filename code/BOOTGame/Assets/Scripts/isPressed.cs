@@ -98,6 +98,10 @@ public class isPressed : MonoBehaviour
             {
                 SceneManager.LoadScene("sc_gemeentebrief_choices");
             }
+            if (SceneManager.GetActiveScene().name == "sc_buurvrouwFeedback")
+            {
+                SceneManager.LoadScene("_sc_initalize_persistence");
+            }
         }
 
 

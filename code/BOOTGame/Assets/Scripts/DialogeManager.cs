@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogeManager : MonoBehaviour
 {
@@ -103,6 +104,10 @@ public class DialogeManager : MonoBehaviour
             buurvrouwText.text = textLines[currentLine];
         }
 
+        if (currentLine == endAtLine && SceneManager.GetActiveScene().name == "sc_street")
+        {
+            SceneManager.LoadScene("sc_buurvrouwFeedback");
+        }
     }
     void Youssef()
     {
