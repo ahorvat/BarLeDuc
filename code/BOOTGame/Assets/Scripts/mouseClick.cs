@@ -6,7 +6,7 @@ public class mouseClick : MonoBehaviour {
 
 
     //use the OnMouseDown method of Unity to check whether the mouseposition is on the object and the mouse is clicked while its on the object.
-    void OnMouseDown() {
+    void OnMouseUp() {
 
         //check which letter is clicked and load scenes of the closeup of the clicked letter.
         if (gameObject.tag == "gemeenteLetter")

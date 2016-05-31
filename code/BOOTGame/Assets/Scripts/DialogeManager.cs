@@ -80,7 +80,7 @@ public class DialogeManager : MonoBehaviour
         //zodra er enter word gedrukt word de volgende line ingeladen
         if (textBox.activeInHierarchy)
         {
-            if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonUp(0))
             {
                 if (KeepEndLne && currentLine == endAtLine)
                 {
