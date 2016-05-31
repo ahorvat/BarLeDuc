@@ -111,7 +111,7 @@ public class isPressed : MonoBehaviour
 
         else if (gameObject.tag == "InternetIcon")
         {
-
+            SceneManager.LoadScene("sc_internet_start");
         }
     }
 }

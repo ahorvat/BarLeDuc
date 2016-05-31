@@ -310,7 +310,7 @@ Prefab:
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: textFile
       value: 
-      objectReference: {fileID: 4900000, guid: 58ffc22313f428849a35a46ce050d205, type: 3}
+      objectReference: {fileID: 4900000, guid: 4e2eae2c2b016014096fca73de0cef59, type: 3}
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: yousef_lines.Array.data[2]
       value: 1
@@ -633,6 +633,7 @@ GameObject:
   - 4: {fileID: 1998730528}
   - 212: {fileID: 1998730527}
   - 114: {fileID: 1998730526}
+  - 61: {fileID: 1998730529}
   m_Layer: 0
   m_Name: InternetIcon
   m_TagString: InternetIcon
@@ -694,6 +695,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!61 &1998730529
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1998730525}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!114 &2046060354 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11492848, guid: c9229d591b7b60a459276988ffabae50,

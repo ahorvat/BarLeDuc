@@ -32,6 +32,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Scenario 1/sc_gemeenteBrief_choices.unity
   - enabled: 1
+    path: Assets/_Scenes/Scenario 2/sc_internet_start.unity
+  - enabled: 1
     path: Assets/_Scenes/Scenario 1/sc_brief_home_buurvrouw.unity
   - enabled: 1
     path: Assets/_Scenes/Feedback Scenes/sc_incorrectletterchoice1.unity
