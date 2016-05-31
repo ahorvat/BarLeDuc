@@ -156,6 +156,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 SceneManager.LoadScene("sc_google_closeup");
             }
+            if (col.gameObject.tag == "digidBrief")
+            {
+                SceneManager.LoadScene("sc_DigiDBrief");
+            }
         }
     }
 
