@@ -104,7 +104,15 @@ public class isPressed : MonoBehaviour
             }
         }
 
+        else if (gameObject.tag == "addressBar")
+        {
 
+        }
+
+        else if (gameObject.tag == "InternetIcon")
+        {
+
+        }
     }
 }
 
