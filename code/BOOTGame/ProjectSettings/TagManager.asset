@@ -27,6 +27,7 @@ TagManager:
   - textButtons
   - InternetIcon
   - adressBar
+  - digidBrief
   layers:
   - Default
   - TransparentFX
