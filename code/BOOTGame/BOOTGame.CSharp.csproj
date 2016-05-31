@@ -101,6 +101,8 @@
     <None Include="Assets\Texts\Scenario 1\Phonecall.txt" />
     <None Include="Assets\Texts\Scenario 1\StartScene1.txt" />
     <None Include="Assets\Texts\Scenario 1\Tutorial.txt" />
+    <None Include="Assets\Texts\Scenario 2\digiD_computer_text.txt" />
+    <None Include="Assets\Texts\Scenario 2\digiD_home_text 1.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_home_text.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

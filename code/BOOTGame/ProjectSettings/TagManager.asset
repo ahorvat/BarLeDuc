@@ -25,6 +25,7 @@ TagManager:
   - arrow
   - Door
   - textButtons
+  - InternetIcon
   layers:
   - Default
   - TransparentFX
