@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:code/BOOTGame/Assets/Sprites/scenario digid.meta
 guid: 24a3ff88d66a856408633ace541d993f
 folderAsset: yes
 timeCreated: 1464696930
+=======
+guid: c101ab56db9a2476ca0dc0a1390dd863
+folderAsset: yes
+timeCreated: 1464696840
+>>>>>>> Stashed changes:code/BOOTGame/Assets/Sprites/scenario digid.meta
 licenseType: Free
 DefaultImporter:
   userData: 

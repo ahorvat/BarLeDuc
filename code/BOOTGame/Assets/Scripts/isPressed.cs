@@ -15,6 +15,7 @@ public class isPressed : MonoBehaviour
         textBoxManager =  FindObjectOfType<TextBoxManager>();
         deleteBrief = FindObjectOfType<DeleteBrief>();
         dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
+
     }
 
 
@@ -24,6 +25,7 @@ public class isPressed : MonoBehaviour
         // check if the gameobject that the mouse clicks on is the correctbutton.
         if (gameObject.tag == "correctButton")
         {
+			
             //switching scenes between different letters.
             if (SceneManager.GetActiveScene().name == "sc_staatsloterijBrief_closeup")
             {
@@ -36,7 +38,10 @@ public class isPressed : MonoBehaviour
             }
 			if (SceneManager.GetActiveScene().name == "sc_ABNBrief_closeup")
             {
-                deleteBrief.abnBrief = true;
+				deleteBrief.abnBrief = true;
+				AudioSource audio = GetComponent<AudioSource>();
+				audio.Play();
+				audio.Play(44100);
                 SceneManager.LoadScene("sc_correctletterchoice");
             }
             if (SceneManager.GetActiveScene().name == "sc_google_closeup")

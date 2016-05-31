@@ -75,6 +75,7 @@
      <None Include="Assets\Texts\Scenario 1\Tutorial.txt" />
      <None Include="Assets\Texts\Scenario 1\BuurvrouwDialogue.txt" />
      <None Include="Assets\Texts\Scenario 1\StartScene1.txt" />
+     <None Include="Assets\Texts\Scenario 2\digiD_receivingLetter.txt" />
      <None Include="Assets\Texts\Scenario 1\GoogleText.txt" />
      <None Include="Assets\Texts\Scenario 1\Dialoguetest.txt" />
      <None Include="Assets\Texts\Scenario 1\Phonecall.txt" />
