@@ -9,14 +9,14 @@ public class isPressed : MonoBehaviour
     public DeleteBrief deleteBrief;
     private TextBoxManager textBoxManager;
     private GameObject dialogueBox;
-    public AudioSource audio;
+  
 
     void Start()
     {
         textBoxManager =  FindObjectOfType<TextBoxManager>();
         deleteBrief = FindObjectOfType<DeleteBrief>();
         dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
-        AudioSource audio = GetComponent<AudioSource>();
+      
     }
 
 
@@ -39,9 +39,10 @@ public class isPressed : MonoBehaviour
             }
 			if (SceneManager.GetActiveScene().name == "sc_ABNBrief_closeup")
             {
-                deleteBrief.abnBrief = true;
-				audio.Play(44100);
+                
                 SceneManager.LoadScene("sc_correctletterchoice");
+				deleteBrief.abnBrief = true;
+
             }
             if (SceneManager.GetActiveScene().name == "sc_google_closeup")
             {
