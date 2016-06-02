@@ -9,21 +9,24 @@ public class isPressed : MonoBehaviour
     public DeleteBrief deleteBrief;
     private TextBoxManager textBoxManager;
     private GameObject dialogueBox;
+  
 
     void Start()
     {
         textBoxManager =  FindObjectOfType<TextBoxManager>();
         deleteBrief = FindObjectOfType<DeleteBrief>();
         dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
+      
     }
 
 
     //use the OnMouseDown method of Unity to check whether the mouseposition is on the object and the mouse is clicked while its on the object.
-    void OnMouseDown()
+    void OnMouseUp()
     {
         // check if the gameobject that the mouse clicks on is the correctbutton.
         if (gameObject.tag == "correctButton")
         {
+			
             //switching scenes between different letters.
             if (SceneManager.GetActiveScene().name == "sc_staatsloterijBrief_closeup")
             {
@@ -36,8 +39,10 @@ public class isPressed : MonoBehaviour
             }
 			if (SceneManager.GetActiveScene().name == "sc_ABNBrief_closeup")
             {
-                deleteBrief.abnBrief = true;
+                
                 SceneManager.LoadScene("sc_correctletterchoice");
+				deleteBrief.abnBrief = true;
+
             }
             if (SceneManager.GetActiveScene().name == "sc_google_closeup")
             {
@@ -111,7 +116,7 @@ public class isPressed : MonoBehaviour
 
         else if (gameObject.tag == "InternetIcon")
         {
-
+            SceneManager.LoadScene("sc_internet_start");
         }
     }
 }

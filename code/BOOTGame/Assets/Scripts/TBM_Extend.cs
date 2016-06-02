@@ -17,7 +17,7 @@ public class TBM_Extend : zOD_TextBoxManager {
         theText.text = textLines[currentLine];
         if (textBox.activeInHierarchy)
         {
-            if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonUp(0))
             {
                 currentLine += 1;
             }

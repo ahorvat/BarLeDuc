@@ -46,7 +46,7 @@ public class Pause : MonoBehaviour
 		if (paused) {
             if (Player != null)
             {
-                Player.canMove = false;
+                Player.canMove = true;
             }
             paused = false;	
 		}
@@ -55,7 +55,7 @@ public class Pause : MonoBehaviour
 			paused = true;
             if (Player != null)
             {
-                Player.canMove = true;
+                Player.canMove = false;
             }
         }
 
