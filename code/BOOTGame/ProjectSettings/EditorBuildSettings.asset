@@ -10,6 +10,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/sc_menu.unity
   - enabled: 1
+    path: Assets/_Scenes/sc_scenario_kiezen.unity
+  - enabled: 1
     path: Assets/_Scenes/Scenario 1/sc_brief_home.unity
   - enabled: 1
     path: Assets/_Scenes/Scenario 1/sc_street.unity
@@ -55,3 +57,5 @@ EditorBuildSettings:
     path: Assets/_Scenes/Scenario 1/sc_brief_home_phonecall.unity
   - enabled: 1
     path: Assets/_Scenes/Scenario 1/sc_brief_home_google.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 2/sc_digiD_home.unity

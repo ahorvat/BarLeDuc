@@ -86,14 +86,14 @@ public class Pause : MonoBehaviour
     //
     public void ScenarioOne()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("sc_brief_home");
         ScenarioUI.SetActive(false);
     }
 
     //
     public void ScenarioTwo()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("sc_digiD_home");
         ScenarioUI.SetActive(false);
     }
 
