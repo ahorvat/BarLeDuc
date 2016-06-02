@@ -24,7 +24,7 @@ public class DeleteBrief : MonoBehaviour {
             Destroy(GameObject.Find("staatsloterijLetter"));
         }
 
-        if(gemeenteBrief && abnBrief && staatsloterijLetter)
+        if(gemeenteBrief && abnBrief && staatsloterijLetter && SceneManager.GetActiveScene().name == "sc_brief_closeup")
         {
             SceneManager.LoadScene("sc_gemeenteBrief_choices");
             Destroy(gameObject);
