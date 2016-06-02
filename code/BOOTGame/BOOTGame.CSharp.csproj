@@ -112,6 +112,7 @@
     <None Include="Assets\Texts\Scenario 2\digiD_home_text.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_internet_start.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_receivingLetter.txt" />
+    <None Include="Assets\Texts\ScenarioKiezen.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
