@@ -58,12 +58,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -107,6 +101,13 @@
     <None Include="Assets\Texts\Scenario 1\Phonecall.txt" />
     <None Include="Assets\Texts\Scenario 1\StartScene1.txt" />
     <None Include="Assets\Texts\Scenario 1\Tutorial.txt" />
+    <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap1.txt" />
+    <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap2.txt" />
+    <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap3.txt" />
+    <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap4.txt" />
+    <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap5.txt" />
+    <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap6.txt" />
+    <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap7.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_computer_text.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_home_text.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_internet_start.txt" />
