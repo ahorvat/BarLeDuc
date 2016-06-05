@@ -107,6 +107,7 @@
     <None Include="Assets\Texts\Scenario 1\Phonecall.txt" />
     <None Include="Assets\Texts\Scenario 1\StartScene1.txt" />
     <None Include="Assets\Texts\Scenario 1\Tutorial.txt" />
+    <None Include="Assets\Texts\Scenario 2\digiD_BSNzoeken.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap1.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap2.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap3.txt" />
