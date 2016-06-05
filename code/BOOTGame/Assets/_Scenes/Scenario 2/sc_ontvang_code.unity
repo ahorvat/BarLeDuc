@@ -556,6 +556,7 @@ GameObject:
   - 212: {fileID: 1221841263}
   - 114: {fileID: 1221841262}
   - 222: {fileID: 1221841261}
+  - 114: {fileID: 1221841264}
   m_Layer: 0
   m_Name: RightArrow
   m_TagString: Untagged
@@ -633,6 +634,21 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1221841264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1221841259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9137fdc89c0c74b98c671e7cc1e34c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.75
+  minXpos: -1000
+  maxXpos: 9
+  scaleAmount: 1.5
 --- !u!1001 &1310674783
 Prefab:
   m_ObjectHideFlags: 0
@@ -714,7 +730,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: stopPlayerMovement
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: yousef_lines.Array.data[4]
@@ -730,7 +746,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: KeepEndLne
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9e996928807af0458ad496f479c5594, type: 2}
@@ -876,6 +892,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1534032077}
   - 212: {fileID: 1534032076}
+  - 114: {fileID: 1534032078}
   m_Layer: 0
   m_Name: DigiDLetter
   m_TagString: digidBrief
@@ -925,6 +942,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!114 &1534032078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1534032075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9137fdc89c0c74b98c671e7cc1e34c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1
+  minXpos: -84.7
+  maxXpos: 209.7
+  scaleAmount: 1.5
 --- !u!1 &1682391870 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 177814, guid: c9229d591b7b60a459276988ffabae50, type: 2}
@@ -1127,8 +1159,8 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 20.58, y: 1.02}
-  m_SizeDelta: {x: 3.22, y: 27.72}
+  m_AnchoredPosition: {x: 20.63, y: -2.24}
+  m_SizeDelta: {x: 3.22, y: 4.08}
   m_Pivot: {x: 0.5, y: 0.5000001}
 --- !u!1001 &2092776204
 Prefab:
@@ -1271,7 +1303,6 @@ GameObject:
   - 212: {fileID: 2130003749}
   - 114: {fileID: 2130003748}
   - 222: {fileID: 2130003747}
-  - 114: {fileID: 2130003746}
   m_Layer: 0
   m_Name: LeftArrow
   m_TagString: Untagged
@@ -1297,21 +1328,6 @@ RectTransform:
   m_AnchoredPosition: {x: -6.3, y: -4.7}
   m_SizeDelta: {x: 1.86, y: 1.18}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2130003746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2130003744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e9137fdc89c0c74b98c671e7cc1e34c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 0.75
-  minXpos: 9
-  maxXpos: 10000
-  scaleAmount: 1.5
 --- !u!222 &2130003747
 CanvasRenderer:
   m_ObjectHideFlags: 0
