@@ -28,6 +28,8 @@ TagManager:
   - InternetIcon
   - adressBar
   - digidBrief
+  - pas
+  - dialogueManager
   layers:
   - Default
   - TransparentFX
