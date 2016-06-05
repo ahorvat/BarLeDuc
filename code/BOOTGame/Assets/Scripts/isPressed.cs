@@ -107,6 +107,10 @@ public class isPressed : MonoBehaviour
             {
                 SceneManager.LoadScene("_sc_initalize_persistence");
             }
+            if (SceneManager.GetActiveScene().name == "sc_BSN_Feedback")
+            {
+                SceneManager.LoadScene("sc_DigiDStap3");
+            }
         }
 
         else if (gameObject.tag == "addressBar")

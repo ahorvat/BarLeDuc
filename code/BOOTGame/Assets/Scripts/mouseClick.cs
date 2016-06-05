@@ -32,7 +32,7 @@ public class mouseClick : MonoBehaviour {
         {
             if (dialogueScript.currentLine == dialogueScript.endAtLine)
             {
-                SceneManager.LoadScene("sc_DigiDStap3");
+                SceneManager.LoadScene("sc_BSN_Feedback");
             }
            
         }
