@@ -99,7 +99,7 @@ GameObject:
   - 114: {fileID: 115243009}
   m_Layer: 0
   m_Name: ABNLetter
-  m_TagString: ABNLetter
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,7 +154,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 820a4d0e9acb9af428db1d342730bba6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 73b5a590f5b60485a811706df2d1a900, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -166,7 +166,7 @@ Transform:
   m_GameObject: {fileID: 115243007}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.19, y: -3.29, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 1, y: 1, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -203,7 +203,7 @@ GameObject:
   - 114: {fileID: 242549638}
   m_Layer: 0
   m_Name: staatsloterijLetter
-  m_TagString: staatsloterijLetter
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -258,7 +258,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 765ed6bbbf7b80543a44f7a4bba2b5f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 73b5a590f5b60485a811706df2d1a900, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -270,7 +270,7 @@ Transform:
   m_GameObject: {fileID: 242549636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.08, y: -3.31, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -521,7 +521,7 @@ GameObject:
   - 114: {fileID: 828761882}
   m_Layer: 0
   m_Name: gemeenteLetter
-  m_TagString: gemeenteLetter
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -563,7 +563,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4d77af88cd30c1e4385d05ddc8a7633a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 73b5a590f5b60485a811706df2d1a900, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -575,7 +575,7 @@ Transform:
   m_GameObject: {fileID: 828761876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.08, y: -3.29, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 1, y: 1, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -697,7 +697,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: yousef_lines.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 405048, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: m_LocalPosition.x
@@ -750,7 +750,7 @@ Prefab:
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: textFile
       value: 
-      objectReference: {fileID: 4900000, guid: 5d72444f91c01f942b02741bc55aad7e, type: 3}
+      objectReference: {fileID: 4900000, guid: bc0cf7d731116cf438072dae9df4d8ab, type: 3}
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: yousef_lines.Array.data[2]
       value: 1
