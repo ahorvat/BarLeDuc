@@ -115,6 +115,7 @@
     <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap5.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap6.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap7.txt" />
+    <None Include="Assets\Texts\Scenario 2\digiD_activeren_stap8.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_brief_closeup.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_computer_text.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_home_text.txt" />

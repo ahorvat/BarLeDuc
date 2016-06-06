@@ -28,13 +28,16 @@ public class mouseClick : MonoBehaviour {
         {
             SceneManager.LoadScene("sc_staatsloterijBrief_closeup");
         }
-        else if (gameObject.tag == "pas")
+        if (SceneManager.GetActiveScene().name == "sc_BSN_zoeken")
         {
-            if (dialogueScript.currentLine == dialogueScript.endAtLine)
+            if (gameObject.tag == "pas" && dialogueScript.currentLine == dialogueScript.endAtLine)
             {
-                SceneManager.LoadScene("sc_BSN_Feedback");
+                SceneManager.LoadScene("sc_BSN_correct");
             }
-           
+            else if(gameObject.tag != "pas" && dialogueScript.currentLine == dialogueScript.endAtLine)
+            {
+                SceneManager.LoadScene("sc_BSN_incorrect");
+            }
         }
 	}
     
