@@ -107,9 +107,13 @@ public class isPressed : MonoBehaviour
             {
                 SceneManager.LoadScene("_sc_initalize_persistence");
             }
-            if (SceneManager.GetActiveScene().name == "sc_BSN_Feedback")
+            if (SceneManager.GetActiveScene().name == "sc_BSN_correct")
             {
                 SceneManager.LoadScene("sc_DigiDStap3");
+            }
+            if (SceneManager.GetActiveScene().name == "sc_BSN_incorrect")
+            {
+                SceneManager.LoadScene("sc_BSN_zoeken");
             }
         }
 
