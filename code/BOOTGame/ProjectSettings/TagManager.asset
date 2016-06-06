@@ -30,6 +30,8 @@ TagManager:
   - digidBrief
   - pas
   - dialogueManager
+  - leftCamBorder
+  - rightCamBorder
   layers:
   - Default
   - TransparentFX

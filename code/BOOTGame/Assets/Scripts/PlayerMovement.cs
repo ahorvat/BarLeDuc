@@ -97,7 +97,12 @@ public class PlayerMovement : MonoBehaviour
                 transform.position -= new Vector3(speed, 0, 0);
                 GetComponent<SpriteRenderer>().flipX = true;      
             }
-        }     
+        }
+        while (speed < 0.2f)
+        {
+            speed += 0.0001f;
+        }
+
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -109,6 +114,13 @@ public class PlayerMovement : MonoBehaviour
             rightArrow.SetActive(false);
             textButtons.SetActive(false);
         }
+        //speed = 0.2f;
+        //if (col.gameObject.tag == "leftCamBorder")
+        //{
+        //    speed = 0;
+        //    transform.position = new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z);
+        //}
+        //speed = 0.2f;
     }
 
     void OnTriggerExit2D(Collider2D col)
@@ -126,7 +138,17 @@ public class PlayerMovement : MonoBehaviour
     //OnTriggerStay checks if the gameobject(player) is standing on a trigger and isnt moving.
     void OnTriggerStay2D(Collider2D col)
     {
-        
+        if (col.gameObject.tag == "leftCamBorder")
+        {
+            speed = 0;
+            transform.position = new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z);
+        }
+        if (col.gameObject.tag == "rightCamBorder")
+        {
+            speed = 0;
+            transform.position = new Vector3(transform.position.x - 0.1f, transform.position.y, transform.position.z);
+        }
+
         // Debug.Log("Collide");
         //for interaction with object, we check if the player touches in the middle of the screen, or touches right of the left inputbox and left of the right inputbox.
         if (Input.GetMouseButtonDown(0) && inputboxmiddle)
