@@ -30,11 +30,11 @@ public class mouseClick : MonoBehaviour {
         }
         if (SceneManager.GetActiveScene().name == "sc_BSN_zoeken")
         {
-            if (gameObject.tag == "pas")
+            if (gameObject.tag == "pas" && dialogueScript.currentLine == dialogueScript.endAtLine)
             {
                 SceneManager.LoadScene("sc_BSN_correct");
             }
-            else
+            else if(gameObject.tag != "pas" && dialogueScript.currentLine == dialogueScript.endAtLine)
             {
                 SceneManager.LoadScene("sc_BSN_incorrect");
             }

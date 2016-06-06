@@ -16,7 +16,7 @@ public class isPressed : MonoBehaviour
         textBoxManager =  FindObjectOfType<TextBoxManager>();
         deleteBrief = FindObjectOfType<DeleteBrief>();
         dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
-      
+
     }
 
 
