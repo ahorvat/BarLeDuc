@@ -9,6 +9,7 @@ public class isPressed : MonoBehaviour
     public DeleteBrief deleteBrief;
     private TextBoxManager textBoxManager;
     private GameObject dialogueBox;
+    private GameObject player;
   
 
     void Start()
@@ -16,6 +17,7 @@ public class isPressed : MonoBehaviour
         textBoxManager =  FindObjectOfType<TextBoxManager>();
         deleteBrief = FindObjectOfType<DeleteBrief>();
         dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
+        player = GameObject.FindGameObjectWithTag("Player");
 
     }
 
@@ -94,6 +96,7 @@ public class isPressed : MonoBehaviour
             if (SceneManager.GetActiveScene().name == "sc_incorrectchoice_dialogue")
             {
                 SceneManager.LoadScene("sc_street");
+                player.transform.position = new Vector3(-10, player.transform.position.y, player.transform.position.z);
             }
             if (SceneManager.GetActiveScene().name == "sc_phonecallFeedback")
             {

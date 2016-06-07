@@ -117,6 +117,7 @@ public class PlayerMovement : MonoBehaviour
             leftArrow.SetActive(false);
             rightArrow.SetActive(false);
             textButtons.SetActive(false);
+            canMove = false;
         }
 
     }
@@ -129,6 +130,7 @@ public class PlayerMovement : MonoBehaviour
             leftArrow.SetActive(true);
             rightArrow.SetActive(true);
             textButtons.SetActive(true);
+            canMove = true;
         }
 
     }
