@@ -353,11 +353,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Mike kon niet helpen met de
-
-    brief via de telefoon omdat hij
-
-    de brief niet kon zien.'
+  m_Text: "Mike kon niet via de telefoon helpen met\n de brief omdat hij de brief
+    niet kon zien."
 --- !u!222 &431570135
 CanvasRenderer:
   m_ObjectHideFlags: 0
