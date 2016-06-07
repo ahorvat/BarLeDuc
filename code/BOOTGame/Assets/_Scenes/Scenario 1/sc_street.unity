@@ -615,7 +615,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: yousef_lines.Array.data[9]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9e996928807af0458ad496f479c5594, type: 2}
@@ -1417,7 +1417,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Wil je de buurvrouw\n om hulp vragen?"
+  m_Text: Buurvrouw om hulp vragen?
 --- !u!222 &1382991529
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1597,7 +1597,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -2306,7 +2306,7 @@ MonoBehaviour:
     m_LineSpacing: -1.34
   m_Text: 'Ik heb deze brief van de post gekregen maar begrijp deze niet.
 
-    Kan je mij helpen?'
+    Goedemiddag, kun je mij helpen?'
 --- !u!222 &2103032222
 CanvasRenderer:
   m_ObjectHideFlags: 0
