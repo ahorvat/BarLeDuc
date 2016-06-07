@@ -61,16 +61,22 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AttachDialogeManager.cs" />
+    <Compile Include="Assets\PhonecallChangePlayerSprite.cs" />
+    <Compile Include="Assets\Scripts\AttachDialogeManager.cs" />
     <Compile Include="Assets\Scripts\Bouncing.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\DeleteBrief.cs" />
     <Compile Include="Assets\Scripts\DialogeManager.cs" />
     <Compile Include="Assets\Scripts\Goto_Start.cs" />
     <Compile Include="Assets\Scripts\LoadOnClick.cs" />
-    <Compile Include="Assets\Scripts\OutOfScreen.cs" />
     <Compile Include="Assets\Scripts\Pause.cs" />
     <Compile Include="Assets\Scripts\Persistence.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
