@@ -37,6 +37,11 @@ public class DialogeManager : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerMovement>();
+
+        image = GameObject.Find("Image").GetComponent<Image>();
+        yousefText = GameObject.Find("Youssef Text").GetComponent<Text>();
+        buurvrouwText = GameObject.Find("Vrouw Text").GetComponent<Text>();
+
         //als de tekst niet leeg is dan word de tekst opgesplits per enter
         if (textFile != null)
         {
