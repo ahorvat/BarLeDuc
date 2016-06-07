@@ -2,7 +2,8 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class SceneSwitch : MonoBehaviour {
+public class SceneSwitch : MonoBehaviour
+{
     private GameObject dialogueManager;
     private DialogeManager dialogueScript;
 
@@ -15,15 +16,29 @@ public class SceneSwitch : MonoBehaviour {
 
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "sc_DigiDStap6")
+        if (dialogueScript.currentLine == dialogueScript.endAtLine && Input.GetMouseButtonUp(0))
         {
-            if (dialogueScript.currentLine == dialogueScript.endAtLine && Input.GetMouseButtonUp(0))
+            if (SceneManager.GetActiveScene().name == "sc_DigiDStap6")
             {
                 SceneManager.LoadScene("sc_ontvang_code");
             }
+
+            if (SceneManager.GetActiveScene().name == "sc_DigiDStap5")
+            {
+                SceneManager.LoadScene("sc_DigiDStap6");
+            }
+            if (SceneManager.GetActiveScene().name == "sc_DigiDStap8")
+            {
+                SceneManager.LoadScene("sc_DigiDStap9");
+            }
+            if (SceneManager.GetActiveScene().name == "sc_DigiDStap9")
+            {
+                SceneManager.LoadScene("sc_FeedBack_Scene");
+            }
         }
+
     }
-	public void sc_brief_home_google()
+    public void sc_brief_home_google()
     {
         SceneManager.LoadScene("sc_brief_home_google");
         return;

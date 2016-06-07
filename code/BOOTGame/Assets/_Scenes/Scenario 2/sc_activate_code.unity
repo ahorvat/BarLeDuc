@@ -455,6 +455,7 @@ MonoBehaviour:
   inputboxmiddle: 0
   inputBoxLeft: 250
   inputBoxRight: 600
+  inputBoxY: 0
   canMove: 1
 --- !u!114 &1028872574
 MonoBehaviour:
@@ -954,6 +955,25 @@ RectTransform:
   m_AnchoredPosition: {x: -3.79, y: 0.27}
   m_SizeDelta: {x: 6.69, y: 7.03}
   m_Pivot: {x: 0.5, y: 0.5000001}
+--- !u!1 &2037339351 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 163818, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+  m_PrefabInternal: {fileID: 2040585735}
+--- !u!114 &2037339356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037339351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9137fdc89c0c74b98c671e7cc1e34c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.75
+  minXpos: 8
+  maxXpos: 1000
+  scaleAmount: 1.5
 --- !u!1001 &2040585735
 Prefab:
   m_ObjectHideFlags: 0
@@ -993,7 +1013,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11401132, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &2092776204
