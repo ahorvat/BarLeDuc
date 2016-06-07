@@ -114,13 +114,7 @@ public class PlayerMovement : MonoBehaviour
             rightArrow.SetActive(false);
             textButtons.SetActive(false);
         }
-        //speed = 0.2f;
-        //if (col.gameObject.tag == "leftCamBorder")
-        //{
-        //    speed = 0;
-        //    transform.position = new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z);
-        //}
-        //speed = 0.2f;
+
     }
 
     void OnTriggerExit2D(Collider2D col)

@@ -119,6 +119,10 @@ public class isPressed : MonoBehaviour
             {
                 SceneManager.LoadScene("_sc_initalize_persistence");
             }
+            if (SceneManager.GetActiveScene().name == "sc_DigiDBrief")
+            {
+                SceneManager.LoadScene("sc_activate_code");
+            }
         }
 
         else if (gameObject.tag == "addressBar")
