@@ -40,18 +40,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  textBox: {fileID: 0}
+  textBox: {fileID: 177814, guid: c9229d591b7b60a459276988ffabae50, type: 2}
   image: {fileID: 0}
   bg_yousef: {fileID: 21300000, guid: ae5fcaca200c54946acf252fa1cdf17b, type: 3}
   bg_buurvrouw: {fileID: 21300000, guid: e5a9f0c8ff296794cba6cae04bae1bf4, type: 3}
-  yousef_lines: 0101000001
+  yousef_lines: 01
   yousefText: {fileID: 0}
   buurvrouwText: {fileID: 0}
-  textFile: {fileID: 4900000, guid: 80b1484ae37120f44b57d4a8832d174b, type: 3}
+  textFile: {fileID: 4900000, guid: 35f8eedb393b8c94c9e24027d4b9380f, type: 3}
   textLines: []
   currentLine: 0
   endAtLine: 0
   isActive: 1
+  keepEndLine: 1
   stopPlayerMovement: 0
 --- !u!1001 &100100000
 Prefab:
