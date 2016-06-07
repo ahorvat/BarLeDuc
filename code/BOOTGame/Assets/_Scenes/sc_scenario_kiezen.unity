@@ -164,10 +164,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 146848, guid: c9229d591b7b60a459276988ffabae50, type: 2}
-      propertyPath: m_Name
-      value: ContinueDialogueButton
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9229d591b7b60a459276988ffabae50, type: 2}
   m_IsPrefabParent: 0
@@ -642,7 +638,7 @@ Prefab:
       objectReference: {fileID: 1044336344}
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: keepEndLine
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9e996928807af0458ad496f479c5594, type: 2}
@@ -861,6 +857,7 @@ MonoBehaviour:
   inputboxmiddle: 0
   inputBoxLeft: 250
   inputBoxRight: 600
+  inputBoxY: 0
   canMove: 1
 --- !u!114 &1030351233
 MonoBehaviour:
@@ -1094,25 +1091,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1460354525}
---- !u!1 &1542124124 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 146848, guid: c9229d591b7b60a459276988ffabae50, type: 2}
-  m_PrefabInternal: {fileID: 53172528}
---- !u!114 &1542124130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1542124124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e9137fdc89c0c74b98c671e7cc1e34c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 1.5
-  minXpos: -1000
-  maxXpos: 1000
-  scaleAmount: 1.2
 --- !u!1 &1678861097
 GameObject:
   m_ObjectHideFlags: 0
