@@ -1,3 +1,4 @@
 Nu gaan we naar stap 3.
-Ik kan hier mijn accountgegevens invullen.
-Klik op "Volgende" om verder te gaan.
+Hier moet ik mijn gegevens invullen.
+Dit kan ik allemaal zelf.
+Klik op volgende om verder te gaan naar stap 4.

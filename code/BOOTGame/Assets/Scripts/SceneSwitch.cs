@@ -35,6 +35,10 @@ public class SceneSwitch : MonoBehaviour
             {
                 SceneManager.LoadScene("sc_FeedBack_Scene");
             }
+            if (SceneManager.GetActiveScene().name == "sc_DigiDStap2")
+            {
+                SceneManager.LoadScene("sc_BSN_zoeken");
+            }
         }
 
     }
