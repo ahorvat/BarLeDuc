@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AttachDialogeManager.cs" />
      <Compile Include="Assets\Scripts\Bouncing.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\DeleteBrief.cs" />
@@ -70,6 +71,7 @@
      <Compile Include="Assets\Scripts\mouseClick.cs" />
      <Compile Include="Assets\Scripts\zOD_ActivateTekstAtLine.cs" />
      <Compile Include="Assets\Scripts\zOD_TextBoxManager.cs" />
+     <None Include="Assets\Texts\Scenario 2\digiD_PC_toelopen.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap6.txt" />
      <None Include="Assets\Texts\Scenario 1\BuurvrouwText.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_internet_start.txt" />
