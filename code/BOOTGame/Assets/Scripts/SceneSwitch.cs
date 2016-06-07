@@ -3,7 +3,26 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class SceneSwitch : MonoBehaviour {
+    private GameObject dialogueManager;
+    private DialogeManager dialogueScript;
 
+
+    void Start()
+    {
+        dialogueManager = GameObject.FindGameObjectWithTag("dialogueManager");
+        dialogueScript = dialogueManager.GetComponent<DialogeManager>();
+    }
+
+    void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "sc_DigiDStap6")
+        {
+            if (dialogueScript.currentLine == dialogueScript.endAtLine && Input.GetMouseButtonUp(0))
+            {
+                SceneManager.LoadScene("sc_ontvang_code");
+            }
+        }
+    }
 	public void sc_brief_home_google()
     {
         SceneManager.LoadScene("sc_brief_home_google");
