@@ -32,6 +32,7 @@ TagManager:
   - dialogueManager
   - leftCamBorder
   - rightCamBorder
+  - navArrow
   layers:
   - Default
   - TransparentFX
