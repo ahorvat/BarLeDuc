@@ -12,7 +12,6 @@ public class DialogeManager : MonoBehaviour
     public Image image;
     public Sprite bg_yousef;
     public Sprite bg_buurvrouw;
-
     // bool arrays om aan te geven welke line van welke personage is.
     public bool[] yousef_lines;
     // text = het textvak van de canvas, textasset is het textscript
@@ -77,18 +76,7 @@ public class DialogeManager : MonoBehaviour
             }
             DisableDM();
         }
-        //zodra er enter word gedrukt word de volgende line ingeladen
-        if (textBox.activeInHierarchy)
-        {
-            if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonUp(0))
-            {
-                if (KeepEndLne && currentLine == endAtLine)
-                {
-                    return;
-                }
-                currentLine += 1;
-            }
-        }
+
         //als de currentline in de boolean lijst true geeft display youseff background.
         if (yousef_lines[currentLine])
         {
@@ -142,5 +130,20 @@ public class DialogeManager : MonoBehaviour
             player.canMove = true;
         }
         isActive = false;
+    }
+
+    public void NextLine()
+    {
+        //zodra er enter word gedrukt word de volgende line ingeladen
+        if (textBox.activeInHierarchy)
+        {
+
+                if (KeepEndLne && currentLine == endAtLine)
+                {
+                    return;
+                }
+                currentLine += 1;
+            
+        }
     }
 }
