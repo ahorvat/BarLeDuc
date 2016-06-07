@@ -1,1 +1,2 @@
 Eerst moet ik mijn BSN invullen. Deze staat op mijn paspoort, ID of rijbewijs.
+Klik op de balk bij BurgerServiceNummer om deze in te vullen.

@@ -301,7 +301,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: KeepEndLne
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 104242, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: m_TagString
