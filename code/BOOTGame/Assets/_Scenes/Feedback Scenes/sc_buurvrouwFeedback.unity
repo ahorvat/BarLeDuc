@@ -353,13 +353,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'U heeft de brief succesvol begrepen,
+  m_Text: 'Wat fijn dat de brief succesvol is begrepen,
 
     het ging om een brief over rioolbelasting.
 
-    U heeft de game succesvol uitgespeeld
-
-    en de juist keuzes gemaakt.'
+    De game is nu succesvol uitgespeeld.'
 --- !u!222 &431570135
 CanvasRenderer:
   m_ObjectHideFlags: 0
