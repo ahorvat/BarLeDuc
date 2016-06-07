@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float inputBoxLeft;
     public float inputBoxRight;
+    public float inputBoxY;
+
     //we use the camera to calculate the inputboxes so they stay the same even when we change the camera size.
     private Camera camera;
     //boolean that we set on false in scenes where the player isnt allowed to move and true when he is allowed to move.
@@ -38,6 +40,8 @@ public class PlayerMovement : MonoBehaviour
         //calculate the inputboxes on the left and right side of the screen/camera.
         inputBoxRight = camera.pixelWidth - camera.pixelWidth / 4;
         inputBoxLeft = camera.pixelWidth / 4;
+        inputBoxY = camera.pixelHeight - camera.pixelHeight / 2;
+
 
         if (leftArrow != null)
         {
@@ -87,12 +91,12 @@ public class PlayerMovement : MonoBehaviour
         */
         if (Input.GetMouseButton(0))
         {
-            if (Input.mousePosition.x > inputBoxRight)
+            if (Input.mousePosition.x > inputBoxRight && Input.mousePosition.y < inputBoxY)
             {
                 transform.position += new Vector3(speed, 0, 0);
                 GetComponent<SpriteRenderer>().flipX = false;
             }
-            if (Input.mousePosition.x < inputBoxLeft)
+            if (Input.mousePosition.x < inputBoxLeft && Input.mousePosition.y < inputBoxY)
             {
                 transform.position -= new Vector3(speed, 0, 0);
                 GetComponent<SpriteRenderer>().flipX = true;      

@@ -41,13 +41,13 @@ public class changingSpritesRightArrow : MonoBehaviour {
         }
 
         //check if the input is in the left inputbox.
-        if (Input.GetMouseButton(0) && Input.mousePosition.x > player.inputBoxRight)
+        if (Input.GetMouseButton(0) && Input.mousePosition.x > player.inputBoxRight && Input.mousePosition.y < player.inputBoxY)
         {
             //so we can change the sprite to sprite2(button pressed sprite).
             spriteRenderer.sprite = sprite2;
         }
         //check if the mouseclick is in the middle of the screen
-        else if (Input.GetMouseButton(0) && player.inputboxmiddle)
+        else if (Input.GetMouseButton(0) && player.inputboxmiddle && Input.mousePosition.y < player.inputBoxY)
         {
             //set the sprite to the not-pressed sprite.
             spriteRenderer.sprite = sprite1;
