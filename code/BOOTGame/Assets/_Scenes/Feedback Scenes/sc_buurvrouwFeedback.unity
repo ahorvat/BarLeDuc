@@ -353,11 +353,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Wat fijn dat de brief succesvol is begrepen,
-
-    het ging om een brief over rioolbelasting.
-
-    De game is nu succesvol uitgespeeld.'
+  m_Text: "Wat fijn dat de brief is begrepen, \nhet was een brief van de belasting."
 --- !u!222 &431570135
 CanvasRenderer:
   m_ObjectHideFlags: 0

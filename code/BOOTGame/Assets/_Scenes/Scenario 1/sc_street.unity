@@ -1411,13 +1411,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 57
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Buurvrouw om hulp vragen?
+  m_Text: "Wilt u de buurvrouw\n om hulp vragen?"
 --- !u!222 &1382991529
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1663,6 +1663,7 @@ MonoBehaviour:
   inputboxmiddle: 0
   inputBoxLeft: 250
   inputBoxRight: 600
+  inputBoxY: 0
   canMove: 1
 --- !u!114 &1647859100
 MonoBehaviour:
