@@ -152,7 +152,7 @@ public class DialogeManager : MonoBehaviour
     // 
     private void hideMoreTextButtonOnDialogueEnd()
     {
-        if (keepEndLine && currentLine == endAtLine)
+        if (GameObject.Find("ContinueDialogueButton") && keepEndLine && currentLine == endAtLine)
             GameObject.Find("ContinueDialogueButton").SetActive(false);
     }
 
