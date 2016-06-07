@@ -94,6 +94,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Scenario 2/sc_BSN_correct.unity
   - enabled: 1
+    path: Assets/_Scenes/Scenario 2/sc_DigiDStap9.unity
+  - enabled: 1
     path: Assets/_Scenes/Scenario 1/sc_brief_home_google.unity
   - enabled: 1
     path: Assets/_Scenes/Scenario 2/sc_digiD_home.unity
