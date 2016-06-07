@@ -36,7 +36,6 @@ public class DialogeManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
         player = FindObjectOfType<PlayerMovement>();
         //als de tekst niet leeg is dan word de tekst opgesplits per enter
         if (textFile != null)
@@ -96,6 +95,9 @@ public class DialogeManager : MonoBehaviour
         {
             SceneManager.LoadScene("sc_buurvrouwFeedback");
         }
+
+        hideMoreTextButtonOnDialogueEnd();
+
     }
     void Youssef()
     {
@@ -146,4 +148,13 @@ public class DialogeManager : MonoBehaviour
             
         }
     }
+
+    // 
+    private void hideMoreTextButtonOnDialogueEnd()
+    {
+        if (keepEndLine && currentLine == endAtLine)
+            GameObject.Find("ContinueDialogueButton").SetActive(false);
+    }
+
+
 }
