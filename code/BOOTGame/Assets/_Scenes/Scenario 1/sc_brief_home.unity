@@ -503,6 +503,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 198828, guid: 8df7b5eb14d3e8a4a8b2c213e7988732, type: 2}
+      propertyPath: m_TagString
+      value: navArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 174226, guid: 8df7b5eb14d3e8a4a8b2c213e7988732, type: 2}
+      propertyPath: m_TagString
+      value: navArrow
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8df7b5eb14d3e8a4a8b2c213e7988732, type: 2}
   m_IsPrefabParent: 0
@@ -761,7 +769,7 @@ Prefab:
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: image
       value: 
-      objectReference: {fileID: 1817869259}
+      objectReference: {fileID: 0}
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: yousef_lines.Array.data[5]
       value: 1
@@ -773,6 +781,10 @@ Prefab:
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: stopPlayerMovement
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
+      propertyPath: keepEndLine
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9e996928807af0458ad496f479c5594, type: 2}
@@ -1072,12 +1084,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!114 &1817869259 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11484730, guid: c9229d591b7b60a459276988ffabae50,
-    type: 2}
-  m_PrefabInternal: {fileID: 685335514}
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!114 &1843024558 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11490460, guid: c9229d591b7b60a459276988ffabae50,
@@ -1122,6 +1128,14 @@ Prefab:
     - target: {fileID: 454360, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 164084, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: m_TagString
+      value: navArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 163818, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: m_TagString
+      value: navArrow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
