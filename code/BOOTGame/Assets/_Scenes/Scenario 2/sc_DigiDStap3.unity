@@ -440,7 +440,7 @@ RectTransform:
   m_RootOrder: 6
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 52, y: -11.175}
+  m_AnchoredPosition: {x: 52, y: -12.1}
   m_SizeDelta: {x: 158, y: 57.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &371238469
@@ -1048,8 +1048,14 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 0.68
-  m_Text: "27                   1987\n\n1000AA\n\n115\t\t              a"
+    m_LineSpacing: 0.6
+  m_Text: '27                1987
+
+
+    1000AA
+
+
+    115               a'
 --- !u!222 &1524948821
 CanvasRenderer:
   m_ObjectHideFlags: 0
