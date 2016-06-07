@@ -52,7 +52,6 @@
      <Compile Include="Assets\Scripts\DialogeManager.cs" />
      <Compile Include="Assets\Scripts\Goto_Start.cs" />
      <Compile Include="Assets\Scripts\LoadOnClick.cs" />
-     <Compile Include="Assets\Scripts\OutOfScreen.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\Persistence.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
