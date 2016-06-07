@@ -20,6 +20,11 @@ public class disableNavOnDialogue : MonoBehaviour {
 			{
 				arrow.SetActive(false);
 			}
+		} else {
+			foreach (GameObject arrow in navArrows)
+			{
+				arrow.SetActive(true);
+			}
 		}
 	}
 }
