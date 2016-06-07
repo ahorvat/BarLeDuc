@@ -28,7 +28,7 @@ public class DialogeManager : MonoBehaviour
 
     // een bool om de canvas aan en uit te zetten
     public bool isActive;
-    public bool KeepEndLne;
+    public bool keepEndLine;
 
     // een bool om de player te laten stoppen
     public bool stopPlayerMovement;
@@ -70,7 +70,7 @@ public class DialogeManager : MonoBehaviour
         }
         if (currentLine > endAtLine)
         {
-            if (KeepEndLne)
+            if (keepEndLine)
             {
                 return;
             }
@@ -138,7 +138,7 @@ public class DialogeManager : MonoBehaviour
         if (textBox.activeInHierarchy)
         {
 
-                if (KeepEndLne && currentLine == endAtLine)
+                if (keepEndLine && currentLine == endAtLine)
                 {
                     return;
                 }
