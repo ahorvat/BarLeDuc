@@ -353,7 +353,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Het begrijpen van de brief \nlukte niet via Google"
+  m_Text: 'Youseff kon niet vinden hoe hij een
+
+    e-mail aanmaakte met deze
+
+    zoekterm.'
 --- !u!222 &431570135
 CanvasRenderer:
   m_ObjectHideFlags: 0
