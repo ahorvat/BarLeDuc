@@ -122,6 +122,7 @@ MonoBehaviour:
   inputboxmiddle: 0
   inputBoxLeft: 250
   inputBoxRight: 600
+  inputBoxY: 0
   canMove: 1
 --- !u!114 &119426824
 MonoBehaviour:
@@ -223,12 +224,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!114 &403591226 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11484730, guid: c9229d591b7b60a459276988ffabae50,
-    type: 2}
-  m_PrefabInternal: {fileID: 1210426152}
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!20 &468070112 stripped
 Camera:
   m_PrefabParentObject: {fileID: 2026698, guid: 5933b1198f8594023bea11cd52231e1f,
@@ -560,7 +555,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11401132, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &983680668 stripped
@@ -802,7 +798,7 @@ Prefab:
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: image
       value: 
-      objectReference: {fileID: 403591226}
+      objectReference: {fileID: 0}
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: yousefText
       value: 
@@ -999,6 +995,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!1 &1845831656 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 163818, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+  m_PrefabInternal: {fileID: 905677449}
+--- !u!114 &1845831658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1845831656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9137fdc89c0c74b98c671e7cc1e34c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.75
+  minXpos: 8
+  maxXpos: 1000
+  scaleAmount: 1.5
 --- !u!1 &1973672154
 GameObject:
   m_ObjectHideFlags: 0

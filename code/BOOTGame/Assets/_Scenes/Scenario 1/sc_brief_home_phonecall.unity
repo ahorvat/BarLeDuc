@@ -157,7 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   textBox: {fileID: 1191249264}
-  image: {fileID: 1191249263}
+  image: {fileID: 0}
   bg_yousef: {fileID: 21300000, guid: ae5fcaca200c54946acf252fa1cdf17b, type: 3}
   bg_buurvrouw: {fileID: 21300000, guid: 6371cd052e54142b7b064b6a0a36693f, type: 3}
   yousef_lines: 010101000001
@@ -168,7 +168,7 @@ MonoBehaviour:
   currentLine: 0
   endAtLine: 0
   isActive: 1
-  KeepEndLne: 0
+  keepEndLine: 0
   stopPlayerMovement: 1
 --- !u!4 &146642220
 Transform:
@@ -318,7 +318,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 8bfe743d0b3282d4e927a0baa0f99085, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b8deda9194d4bf94bb6d6849b02476fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -652,12 +652,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1191249259}
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
---- !u!114 &1191249263 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11484730, guid: c9229d591b7b60a459276988ffabae50,
-    type: 2}
-  m_PrefabInternal: {fileID: 1191249259}
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &1191249264 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 177814, guid: c9229d591b7b60a459276988ffabae50, type: 2}

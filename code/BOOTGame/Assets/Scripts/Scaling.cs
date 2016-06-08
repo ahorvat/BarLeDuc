@@ -41,7 +41,7 @@ public class Scaling : MonoBehaviour
                 yield break;
             }   
         }
-
+        Debug.Log("JAJAJAJAJA");
         //Set scaling on true so the scaling starts.
         isScaling = true;
 
