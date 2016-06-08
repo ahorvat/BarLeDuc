@@ -120,7 +120,7 @@ public class isPressed : MonoBehaviour
             }
             if (SceneManager.GetActiveScene().name == "sc_FeedBack_Scene")
             {
-                SceneManager.LoadScene("'sc_menu");
+                SceneManager.LoadScene("sc_menu");
             }
             if (SceneManager.GetActiveScene().name == "sc_DigiDBrief")
             {
@@ -136,6 +136,12 @@ public class isPressed : MonoBehaviour
         else if (gameObject.tag == "InternetIcon")
         {
             SceneManager.LoadScene("sc_internet_start");
+        }
+
+        // When all else fails, go back to the main menu
+        else
+        {
+            SceneManager.LoadScene("sc_menu")
         }
     }
 }
