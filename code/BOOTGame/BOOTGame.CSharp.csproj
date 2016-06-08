@@ -129,14 +129,15 @@
     <None Include="Assets\Texts\Scenario 2\digiD_home_text.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_internet_start.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_receivingLetter.txt" />
+    <None Include="Assets\Texts\Scenario 3\Email_Aanmaak_Google.txt" />
+    <None Include="Assets\Texts\Scenario 3\Email_Aanmaak_GoogleResults.txt" />
     <None Include="Assets\Texts\Scenario 3\Email_Aanmaak_Start.txt" />
-    <None Include="Assets\Texts\Scenario 3\Nieuw tekstdocument 1.txt" />
-    <None Include="Assets\Texts\Scenario 3\Nieuw tekstdocument 2.txt" />
-    <None Include="Assets\Texts\Scenario 3\Nieuw tekstdocument 3.txt" />
-    <None Include="Assets\Texts\Scenario 3\Nieuw tekstdocument 4.txt" />
-    <None Include="Assets\Texts\Scenario 3\Nieuw tekstdocument 5.txt" />
+    <None Include="Assets\Texts\Scenario 3\Email_openen.txt" />
+    <None Include="Assets\Texts\Scenario 3\Email_stap1.txt" />
+    <None Include="Assets\Texts\Scenario 3\Email_stap2.txt" />
+    <None Include="Assets\Texts\Scenario 3\Email_stap3.txt" />
+    <None Include="Assets\Texts\Scenario 3\Email_stap4.txt" />
     <None Include="Assets\Texts\Scenario 3\Nieuw tekstdocument 6.txt" />
-    <None Include="Assets\Texts\Scenario 3\Nieuw tekstdocument.txt" />
     <None Include="Assets\Texts\ScenarioKiezen.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
