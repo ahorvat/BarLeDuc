@@ -7,6 +7,6 @@ public class bouncingTest : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        transform.position = new Vector3(xPos, Mathf.PingPong(Time.time, .5f) - 3, zPos);
+        transform.position = new Vector3(xPos, Mathf.PingPong(Time.time, 1f) - 3, zPos);
     }
 }
