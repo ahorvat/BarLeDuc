@@ -79,6 +79,7 @@ public class DialogeManager : MonoBehaviour
                 return;
             }
             DisableDM();
+            return;
         }
 
         //als de currentline in de boolean lijst true geeft display youseff background.
