@@ -151,13 +151,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'U heeft uw DigiD succesvol geactiveerd!
-
-    Zijn er nog dingen die u niet snapt bij het
-
-    activeren? Stap dan naar BOOT of neem een
-
-    kijkje op www.digid.nl'
+  m_Text: "U heeft uw DigiD succesvol geactiveerd!\nZijn er nog dingen die u niet
+    snapt bij het\nactiveren? Stap dan naar BOOT of naar \neen betrouwbaar iemand."
 --- !u!222 &28740474
 CanvasRenderer:
   m_ObjectHideFlags: 0
