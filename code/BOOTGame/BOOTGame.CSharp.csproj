@@ -61,6 +61,12 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\NextRoom_Time.cs" />
@@ -122,6 +128,7 @@
     <None Include="Assets\Texts\Scenario 2\digiD_home_text.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_internet_start.txt" />
     <None Include="Assets\Texts\Scenario 2\digiD_receivingLetter.txt" />
+    <None Include="Assets\Texts\Scenario 3\Email_Aanmaak_Start.txt" />
     <None Include="Assets\Texts\ScenarioKiezen.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
