@@ -353,8 +353,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Wat fijn dat de brief is begrepen, \nhet was een brief van de belasting.\nZijn
-    er nog dingen die u niet snapt? \nStap dan naar BOOT of neem een kijkje\nop www.belastingdienst.nl."
+  m_Text: "Wat fijn dat de brief is begrepen.\nZijn er nog dingen die u niet snapt?
+    \nStap dan naar BOOT toe!"
 --- !u!222 &431570135
 CanvasRenderer:
   m_ObjectHideFlags: 0
