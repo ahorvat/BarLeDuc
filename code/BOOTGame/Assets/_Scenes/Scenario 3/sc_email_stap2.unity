@@ -147,7 +147,7 @@ SpriteRenderer:
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 3a0bac62fa6215e4cbb36e7687c42630, type: 3}
   m_Color: {r: 0.2907708, g: 0.89705884, b: 0, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
 --- !u!4 &183309242
 Transform:
@@ -156,7 +156,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 183309239}
   m_LocalRotation: {x: 0, y: 0.999996, z: 0, w: 0.00283668}
-  m_LocalPosition: {x: 0.26, y: 2.8, z: -0.00999999}
+  m_LocalPosition: {x: -6.46, y: 2.8, z: -0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -223,7 +223,7 @@ Prefab:
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: textFile
       value: 
-      objectReference: {fileID: 4900000, guid: d2827c082a42d234ca10914bf6de1275, type: 3}
+      objectReference: {fileID: 4900000, guid: 8b69c4713050aba48a492a9ce1c72e33, type: 3}
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: yousef_lines.Array.data[2]
       value: 1
@@ -321,7 +321,7 @@ Transform:
   m_GameObject: {fileID: 560806767}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.19, y: 1.17, z: 0}
-  m_LocalScale: {x: 1.057878, y: 1.0642369, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -855,18 +855,6 @@ Prefab:
     - target: {fileID: 22441948, guid: c9229d591b7b60a459276988ffabae50, type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 22441948, guid: c9229d591b7b60a459276988ffabae50, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 22441948, guid: c9229d591b7b60a459276988ffabae50, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 22441948, guid: c9229d591b7b60a459276988ffabae50, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9229d591b7b60a459276988ffabae50, type: 2}

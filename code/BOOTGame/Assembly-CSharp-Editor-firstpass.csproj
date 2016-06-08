@@ -54,9 +54,7 @@
      <None Include="Assets\Texts\Scenario 1\BuurvrouwText.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap8.txt" />
      <None Include="Assets\Texts\Scenario 3\Email_stap2.txt" />
-     <None Include="Assets\Texts\Scenario 3\Email_stap1.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_internet_start.txt" />
-     <None Include="Assets\Texts\Scenario 3\Email_openen.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap7.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap5.txt" />
      <None Include="Assets\Texts\Scenario 3\2.Email_Aanmaak_GoogleResults.txt" />
@@ -76,7 +74,6 @@
      <None Include="Assets\Texts\Scenario 1\Phonecall.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap9.txt" />
      <None Include="Assets\Texts\Scenario 1\BriefCloseup.txt" />
-     <None Include="Assets\Texts\Scenario 3\Email_Aanmaak_Google.txt" />
      <None Include="Assets\Texts\ScenarioKiezen.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_home_text.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_computer_text.txt" />
