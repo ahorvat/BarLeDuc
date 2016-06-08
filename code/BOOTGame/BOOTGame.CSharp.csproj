@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\NextRoom_Time.cs" />
     <Compile Include="Assets\PhonecallChangePlayerSprite.cs" />
     <Compile Include="Assets\Scripts\AttachDialogeManager.cs" />
     <Compile Include="Assets\Scripts\Bouncing.cs" />
