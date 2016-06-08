@@ -108,7 +108,7 @@ public class isPressed : MonoBehaviour
             }
             if (SceneManager.GetActiveScene().name == "sc_buurvrouwFeedback")
             {
-                SceneManager.LoadScene("_sc_initalize_persistence");
+                SceneManager.LoadScene("sc_menu");
             }
             if (SceneManager.GetActiveScene().name == "sc_BSN_correct")
             {
@@ -120,7 +120,7 @@ public class isPressed : MonoBehaviour
             }
             if (SceneManager.GetActiveScene().name == "sc_FeedBack_Scene")
             {
-                SceneManager.LoadScene("_sc_initalize_persistence");
+                SceneManager.LoadScene("'sc_menu");
             }
             if (SceneManager.GetActiveScene().name == "sc_DigiDBrief")
             {

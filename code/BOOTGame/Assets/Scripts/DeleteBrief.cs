@@ -27,7 +27,9 @@ public class DeleteBrief : MonoBehaviour {
         if(gemeenteBrief && abnBrief && staatsloterijLetter && SceneManager.GetActiveScene().name == "sc_brief_closeup")
         {
             SceneManager.LoadScene("sc_gemeenteBrief_choices");
-            Destroy(gameObject);
+            gemeenteBrief = false;
+            abnBrief = false;
+            staatsloterijLetter = false;
         }
     }
 }
