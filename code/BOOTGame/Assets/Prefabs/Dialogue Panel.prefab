@@ -261,6 +261,7 @@ MonoBehaviour:
   minXpos: -1000
   maxXpos: 1000
   scaleAmount: 1.2
+  isScaling: 0
 --- !u!114 &11495352
 MonoBehaviour:
   m_ObjectHideFlags: 1

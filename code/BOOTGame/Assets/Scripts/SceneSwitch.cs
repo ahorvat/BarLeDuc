@@ -20,7 +20,7 @@ public class SceneSwitch : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name == "sc_DigiDStap6")
             {
-                SceneManager.LoadScene("sc_ontvang_code");
+                SceneManager.LoadScene("sc_DigiD_TimePass");
             }
 
             if (SceneManager.GetActiveScene().name == "sc_DigiDStap5")

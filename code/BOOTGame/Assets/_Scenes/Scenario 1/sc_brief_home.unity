@@ -118,6 +118,7 @@ MonoBehaviour:
   minXpos: -113.28
   maxXpos: 201.72
   scaleAmount: 1.5
+  isScaling: 0
 --- !u!212 &105651265
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -514,6 +515,26 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8df7b5eb14d3e8a4a8b2c213e7988732, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &656752426 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 164084, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+  m_PrefabInternal: {fileID: 1922359885}
+--- !u!114 &656752429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 656752426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9137fdc89c0c74b98c671e7cc1e34c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1.5
+  minXpos: -1000
+  maxXpos: 8
+  scaleAmount: 1.5
+  isScaling: 0
 --- !u!1001 &685335514
 Prefab:
   m_ObjectHideFlags: 0
@@ -1145,6 +1166,15 @@ Prefab:
       propertyPath: m_TagString
       value: navArrow
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11401132, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: isScaling
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401132, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: minXpos
+      value: -372.79
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11401132, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
   m_IsPrefabParent: 0

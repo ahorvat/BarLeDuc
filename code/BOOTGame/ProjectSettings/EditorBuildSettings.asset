@@ -87,6 +87,8 @@ EditorBuildSettings:
     path: Assets/_Scenes/Feedback Scenes/sc_buurvrouwFeedback.unity
   - enabled: 1
     path: Assets/_Scenes/Feedback Scenes/sc_incorrectchoice_dialogue.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 2/sc_DigiD_TimePass.unity
   - enabled: 0
     path: Assets/_Scenes/Scenario 2/sc_computer_closeup.unity
   - enabled: 1

@@ -11,7 +11,7 @@ public class Scaling : MonoBehaviour
     public float scaleAmount;
 
     // Boolean to check if its scaling so the method doesnt overlap.
-    private bool isScaling = false;
+    public bool isScaling = false;
 
     private GameObject player;
 
@@ -54,7 +54,7 @@ public class Scaling : MonoBehaviour
             //set the amount to lerp the scale with the amount. 
             float amount = (Time.time - startTime) / duration;
             //lerp to calculate the interpollation of 2 vectors and amount to set the amount that it scales with each frame.
-            transform.localScale = Vector3.Lerp(Vector3.one, Vector3.one * scaleAmount, amount);
+            gameObject.transform.localScale = Vector3.Lerp(Vector3.one, Vector3.one * scaleAmount, amount);
             //yield to return on this frame and go on next frame with the loop with the same variables it had last frame.
             yield return null;
         }
