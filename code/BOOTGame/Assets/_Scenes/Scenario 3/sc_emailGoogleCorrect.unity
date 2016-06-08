@@ -658,7 +658,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Jij hebt Youssef goed geholpen met het kiezen van de beste zoekterm.
+  m_Text: Je hebt Youssef goed geholpen met het kiezen van de meest geschikte zoekterm.
 --- !u!222 &1393052964
 CanvasRenderer:
   m_ObjectHideFlags: 0
