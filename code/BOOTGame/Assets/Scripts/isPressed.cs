@@ -126,6 +126,14 @@ public class isPressed : MonoBehaviour
             {
                 SceneManager.LoadScene("sc_activate_code");
             }
+            if (SceneManager.GetActiveScene().name == "sc_emailGoogleCorrect")
+            {
+                SceneManager.LoadScene("sc_email_google_results");
+            }
+            if (SceneManager.GetActiveScene().name == "sc_emailGoogleIncorrect")
+            {
+                SceneManager.LoadScene("sc_email_google");
+            }
         }
 
         else if (gameObject.tag == "addressBar")
