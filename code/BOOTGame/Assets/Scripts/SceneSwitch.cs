@@ -64,5 +64,15 @@ public class SceneSwitch : MonoBehaviour
         SceneManager.LoadScene("sc_incorrectchoice_dialogue");
         return;
     }
+    public void sc_emailGoogleCorrect()
+    {
+        SceneManager.LoadScene("sc_emailGoogleCorrect");
+        return;
+    }
 
+    public void sc_emailGoogleIncorrect()
+    {
+        SceneManager.LoadScene("sc_emailGoogleIncorrect");
+        return;
+    }
 }
