@@ -101,6 +101,10 @@ public class DialogeManager : MonoBehaviour
         {
             SceneManager.LoadScene("sc_buurvrouwFeedback");
         }
+        if(currentLine == endAtLine && SceneManager.GetActiveScene().name == "sc_email_stap8")
+        {
+            SceneManager.LoadScene("sc_email_feedback");
+        }
 
         hideMoreTextButtonOnDialogueEnd();
 
