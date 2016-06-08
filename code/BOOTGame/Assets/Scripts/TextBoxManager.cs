@@ -63,7 +63,10 @@ public class TextBoxManager : MonoBehaviour {
     public void DisableTekstBox()
     {
         optionBox.SetActive(false);
-        player.canMove = true;
+        if(player != null)
+        {
+            player.canMove = true;
+        }
         isActive = false;
     }
 }

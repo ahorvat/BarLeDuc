@@ -114,4 +114,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Scenario 3/sc_email_start.unity
   - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_email_stap3.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_email_stap4.unity
+  - enabled: 1
     path: Assets/_Scenes/Scenario 2/sc_digiD_home.unity
