@@ -47,7 +47,7 @@ GameObject:
   - 114: {fileID: 11404602}
   m_Layer: 5
   m_Name: txtLinks
-  m_TagString: Untagged
+  m_TagString: navArrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +64,7 @@ GameObject:
   - 114: {fileID: 11419978}
   m_Layer: 5
   m_Name: txtRechts
-  m_TagString: Untagged
+  m_TagString: navArrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
