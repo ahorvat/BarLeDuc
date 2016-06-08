@@ -670,7 +670,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Youseff heeft gevonden hoe \nhij een e-mail aan maakt!"
+  m_Text: "Youssef heeft gevonden hoe \nhij een e-mail aan maakt!"
 --- !u!222 &1393052964
 CanvasRenderer:
   m_ObjectHideFlags: 0
