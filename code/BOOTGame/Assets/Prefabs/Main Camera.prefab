@@ -81,7 +81,7 @@ GameObject:
   - 222: {fileID: 22243880}
   m_Layer: 0
   m_Name: LeftArrow
-  m_TagString: Untagged
+  m_TagString: navArrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +100,7 @@ GameObject:
   - 222: {fileID: 22231070}
   m_Layer: 0
   m_Name: RightArrow
-  m_TagString: Untagged
+  m_TagString: navArrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
