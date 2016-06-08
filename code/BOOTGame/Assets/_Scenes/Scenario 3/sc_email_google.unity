@@ -1314,7 +1314,7 @@ MonoBehaviour:
   buttonSprite2: {fileID: 21300000, guid: ae5fcaca200c54946acf252fa1cdf17b, type: 3}
   buttonSprite3: {fileID: 21300000, guid: ae5fcaca200c54946acf252fa1cdf17b, type: 3}
   isActive: 0
-  stopPlayerMovement: 1
+  stopPlayerMovement: 0
 --- !u!4 &1267837986
 Transform:
   m_ObjectHideFlags: 0
