@@ -141,7 +141,7 @@ public class isPressed : MonoBehaviour
         // When all else fails, go back to the main menu
         else
         {
-            SceneManager.LoadScene("sc_menu")
+            SceneManager.LoadScene("sc_menu");
         }
     }
 }
