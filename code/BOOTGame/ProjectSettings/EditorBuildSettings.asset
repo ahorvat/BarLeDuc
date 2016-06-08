@@ -106,7 +106,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Scenario 3/sc_email_google.unity
   - enabled: 1
-    path: Assets/_Scenes/Scenario 3/sc_email_google_results.unity
+    path: Assets/_Scenes/Scenario 3/sc_email_stap5.unity
   - enabled: 1
     path: Assets/_Scenes/Scenario 3/sc_email_stap1.unity
   - enabled: 1
