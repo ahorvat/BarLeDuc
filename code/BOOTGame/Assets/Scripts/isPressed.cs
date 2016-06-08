@@ -128,7 +128,7 @@ public class isPressed : MonoBehaviour
             }
             if (SceneManager.GetActiveScene().name == "sc_emailGoogleCorrect")
             {
-                SceneManager.LoadScene("sc_email_google_results");
+                SceneManager.LoadScene("sc_email_stap2");
             }
             if (SceneManager.GetActiveScene().name == "sc_emailGoogleIncorrect")
             {
