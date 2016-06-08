@@ -42,6 +42,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Feedback Scenes/sc_correctletterchoice.unity
   - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_email_google.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_email_stap1.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_email_stap2.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_email_stap3.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_email_stap4.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_email_stap5.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_email_stap6.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_email_stap7.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_email_stap8.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_email_start.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_emailGoogleCorrect.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_emailGoogleIncorrect.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_emailnaam_correct.unity
+  - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_emailnaam_incorrect.unity
+  - enabled: 1
     path: Assets/_Scenes/Feedback Scenes/sc_googleFeedback.unity
   - enabled: 1
     path: Assets/_Scenes/Scenario 2/sc_DigiDStap8.unity
