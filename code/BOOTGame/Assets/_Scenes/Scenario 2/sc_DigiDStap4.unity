@@ -191,12 +191,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 3762015}
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
---- !u!114 &3762018 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11484730, guid: c9229d591b7b60a459276988ffabae50,
-    type: 2}
-  m_PrefabInternal: {fileID: 3762015}
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &3762019 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 177814, guid: c9229d591b7b60a459276988ffabae50, type: 2}
@@ -442,7 +436,7 @@ Prefab:
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: image
       value: 
-      objectReference: {fileID: 3762018}
+      objectReference: {fileID: 0}
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: yousefText
       value: 
@@ -786,7 +780,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1343808448}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.93, y: -2.33, z: -0.00999999}
+  m_LocalPosition: {x: -4.19, y: -0.1, z: -0.00999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

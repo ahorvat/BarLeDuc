@@ -1,4 +1,4 @@
-Klik nu op “Volgende”.
 Ik kan kiezen om een code te ontvangen via SMS.
-Of alleen in te loggen met een wachtwoord.	
-Klik op "Volgende" om naar stap 3 te gaan.
+Of alleen in te loggen met een wachtwoord.
+Ik kies de optie "wachtwoord".
+Klik nu op “Volgende”.
