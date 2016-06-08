@@ -353,7 +353,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Wat fijn dat de brief is begrepen, \nhet was een brief van de belasting."
+  m_Text: "Wat fijn dat de brief is begrepen, \nhet was een brief van de belasting.\nZijn
+    er nog dingen die u niet snapt? \nStap dan naar BOOT of neem een kijkje\nop www.belastingdienst.nl."
 --- !u!222 &431570135
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -871,7 +872,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
