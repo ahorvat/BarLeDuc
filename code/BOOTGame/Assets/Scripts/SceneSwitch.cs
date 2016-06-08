@@ -4,42 +4,44 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitch : MonoBehaviour
 {
-    private GameObject dialogueManager;
-    private DialogeManager dialogueScript;
+    private DialogeManager dialogueManager;
 
 
     void Start()
     {
-        dialogueManager = GameObject.FindGameObjectWithTag("dialogueManager");
-        dialogueScript = dialogueManager.GetComponent<DialogeManager>();
+        dialogueManager = GameObject.FindGameObjectWithTag("dialogueManager").GetComponent<DialogeManager>();
     }
 
     void Update()
     {
-        if (dialogueScript.currentLine == dialogueScript.endAtLine && Input.GetMouseButtonUp(0))
+        if (dialogueManager != null)
         {
-            if (SceneManager.GetActiveScene().name == "sc_DigiDStap6")
+            if (dialogueManager.currentLine == dialogueManager.endAtLine && Input.GetMouseButtonUp(0))
             {
-                SceneManager.LoadScene("sc_DigiD_TimePass");
-            }
+                if (SceneManager.GetActiveScene().name == "sc_DigiDStap6")
+                {
+                    SceneManager.LoadScene("sc_DigiD_TimePass");
+                }
 
-            if (SceneManager.GetActiveScene().name == "sc_DigiDStap5")
-            {
-                SceneManager.LoadScene("sc_DigiDStap6");
-            }
-            if (SceneManager.GetActiveScene().name == "sc_DigiDStap8")
-            {
-                SceneManager.LoadScene("sc_DigiDStap9");
-            }
-            if (SceneManager.GetActiveScene().name == "sc_DigiDStap9")
-            {
-                SceneManager.LoadScene("sc_FeedBack_Scene");
-            }
-            if (SceneManager.GetActiveScene().name == "sc_DigiDStap2")
-            {
-                SceneManager.LoadScene("sc_BSN_zoeken");
+                if (SceneManager.GetActiveScene().name == "sc_DigiDStap5")
+                {
+                    SceneManager.LoadScene("sc_DigiDStap6");
+                }
+                if (SceneManager.GetActiveScene().name == "sc_DigiDStap8")
+                {
+                    SceneManager.LoadScene("sc_DigiDStap9");
+                }
+                if (SceneManager.GetActiveScene().name == "sc_DigiDStap9")
+                {
+                    SceneManager.LoadScene("sc_FeedBack_Scene");
+                }
+                if (SceneManager.GetActiveScene().name == "sc_DigiDStap2")
+                {
+                    SceneManager.LoadScene("sc_BSN_zoeken");
+                }
             }
         }
+
 
     }
     public void sc_brief_home_google()
