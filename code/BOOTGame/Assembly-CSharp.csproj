@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ActivateTBMatLastLine.cs" />
      <Compile Include="Assets\NextRoom_Time.cs" />
      <Compile Include="Assets\PhonecallChangePlayerSprite.cs" />
      <Compile Include="Assets\Scripts\AttachDialogeManager.cs" />
@@ -75,6 +76,7 @@
      <Compile Include="Assets\Scripts\zOD_ActivateTekstAtLine.cs" />
      <Compile Include="Assets\Scripts\zOD_TextBoxManager.cs" />
      <Compile Include="Assets\aboutBoot.cs" />
+     <Compile Include="Assets\activateGameObject.cs" />
      <None Include="Assets\Texts\Scenario 2\digiD_PC_toelopen.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap6.txt" />
      <None Include="Assets\Texts\Scenario 1\BuurvrouwText.txt" />
@@ -85,7 +87,7 @@
      <None Include="Assets\Texts\Scenario 3\Email_openen.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap7.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap5.txt" />
-     <None Include="Assets\Texts\Scenario 3\Email_Aanmaak_Google.txt" />
+     <None Include="Assets\Texts\Scenario 3\Email_Aanmaak_GoogleResults.txt" />
      <None Include="Assets\Texts\Scenario 3\Nieuw tekstdocument 6.txt" />
      <None Include="Assets\Texts\Scenario 3\Email_stap3.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap4.txt" />
@@ -102,7 +104,7 @@
      <None Include="Assets\Texts\Scenario 1\Phonecall.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_DigiD_stap9.txt" />
      <None Include="Assets\Texts\Scenario 1\BriefCloseup.txt" />
-     <None Include="Assets\Texts\Scenario 3\Email_Aanmaak_GoogleResults.txt" />
+     <None Include="Assets\Texts\Scenario 3\Email_Aanmaak_Google.txt" />
      <None Include="Assets\Texts\ScenarioKiezen.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_home_text.txt" />
      <None Include="Assets\Texts\Scenario 2\digiD_computer_text.txt" />

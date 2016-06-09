@@ -371,6 +371,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11401132, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
+      propertyPath: isScaling
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5933b1198f8594023bea11cd52231e1f, type: 2}
   m_IsPrefabParent: 0
@@ -898,6 +902,7 @@ MonoBehaviour:
   minXpos: -84.7
   maxXpos: 209.7
   scaleAmount: 1.5
+  isScaling: 0
 --- !u!1 &1682391870 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 177814, guid: c9229d591b7b60a459276988ffabae50, type: 2}

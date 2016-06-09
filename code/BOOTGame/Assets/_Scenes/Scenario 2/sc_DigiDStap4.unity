@@ -126,11 +126,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22441948, guid: c9229d591b7b60a459276988ffabae50, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 58
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 22441948, guid: c9229d591b7b60a459276988ffabae50, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 216.21777
+      value: 179
       objectReference: {fileID: 0}
     - target: {fileID: 22441948, guid: c9229d591b7b60a459276988ffabae50, type: 2}
       propertyPath: m_SizeDelta.x
@@ -742,6 +742,7 @@ MonoBehaviour:
   minXpos: -1000
   maxXpos: 1000
   scaleAmount: 1.5
+  isScaling: 0
 --- !u!212 &1343808450
 SpriteRenderer:
   m_ObjectHideFlags: 0

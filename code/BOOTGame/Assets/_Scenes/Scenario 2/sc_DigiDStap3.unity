@@ -366,6 +366,7 @@ MonoBehaviour:
   minXpos: -1000
   maxXpos: 1000
   scaleAmount: 1.5
+  isScaling: 0
 --- !u!212 &279452600
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -532,7 +533,7 @@ Prefab:
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: image
       value: 
-      objectReference: {fileID: 918574323}
+      objectReference: {fileID: 0}
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: yousefText
       value: 
@@ -629,11 +630,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22441948, guid: c9229d591b7b60a459276988ffabae50, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 58
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 22441948, guid: c9229d591b7b60a459276988ffabae50, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 216.21777
+      value: 179
       objectReference: {fileID: 0}
     - target: {fileID: 22441948, guid: c9229d591b7b60a459276988ffabae50, type: 2}
       propertyPath: m_SizeDelta.x
@@ -694,12 +695,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 918574320}
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
---- !u!114 &918574323 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11484730, guid: c9229d591b7b60a459276988ffabae50,
-    type: 2}
-  m_PrefabInternal: {fileID: 918574320}
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &918574324 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 177814, guid: c9229d591b7b60a459276988ffabae50, type: 2}
