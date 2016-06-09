@@ -440,7 +440,7 @@ Prefab:
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: textFile
       value: 
-      objectReference: {fileID: 4900000, guid: dc188505e14bbd143a07a1d5db1993a4, type: 3}
+      objectReference: {fileID: 4900000, guid: 389004276bea52c4c83d1b02bf068378, type: 3}
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: textBox
       value: 
@@ -1330,7 +1330,7 @@ Transform:
   m_LocalScale: {x: 1.4404432, y: 1.4404432, z: 1.4404432}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &1290917658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,7 +1936,7 @@ RectTransform:
   m_Children:
   - {fileID: 282539621}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}

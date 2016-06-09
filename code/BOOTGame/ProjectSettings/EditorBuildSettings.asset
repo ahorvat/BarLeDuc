@@ -24,6 +24,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Scenario 3/sc_emailGoogleIncorrect.unity
   - enabled: 1
+    path: Assets/_Scenes/Scenario 3/sc_email_feedback.unity
+  - enabled: 1
     path: Assets/_Scenes/Scenario 1/sc_ABNBrief_closeup.unity
   - enabled: 1
     path: Assets/_Scenes/Scenario 1/sc_gemeenteBrief_closeup.unity
