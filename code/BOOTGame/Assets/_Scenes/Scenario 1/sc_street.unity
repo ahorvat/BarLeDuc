@@ -1418,7 +1418,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Wilt u de buurvrouw om hulp vragen?
+  m_Text: Wil je de buurvrouw om hulp vragen?
 --- !u!222 &1382991529
 CanvasRenderer:
   m_ObjectHideFlags: 0
