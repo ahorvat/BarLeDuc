@@ -354,7 +354,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Wat fijn dat de brief is begrepen.\nZijn er nog dingen die u niet snapt
-    bij het\nsorteren van brieven? \nStap dan naar BOOT toe!"
+    bij het\nsorteren van brieven? \nStap dan naar BOOT!"
 --- !u!222 &431570135
 CanvasRenderer:
   m_ObjectHideFlags: 0
