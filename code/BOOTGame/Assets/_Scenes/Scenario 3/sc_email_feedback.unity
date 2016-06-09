@@ -153,7 +153,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Je hebt youssef succesvol geholpen
 
-    met een email adress te maken!'
+    met een e-mail adress aan te maken!'
 --- !u!222 &87221268
 CanvasRenderer:
   m_ObjectHideFlags: 0
