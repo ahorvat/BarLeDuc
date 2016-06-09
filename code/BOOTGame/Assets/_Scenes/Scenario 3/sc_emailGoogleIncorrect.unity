@@ -681,7 +681,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Youseff kon niet vinden hoe hij een
+  m_Text: 'Youssef kon niet vinden hoe hij een
 
     e-mail aanmaakte met deze
 
@@ -758,7 +758,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 0.93
-  m_Text: "Druk op de knop om een \nandere keuze te selecteren!"
+  m_Text: "Druk op de knop om een \nandere keuze te maken!"
 --- !u!222 &1652301300
 CanvasRenderer:
   m_ObjectHideFlags: 0

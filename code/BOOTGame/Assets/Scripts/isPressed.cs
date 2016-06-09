@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
-using UnityEditor.SceneManagement;
 
 public class isPressed : MonoBehaviour
 {
@@ -128,11 +127,23 @@ public class isPressed : MonoBehaviour
             }
             if (SceneManager.GetActiveScene().name == "sc_emailGoogleCorrect")
             {
-                SceneManager.LoadScene("sc_email_google_results");
+                SceneManager.LoadScene("sc_email_stap2");
             }
             if (SceneManager.GetActiveScene().name == "sc_emailGoogleIncorrect")
             {
                 SceneManager.LoadScene("sc_email_google");
+            }
+            if (SceneManager.GetActiveScene().name == "sc_emailnaam_correct")
+            {
+                SceneManager.LoadScene("sc_email_stap5");
+            }
+            if (SceneManager.GetActiveScene().name == "sc_emailnaam_incorrect")
+            {
+                SceneManager.LoadScene("sc_email_stap4");
+            }
+            if(SceneManager.GetActiveScene().name == "sc_email_feedback")
+            {
+                SceneManager.LoadScene("sc_menu");
             }
         }
 
