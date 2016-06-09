@@ -151,9 +151,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Youssef heeft een correcte
+  m_Text: 'Youssef heeft een correct
 
-    email adress gemaakt!'
+    e-mailadres aangemaakt!'
 --- !u!222 &892332300
 CanvasRenderer:
   m_ObjectHideFlags: 0
