@@ -487,7 +487,7 @@ Prefab:
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: textFile
       value: 
-      objectReference: {fileID: 4900000, guid: d2827c082a42d234ca10914bf6de1275, type: 3}
+      objectReference: {fileID: 4900000, guid: 3281222c925bab645825be27799c0cfa, type: 3}
     - target: {fileID: 11479980, guid: b9e996928807af0458ad496f479c5594, type: 2}
       propertyPath: yousef_lines.Array.data[2]
       value: 1
