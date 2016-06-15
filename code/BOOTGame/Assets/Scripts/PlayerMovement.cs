@@ -7,8 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     //public float for speed so we can change it in the unity editor.
     public float speed;
-    //rigidbody so we can get the component and change the position of the rigidbody(player).
-    private Rigidbody2D rb;
+
     private GameObject dialogueBox;
     private GameObject leftArrow;
     private GameObject rightArrow;
@@ -32,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
         //set the camera to the gameobject camera so we can change its fields.
         camera = FindObjectOfType<Camera>();
         //set the rb(rigidbody) to the rigidbody component of this gameobject(player) so we can change its fields.
-        rb = GetComponent<Rigidbody2D>();
         textButtons = GameObject.FindGameObjectWithTag("textButtons");
         leftArrow = GameObject.FindGameObjectWithTag("leftArrow");
         rightArrow = GameObject.FindGameObjectWithTag("rightArrow");
@@ -122,18 +120,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    void OnTriggerExit2D(Collider2D col)
-    {
-        if (col.gameObject.tag == "Woman")
-        {
-            dialogueBox.SetActive(false);
-            leftArrow.SetActive(true);
-            rightArrow.SetActive(true);
-            textButtons.SetActive(true);
-            canMove = true;
-        }
 
-    }
 
     //OnTriggerStay checks if the gameobject(player) is standing on a trigger and isnt moving.
     void OnTriggerStay2D(Collider2D col)

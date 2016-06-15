@@ -109,21 +109,6 @@ public class DialogeManager : MonoBehaviour
         hideMoreTextButtonOnDialogueEnd();
 
     }
-    void Youssef()
-    {
-        image.sprite = bg_yousef;
-
-        buurvrouwText.text = "";
-        yousefText.text = textLines[currentLine];
-    }
-
-    void Buurvrouw()
-    {
-        image.sprite = bg_buurvrouw;
-        yousefText.text = "";
-        buurvrouwText.text = textLines[currentLine];
-
-    }
 
     public void EnableDM()
     {
@@ -159,7 +144,7 @@ public class DialogeManager : MonoBehaviour
         }
     }
 
-    // 
+    // verwijdert de continue button als de currentline gelijk is aan de endline en de DM nog niet uit staat. wat wel zou moeten.
     private void hideMoreTextButtonOnDialogueEnd()
     {
         if (GameObject.Find("ContinueDialogueButton") && keepEndLine && currentLine == endAtLine)

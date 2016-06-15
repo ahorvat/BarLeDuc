@@ -72,10 +72,10 @@ public class Pause : MonoBehaviour
     public void HoofdMenu()
     {
         MenuCan.gameObject.SetActive(false);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         paused = false;
     }
-
+    
     //
     public void KiesScenario()
     {

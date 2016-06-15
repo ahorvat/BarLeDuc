@@ -12,7 +12,7 @@ public class disableNavOnDialogue : MonoBehaviour {
 		navArrows = GameObject.FindGameObjectsWithTag("navArrow");
 	}
 	
-	// Update is called once per frame
+	// Update is called once per frame.
 	void Update () {
 		if (!player || !player.canMove)
 		{

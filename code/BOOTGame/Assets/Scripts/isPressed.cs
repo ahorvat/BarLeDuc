@@ -147,15 +147,6 @@ public class isPressed : MonoBehaviour
             }
         }
 
-        else if (gameObject.tag == "addressBar")
-        {
-
-        }
-
-        else if (gameObject.tag == "InternetIcon")
-        {
-            SceneManager.LoadScene("sc_internet_start");
-        }
 
         // When all else fails, go back to the main menu
         else
@@ -164,7 +155,3 @@ public class isPressed : MonoBehaviour
         }
     }
 }
-
-//
-//Scene scene = SceneManager.GetActiveScene();
-//scene.name; // name of scene

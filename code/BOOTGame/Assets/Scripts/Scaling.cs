@@ -58,7 +58,7 @@ public class Scaling : MonoBehaviour
             //yield to return on this frame and go on next frame with the loop with the same variables it had last frame.
             yield return null;
         }
-
+        
         // Scale down part, works the same as the scaling part.
         startTime = Time.time;
 
@@ -68,7 +68,6 @@ public class Scaling : MonoBehaviour
             transform.localScale = Vector3.Lerp(Vector3.one * scaleAmount, Vector3.one, amount);
             yield return null;
         }
-
         //Set the scale to one if it isnt scaling up/down
         transform.localScale = Vector3.one;
 
